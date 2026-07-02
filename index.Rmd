@@ -1,0 +1,496 @@
+---
+title: "DESAFIOS DE INSTALAÇÃO DE UMA PLANTA DE PRODUÇÃO DE H₂"
+subtitle: "Estudo de Caso da UNIFEI"
+author: "**Autores**: _<br>[**Prof. Dr. Jamil Haddad**](http://lattes.cnpq.br/3322615178606123) <br>[**Prof. Me. Fábio José Horta Nogueira**]()_"
+date: "**Última Atualização**: `r format(Sys.Date(), '%d de %B de %Y')`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: ["packages.bib"]
+csl: "abnt_numerico.csl"
+link-citations: yes
+classoption: openany
+github-repo: rstudio/bookdown-demo
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  out.width = "80%",
+  fig.align = "center"
+)
+```
+
+# INTRODUÇÃO
+
+Figura \@ref(fig:figura_01)
+
+```{r figura_01, fig.cap=""}
+knitr::include_graphics(path = 'figura_01.png')
+```
+
+Figura \@ref(fig:figura_02)
+
+```{r figura_02, fig.cap=""}
+knitr::include_graphics(path = 'figura_02.png')
+```
+
+Figura \@ref(fig:figura_03)
+
+```{r figura_03, fig.cap=""}
+knitr::include_graphics(path = 'figura_03.png')
+```
+
+Figura \@ref(fig:figura_04)
+
+```{r figura_04, fig.cap=""}
+knitr::include_graphics(path = 'figura_04.png')
+```
+
+Figura \@ref(fig:figura_05)
+
+```{r figura_05, fig.cap=""}
+knitr::include_graphics(path = 'figura_05.png')
+```
+
+Figura \@ref(fig:figura_06)
+
+```{r figura_06, fig.cap=""}
+knitr::include_graphics(path = 'figura_06.png')
+```
+
+Figura \@ref(fig:figura_07)
+
+```{r figura_07, fig.cap=""}
+knitr::include_graphics(path = 'figura_07.png')
+```
+
+Figura \@ref(fig:figura_08)
+
+```{r figura_08, fig.cap=""}
+knitr::include_graphics(path = 'figura_08.png')
+```
+
+Figura \@ref(fig:figura_09)
+
+```{r figura_09, fig.cap=""}
+knitr::include_graphics(path = 'figura_09.png')
+```
+
+Figura \@ref(fig:figura_10)
+
+```{r figura_10, fig.cap=""}
+knitr::include_graphics(path = 'figura_10.png')
+```
+
+Figura \@ref(fig:figura_11)
+
+```{r figura_11, fig.cap=""}
+knitr::include_graphics(path = 'figura_11.png')
+```
+
+Figura \@ref(fig:figura_12)
+
+```{r figura_12, fig.cap=""}
+knitr::include_graphics(path = 'figura_12.png')
+```
+
+Figura \@ref(fig:figura_13)
+
+```{r figura_13, fig.cap=""}
+knitr::include_graphics(path = 'figura_13.png')
+```
+
+Figura \@ref(fig:figura_14)
+
+```{r figura_14, fig.cap=""}
+knitr::include_graphics(path = 'figura_14.png')
+```
+
+Figura \@ref(fig:figura_15)
+
+```{r figura_15, fig.cap=""}
+knitr::include_graphics(path = 'figura_15.png')
+```
+
+Figura \@ref(fig:figura_16)
+
+```{r figura_16, fig.cap=""}
+knitr::include_graphics(path = 'figura_16.png')
+```
+
+Figura \@ref(fig:figura_17)
+
+```{r figura_17, fig.cap=""}
+knitr::include_graphics(path = 'figura_17.png')
+```
+
+Figura \@ref(fig:figura_18)
+
+```{r figura_18, fig.cap=""}
+knitr::include_graphics(path = 'figura_18.png')
+```
+
+Figura \@ref(fig:figura_19)
+
+```{r figura_19, fig.cap=""}
+knitr::include_graphics(path = 'figura_19.png')
+```
+
+Figura \@ref(fig:figura_20)
+
+```{r figura_20, fig.cap=""}
+knitr::include_graphics(path = 'figura_20.png')
+```
+
+Figura \@ref(fig:figura_21)
+
+```{r figura_21, fig.cap=""}
+knitr::include_graphics(path = 'figura_21.png')
+```
+
+Figura \@ref(fig:figura_22)
+
+```{r figura_22, fig.cap=""}
+knitr::include_graphics(path = 'figura_22.png')
+```
+
+Figura \@ref(fig:figura_23)
+
+```{r figura_23, fig.cap=""}
+knitr::include_graphics(path = 'figura_23.png')
+```
+
+Figura \@ref(fig:figura_24)
+
+```{r figura_24, fig.cap=""}
+knitr::include_graphics(path = 'figura_24.png')
+```
+
+Figura \@ref(fig:figura_25)
+
+```{r figura_25, fig.cap=""}
+knitr::include_graphics(path = 'figura_25.png')
+```
+
+Figura \@ref(fig:figura_26)
+
+```{r figura_26, fig.cap=""}
+knitr::include_graphics(path = 'figura_26.png')
+```
+
+Figura \@ref(fig:figura_27)
+
+```{r figura_27, fig.cap=""}
+knitr::include_graphics(path = 'figura_27.png')
+```
+
+Figura \@ref(fig:figura_28)
+
+```{r figura_28, fig.cap=""}
+knitr::include_graphics(path = 'figura_28.png')
+```
+
+Figura \@ref(fig:figura_29)
+
+```{r figura_29, fig.cap=""}
+knitr::include_graphics(path = 'figura_29.png')
+```
+
+Figura \@ref(fig:figura_30)
+
+```{r figura_30, fig.cap=""}
+knitr::include_graphics(path = 'figura_30.png')
+```
+
+Figura \@ref(fig:figura_31)
+
+```{r figura_31, fig.cap=""}
+knitr::include_graphics(path = 'figura_31.png')
+```
+
+Figura \@ref(fig:figura_32)
+
+```{r figura_32, fig.cap=""}
+knitr::include_graphics(path = 'figura_32.png')
+```
+
+Figura \@ref(fig:figura_33)
+
+```{r figura_33, fig.cap=""}
+knitr::include_graphics(path = 'figura_33.png')
+```
+
+Figura \@ref(fig:figura_34)
+
+```{r figura_34, fig.cap=""}
+knitr::include_graphics(path = 'figura_34.png')
+```
+
+Figura \@ref(fig:figura_35)
+
+```{r figura_35, fig.cap=""}
+knitr::include_graphics(path = 'figura_35.png')
+```
+
+Figura \@ref(fig:figura_36)
+
+```{r figura_36, fig.cap=""}
+knitr::include_graphics(path = 'figura_36.png')
+```
+
+Figura \@ref(fig:figura_37)
+
+```{r figura_37, fig.cap=""}
+knitr::include_graphics(path = 'figura_37.png')
+```
+
+Figura \@ref(fig:figura_38)
+
+```{r figura_38, fig.cap=""}
+knitr::include_graphics(path = 'figura_38.png')
+```
+
+Figura \@ref(fig:figura_39)
+
+```{r figura_39, fig.cap=""}
+knitr::include_graphics(path = 'figura_39.png')
+```
+
+Figura \@ref(fig:figura_40)
+
+```{r figura_40, fig.cap=""}
+knitr::include_graphics(path = 'figura_40.png')
+```
+
+Figura \@ref(fig:figura_41)
+
+```{r figura_41, fig.cap=""}
+knitr::include_graphics(path = 'figura_41.png')
+```
+
+Figura \@ref(fig:figura_42)
+
+```{r figura_42, fig.cap=""}
+knitr::include_graphics(path = 'figura_42.png')
+```
+
+Figura \@ref(fig:figura_43)
+
+```{r figura_43, fig.cap=""}
+knitr::include_graphics(path = 'figura_43.png')
+```
+
+Figura \@ref(fig:figura_44)
+
+```{r figura_44, fig.cap=""}
+knitr::include_graphics(path = 'figura_44.png')
+```
+
+Figura \@ref(fig:figura_45)
+
+```{r figura_45, fig.cap=""}
+knitr::include_graphics(path = 'figura_45.png')
+```
+
+Figura \@ref(fig:figura_46)
+
+```{r figura_46, fig.cap=""}
+knitr::include_graphics(path = 'figura_46.png')
+```
+
+Figura \@ref(fig:figura_47)
+
+```{r figura_47, fig.cap=""}
+knitr::include_graphics(path = 'figura_47.png')
+```
+
+Figura \@ref(fig:figura_48)
+
+```{r figura_48, fig.cap=""}
+knitr::include_graphics(path = 'figura_48.png')
+```
+
+Figura \@ref(fig:figura_49)
+
+```{r figura_49, fig.cap=""}
+knitr::include_graphics(path = 'figura_49.png')
+```
+
+Figura \@ref(fig:figura_50)
+
+```{r figura_50, fig.cap=""}
+knitr::include_graphics(path = 'figura_50.png')
+```
+
+Figura \@ref(fig:figura_51)
+
+```{r figura_51, fig.cap=""}
+knitr::include_graphics(path = 'figura_51.png')
+```
+
+Figura \@ref(fig:figura_52)
+
+```{r figura_52, out.width = "70%", fig.cap=""}
+knitr::include_graphics(path = 'figura_52.png')
+```
+
+Figura \@ref(fig:figura_53)
+
+```{r figura_53, fig.cap=""}
+knitr::include_graphics(path = 'figura_53.png')
+```
+
+Figura \@ref(fig:figura_54)
+
+```{r figura_54, fig.cap=""}
+knitr::include_graphics(path = 'figura_54.png')
+```
+
+Figura \@ref(fig:figura_55)
+
+```{r figura_55, fig.cap=""}
+knitr::include_graphics(path = 'figura_55.png')
+```
+
+Figura \@ref(fig:figura_56)
+
+```{r figura_56, fig.cap=""}
+knitr::include_graphics(path = 'figura_56.png')
+```
+
+Figura \@ref(fig:figura_57)
+
+```{r figura_57, fig.cap=""}
+knitr::include_graphics(path = 'figura_57.png')
+```
+
+Figura \@ref(fig:figura_58)
+
+```{r figura_58, fig.cap=""}
+knitr::include_graphics(path = 'figura_58.png')
+```
+
+Figura \@ref(fig:figura_59)
+
+```{r figura_59, fig.cap=""}
+knitr::include_graphics(path = 'figura_59.png')
+```
+
+Figura \@ref(fig:figura_60)
+
+```{r figura_60, fig.cap=""}
+knitr::include_graphics(path = 'figura_60.png')
+```
+
+Figura \@ref(fig:figura_61)
+
+```{r figura_61, fig.cap=""}
+knitr::include_graphics(path = 'figura_61.png')
+```
+
+Figura \@ref(fig:figura_62)
+
+```{r figura_62, fig.cap=""}
+knitr::include_graphics(path = 'figura_62.png')
+```
+
+Figura \@ref(fig:figura_63)
+
+```{r figura_63, fig.cap=""}
+knitr::include_graphics(path = 'figura_63.png')
+```
+
+Figura \@ref(fig:figura_64)
+
+```{r figura_64, fig.cap=""}
+knitr::include_graphics(path = 'figura_64.png')
+```
+
+Figura \@ref(fig:figura_65)
+
+```{r figura_65, fig.cap=""}
+knitr::include_graphics(path = 'figura_65.png')
+```
+
+Figura \@ref(fig:figura_66)
+
+```{r figura_66, fig.cap=""}
+knitr::include_graphics(path = 'figura_66.png')
+```
+
+Figura \@ref(fig:figura_67)
+
+```{r figura_67, fig.cap=""}
+knitr::include_graphics(path = 'figura_67.png')
+```
+
+Figura \@ref(fig:figura_68)
+
+```{r figura_68, fig.cap=""}
+knitr::include_graphics(path = 'figura_68.png')
+```
+
+Figura \@ref(fig:figura_69)
+
+```{r figura_69, fig.cap=""}
+knitr::include_graphics(path = 'figura_69.png')
+```
+
+Figura \@ref(fig:figura_70)
+
+```{r figura_70, fig.cap=""}
+knitr::include_graphics(path = 'figura_70.png')
+```
+
+Figura \@ref(fig:figura_71)
+
+```{r figura_71, fig.cap=""}
+knitr::include_graphics(path = 'figura_71.png')
+```
+
+Figura \@ref(fig:figura_72)
+
+```{r figura_72, fig.cap=""}
+knitr::include_graphics(path = 'figura_72.png')
+```
+
+Figura \@ref(fig:figura_73)
+
+```{r figura_73, fig.cap=""}
+knitr::include_graphics(path = 'figura_73.png')
+```
+
+Figura \@ref(fig:figura_74)
+
+```{r figura_74, fig.cap=""}
+knitr::include_graphics(path = 'figura_74.png')
+```
+
+# REFERÊNCIAS {-}
+
+Barbir, Frano. PEM electrolysis for production of hydrogen from renewable energy sources, Solar Energy, Vol. 78, n. 5, 2005, p. 661-669, ISSN 0038-092X, https://doi.org/10.1016/j.solener.2004.09.003
+
+Chauhan, Deepak; Ahn, Young- Ho. Alkaline electrolysis of wastewater and low-quality water, Journal of Cleaner Production, Volume 397, 2023, 136613, ISSN 0959-6526, https://doi.org/10.1016/j.jclepro.2023.136613
+
+Chi, Jun; Yu, Hongmei. Water electrolysis based on renewable energy for hydrogen production. Chinese Journal of Catalysis, Vol. 39, n. 3, 2018, p. 390-394, ISSN 1872-2067, https://doi.org/10.1016/S1872-2067(17)62949-8
+
+Gases - Explosion and Flammability Concentration Limits, https://www.engineeringtoolbox.com/explosive-concentration-limits-d_423.html, Acesso em 15/03/2025.
+
+Lampert, D.; Cai, Hao; Wang, Zhichao et al. Development of a Life Cycle Inventory of Water Consumption Associated with the Production of Transportation Fuel. Argonne National Laboratory – Energy Systems Division: October, 2015 (Technical Report Number: ANL/ESD-15/27). DOI:10.13140/RG.2.1.3886.9201
+
+Lemmon, E. W., Huber, M. L., Leachman, J. W., Revised Standardized Equation for Hydrogen Gas Densities for Fuel Consumption Applications, Journal of Research of the National Institute of Standards and Technology, Volume 113, Number 6, November-December 2018.
+
+Li, J.Q., Chen, Y., et all, A study on the Joule-Thomson effect of during filling hydrogen in high pressure tank, https://www.sciencedirect.com/journal/case-studies-in-thermal-engineering, Acesso em 17/08/2024.
+
+National Institute of Standards and Technology, NIST, Reference Fluid Thermodynamic and Transport Properties Database V10, https://www.nist.gov/programs-projects/reference-/fluid-thermodynamic-and-transport-properties-database-refprop. Acesso em 17/02/2025.
+
+Schmidt, O.; Gambhir, A.; Staffell, I.; Hawkes, A.; Nelson, J.; Few, S. Future cost and performance of water electrolysis: An expert elicitation study, International Journal of Hydrogen Energy, Vol. 42, n. 52, 2017, p. 30470-30492, ISSN 0360-3199, https://doi.org/10.1016/j.ijhydene.2017.10.045.
+
+Shi, Xunpeng; Liao, Xun; Li, Yanfei. Quantification of fresh water consumption and scarcity footprints of hydrogen from water electrolysis: A methodology framework, Renewable Energy, Vol. 154, 2020, p. 786-796, ISSN 0960-1481, https://doi.org/10.1016/j.renene.2020.03.026
+
+Reason for negative Joule Thomson coefficient of Hydrogen, Helium and Neon at NPT conditions, https://chemistry.stackexchange.com/questions/61517/reason-for-negative-joule-thomson-coefficient-of-helium-and-hydrogen-at-ntp-cond, Acesso em 16/08/2025.
+
+Zawadzki, Piotr; Kończak, Beata; Smoliński, Adam. Municipal wastewater reclamation: reclaimed water for hydrogen production by electrolysis – a case study, Measurement, 2023, 112928, ISSN 0263-2241, https://doi.org/10.1016/j.measurement.2023.112928
+

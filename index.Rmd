@@ -44,7 +44,7 @@ A Universidade Federal de Itajubá (Unifei) foi fundada em 23 de novembro de 191
 
 Após algumas reuniões com a equipe técnica da GIZ, a UNIFEI encaminhou uma proposta de projeto em fevereiro de 2022, contendo 42 páginas com o seguinte conteúdo: 1. Apresentação, 2. Justificativa, 3. Objetivos, 4. Estratégias para disseminação do conhecimento, 5. Estratégias para inclusão de iniciativa privada, 6. Sinergia e integração com outras atividades, 9. Cronograma de atividades, 10. Equipe e matriz de responsabilidades, 11. Resultados esperados, 12. Planilha orçamentária, 13. Análise de riscos e 14. Considerações finais.
 
-O valor total destinado pela GIZ para esse projeto, denominado Centro de Hidrogênio Verde (CH2V), foi de 5 milhões de euros envolvendo a instalação de uma planta de produção de hidrogênio juntamente com um sistema de abastecimento veicular, construção de uma edificação (projetos, obras, estrutura interna, etc.) para abrigar pessoal técnico e laboratórios destinados a atividades com hidrogênio, banco de ensaios em motores com H2, desenvolvimento de um curso EAD, desenvolvimento de website, bolsas para alunos e pesquisadores, viagens nacionais e internacionais, desenvolvimento de estudos técnicos, estabelecimento de parcerias, workshops, entre outras ações. Inicialmente, o projeto estava previsto para ser desenvolvido entre março/2022 a dezembro/2023. A Figura \@ref(fig:figura01) ilustra as principais questões relacionadas ao projeto enquanto a Figura \@ref(fig:figura02) apresenta uma visão geral dos principais componentes da planta de produção de hidrogênio.
+O valor total destinado pela GIZ para esse projeto, denominado Centro de Hidrogênio Verde (CH2V), foi de 5 milhões de euros envolvendo a instalação de uma planta de produção de hidrogênio juntamente com um sistema de abastecimento veicular, construção de uma edificação (projetos, obras, estrutura interna, etc.) para abrigar pessoal técnico e laboratórios destinados a atividades com hidrogênio, banco de ensaios em motores com H~2~, desenvolvimento de um curso EAD, desenvolvimento de website, bolsas para alunos e pesquisadores, viagens nacionais e internacionais, desenvolvimento de estudos técnicos, estabelecimento de parcerias, workshops, entre outras ações. Inicialmente, o projeto estava previsto para ser desenvolvido entre março/2022 a dezembro/2023. A Figura \@ref(fig:figura01) ilustra as principais questões relacionadas ao projeto enquanto a Figura \@ref(fig:figura02) apresenta uma visão geral dos principais componentes da planta de produção de hidrogênio.
 
 ```{r figura01, fig.cap="Atividades relacionadas ao projeto CH2V"}
 knitr::include_graphics(path = 'figura_01.png')
@@ -178,7 +178,7 @@ A seguir apresentam-se comentários sobre a infraestrutura para a instalação d
 
 ## Instalação da Edificação do CH2V
 
-No início de 2022, após algumas reuniões internas com a equipe do projeto e visitas a algumas empresas que tinham instalações com hidrogênio, definiu-se um projeto conceitual do que seria a edificação a ser construída dentro do campus da universidade. Esse local destinado para construção da edificação (vide ilustração na Figura \@ref(fig:figura03)), situado em frente a um lago, compreende um lote com área aproximada de 3.000 m2, em terreno plano com acesso por rua pavimentada, conforme apresentado nas Figuras \@ref(fig:figura04) e \@ref(fig:figura05).
+No início de 2022, após algumas reuniões internas com a equipe do projeto e visitas a algumas empresas que tinham instalações com hidrogênio, definiu-se um projeto conceitual do que seria a edificação a ser construída dentro do campus da universidade. Esse local destinado para construção da edificação (vide ilustração na Figura \@ref(fig:figura03)), situado em frente a um lago, compreende um lote com área aproximada de 3.000 m^2^, em terreno plano com acesso por rua pavimentada, conforme apresentado nas Figuras \@ref(fig:figura04) e \@ref(fig:figura05).
 
 ```{r figura04, fig.cap="Área prevista para construção (em vermelho) – aproximadamente 3.000 m²"}
 knitr::include_graphics(path = 'figura_04.png')
@@ -244,433 +244,1209 @@ Após o processo licitatório e observados o devido processo legal (publicação
 
 Foi encaminhado o Memorial Descritivo do edifício, incluindo os projetos arquitetônico, paisagístico, estrutural e de infraestrutura, bem como o projeto de proteção contra incêndio. A documentação incluiu ainda as licenças ambientais e de uso da água, além dos trâmites junto à prefeitura municipal de Itajubá necessários para a execução da obra. Antes desse envio, uma consultora da GIZ, no Brasil, avaliou o material e emitiu parecer favorável ao projeto, também encaminhado a GIZ, na Alemanha.
 
-##
+## Características Principais da Edificação do CH2V
 
+O Centro de Hidrogênio Verde (CH2V) é composto por um pavimento térreo e um pavimento superior, sendo a altura de piso a piso de 3,96m e 4,00m respectivamente. No andar térreo, estão previstos laboratórios, sala de monitoramento, almoxarifado, sala de arquivos, recepção, secretaria, copa, banheiros, depósito de material de limpeza, elevador e escada de acesso ao mezanino. Já no pavimento superior, está previsto um mezanino, o setor administrativo, composto pelas salas de pesquisa, de professores, administração, salas multiuso e de reuniões, além da sala comum e lavabos. 
 
+Toda a edificação do prédio será concebida em estruturas de concreto armado do tipo reticulado, inclusive a laje de piso do pavimento térreo. No pavimento superior as 
+lajes são maciças em concreto armado. 
 
+No exterior da edificação há uma pequena edificação de gases, local no qual serão armazenados os cilindros de gases que serão usados nos laboratórios. 
 
+Para abastecimento de água, foi considerada uma caixa d’água de polietileno de 5.000 L, a qual será instalada no nível da laje de cobertura, protegida por fechamento em alvenaria e pela cobertura em telha metálica. 
 
+O esgoto será conduzido à rede coletora existente no Campus e destinado à rede coletora da concessionária. 
+A cobertura do prédio do CH2V será em estrutura metálica de duas águas com telha metálica termoacústica e com abertura do tipo lanternim, no centro da edificação, conforme projeto arquitetônico. Todas as disposições e medidas podem ser visualizadas no referido projeto. 
 
+A captação das águas pluviais será por meio de calhas, escoando pelos condutores verticais e conduzidas à rede pluvial existente no Campus. 
+Para o fechamento/vedação da estrutura foi considerado o uso de blocos de concreto de 14x19x39 e, no interior da edificação, serão utilizadas divisórias em drywall (salas) e do tipo melamina (banheiros). 
 
+No mezanino todas as salas terão piso em porcelanato, enquanto no térreo, apenas as áreas molhadas serão em porcelanato (copa, depósito de material de limpeza e banheiros). Os demais ambientes receberão acabamento com piso de alta resistência e pintura. 
 
+Todas as áreas molhadas receberão revestimento cerâmico nas paredes, além de impermeabilização nas áreas pertinentes. As salas de laboratório não receberão forro, sendo que os outros ambientes terão forro de placas de isopor. 
 
+As janelas serão de perfil de alumínio e vidro, do tipo maxim-ar com bandeira, a um peitoril de 1,40m no térreo e 1,10 no mezanino, de modo que não interfira nos pontos de água, elétrica e gás. Foi considerado em projeto, portas de enrolar, em aço, para os laboratórios e entrada dos fundos. Portas de madeira para pintura e portas de alumínio veneziana. Nas janelas, foi considerado pingadeira em granito. 
 
+Quanto a alimentação elétrica, o fornecimento de energia elétrica ao CH2V ocorrerá de duas maneiras, considerando aspectos de segurança e proteção elétricas, manutenção e qualidade de energia. 
 
+O prédio principal será conectado ao alimentador 5, já existente no Campus, por meio de um transformador de 150 kVA compartilhado com o laboratório do Bloco K1. O eletrolisador será conectado a um novo alimentador, de número 6, que será exclusivo para planta de eletrólise, e será construído dentro do projeto do CH2V. Este alimentador é formado por um disjuntor em 13,8 kV no início do alimentador, junto à subestação principal, condutores e canaletas enterradas, fazendo o percurso da subestação até o ponto de conexão com o transformador próprio do eletrolisador.
 
+## Sobre a Licença Ambiental e Outorga de Uso da Água
 
+Quando da construção da edificação do CH2V dentro do campus da universidade foi necessário, inicialmente, preencher o FCE (Formulário de Caracterização de Empreendimento) que é um documento fundamental no processo de licenciamento ambiental, especialmente utilizado em níveis municipais e estaduais no Brasil. Ele funciona como uma "ficha técnica" que descreve detalhadamente as características de uma atividade ou empreendimento potencialmente poluidor, permitindo que o órgão ambiental compreenda o impacto da atividade e determine quais licenças ou estudos são necessários. 
 
+O FCE é usado para iniciar o processo de licenciamento, solicitando Licença Prévia (LP), de Instalação (LI) ou de Operação (LO). Ele ajuda o órgão ambiental a enquadrar a atividade de acordo com o porte e potencial poluidor. O conteúdo, a ser preenchido, deve possuir informações sobre a identificação do empreendedor e do local, a descrição do processo produtivo, o uso de recursos hídricos, a movimentação de terra e supressão de vegetação, os efluentes líquidos, emissão sonora e resíduos sólidos.
 
-
-
-
-
-
-
-
-
-Figura \@ref(fig:figura07)
+Em seguida, foi aberto um processo técnico junto a Secretaria Municipal de Meio Ambiente (SEMEA) da Prefeitura Municipal de Itajubá, por meio do Formulário de Orientação Básica (FOB), conforme apresentado nas Figuras \@ref(fig:figura07) e \@ref(fig:figura08).
 
 ```{r figura07, fig.cap="Formulário de Orientação Básica - CH2V (folha 1/2)"}
 knitr::include_graphics(path = 'figura_07.png')
 ```
 
-Figura \@ref(fig:figura08)
-
 ```{r figura08, fig.cap="Formulário de Orientação Básica - CH2V (folha 2/2)"}
 knitr::include_graphics(path = 'figura_08.png')
 ```
 
-Figura \@ref(fig:figura09)
+Como esse projeto inicial consiste na implantação da edificação destinada à pesquisa e desenvolvimento dos projetos relacionados ao empreendimento, não havendo operações relacionadas à produção e armazenamento do combustível sustentável, não há ocorrência de impactos ambientais significativos. Dessa forma é dispensado o licenciamento ambiental nesta etapa. Naturalmente que numa etapa posterior, para a instalação e operação do Centro de Hidrogênio Verde (principalmente devido a produção de H~2~), deverá ser obtida a licença ambiental. 
+
+A Figura \@ref(fig:figura09) apresenta uma imagem da Licença Ambiental Simplificada (LAS) da edificação do CH2V que foi também encaminhada para a GIZ, na Alemanha.
 
 ```{r figura09, fig.cap="Licença Ambiental Simplificada (LAS) da edificação do CH2V"}
 knitr::include_graphics(path = 'figura_09.png')
 ```
 
-Figura \@ref(fig:figura10)
+Uma das questões fundamentais para a produção de hidrogênio é a disponibilidade de recursos hídricos para o processo de eletrólise. A eletrólise da água se constitui em um dos métodos mais apropriados para produção de H2V, que usa como insumos a eletricidade, água pura (em uma reação exotérmica) para produzir hidrogênio e oxigênio puro, único subproduto (Schmidt et al., 2017; Simoes et al., 2021). No processo de eletrólise da água, a água é o reagente, dissociado em hidrogênio e oxigênio sob a influência da corrente contínua (Chi e Yu, 2018).
+
+A pureza da água constitui-se em um fator primordial para o desenvolvimento do H~2~, uma vez que será necessária uma elevada quantidade de água doce para produção de H~2~ em escala industrial a partir, por exemplo, da divisão de água alcalina (Chauhan e Ahn, 2023). Para os autores, a água tratada com tratamento avançado de alta qualidade pode ser uma excelente alternativa para a eletrólise da água. A água que abastece um eletrolisador deve primeiro ser purificada e desmineralizada, independentemente da matéria-prima (Zawadzki et al., 2023). Simoes et al. (2021) concluíram que a água da rede pública se constitui na fonte de água mais apropriada para eletrólise em razão do menor risco de abastecimento, custos mais baixos e o fato de que os complexos processos de licenciamento são evitados.
+
+Teoricamente, 1 normal metro cúbico (Nm^3^) de hidrogênio consome diretamente 0,81 litro (L) de água a partir da eletrólise da água (Shi et al., 2020), no consumo de 2,4 galões de água por kg de H~2~ (Lampert et al., 2015) ou ainda, 8,92l de água deionizada são necessários para produção de 1kg de H~2~ e 8kg de O~2~ (Zawadzki et al., 2023). Entretanto, em geral, esse valor é 25% superior na realidade, a saber: 1 Nm^3^, ou 0,09 kg (kg), de hidrogênio requer 1 L (1 kg) de água de consumo de água, dependendo da cadeia de abastecimento de eletricidade (Shi et al., 2020). Isto ocorre, pois ambos os gases deixam o eletrolisador úmido e parte da água é perdida do sistema em razão da exaustão de oxigênio e da purga periódica de hidrogênio. Isto é especialmente importante para os sistemas que devem funcionar em circuito fechado com uma célula de combustível. Se a pilha de combustível utilizar ar ao invés de oxigênio puro, perde-se uma parte de água em decorrência da exaustão de ar da célula de combustível (Barbir, 2005). 
+
+Para uma operação estável de eletrólise, a água de resfriamento também é necessária. Portanto, a eletrólise da água consome água não apenas como insumo no processo na reação de produção de hidrogênio (equação 4), assim como no rejeito no processo de pré-tratamento da água e no processo de resfriamento (Lampert et al., 2015). A despeito do consumo direto de água não ser expressivo, o consumo indireto de água oriundo da geração de energia e equipamentos usados para produção de hidrogênio é passível de ser 20 vezes superior ao consumo direto de água, em função da cadeia de fornecimento de eletricidade (Shi et al., 2020).
+
+Para atender à necessidade de abastecimento de água para o projeto do CH2V, a UNIFEI, em seu campus de Itajubá, ofereceu 3 possibilidades, sendo 2 poços tubulares subterrâneos e 1 ponto da Companhia Estadual de Abastecimento de Água (COPASA), assim localizados:
+
+- **Poço 1**: coordenadas UTM: 453.917,15 – Leste e 7.521.236,48 – Norte
+- **Poço 2**: coordenadas UTM: 453.597,19 – Leste e 7.521.411,66 – Norte
+- **COPASA**: coordenadas UTM: 453.966,79 – Leste e 7.521.065,51 – Norte
+
+A UNIFEI já tinha, em outubro de 2019, dado entrada no Instituto Mineiro de Gestão das Águas (Igam), conforme processo nº 44234/2019 e protocolo nº 0660635/2019, solicitou autorização para captação em águas subterrâneas por meio de poço tubular profundo, na coordenada geográfica 22°24”46.7” S e 45°27’03” W, no município de ITAJUBÁ, com a finalidade de consumo humano. Esse mesmo poço obteve em 14/02/2019 autorização para perfuração, por meio do processo nº 10556/2018.
+
+O Igam emitiu o seguinte parecer: “Diante do exposto, somos favoráveis à a autorização de outorga para captação de água subterrânea por meio de poço tubular já existente, por meio do processo de outorga nº 44234/2019, com a finalidade de consumo humano, para o UNIFEI - UNIVERSIDADE FEDERAL DE ITAJUBÁ, CPF/CNPJ 21.040.001/0001-30, na coordenada geográfica 22°24”46.7” S e 45°27’03” W, no município de ITAJUBÁ, com validade de 10 anos, para uma vazão de 2,2 m³/h, durante 11:40 horas/dia, 12 meses/ano, perfazendo um volume diário de 25,6 m³. Este parecer técnico refere-se exclusivamente às questões técnicas relativas ao pedido de outorga de direito de uso dos recursos hídricos, não abarcando a análise documental, administrativa, judicial ou de conveniência e oportunidade da Administração Pública”.
+
+As Figuras \@ref(fig:figura10) e \@ref(fig:figura11) apresentam o Certificado e a Outorga emitidas pelo Igam.
 
 ```{r figura10, fig.cap="Certificado emitido pelo Igam"}
 knitr::include_graphics(path = 'figura_10.png')
 ```
 
-Figura \@ref(fig:figura11)
-
 ```{r figura11, fig.cap="Outorga emitida pelo Igam"}
 knitr::include_graphics(path = 'figura_11.png')
 ```
 
-Figura \@ref(fig:figura12)
+## Sobre a Fonte de Energia Elétrica Renovável Utilizada para Produção de Hidrogênio
+
+Com o apoio do MEC, a UNIFEI investiu R\$ 2.492.541,88 e instalou, em 2020, numa primeira fase do projeto “Sistema Fotovoltaico da UNIFEI”, um sistema de geração de energia elétrica fotovoltaico composto de 1584 placas (1m X 2m), totalizando 610,00 kWp (CC). Na fase 2, com um investimento previsto de R$ 2.000.000,00, uma nova licitação foi realizada e até o final de 2021 a potência total instalada é de aproximadamente 1.000 kWp com uma média de energia gerada de aproximadamente 3.800,00 kWh/dia. As Figuras \@ref(fig:figura12), \@ref(fig:figura13) e \@ref(fig:figura14) apresentam parte deste sistema localizado nos tetos de algumas edificações do Campus da Universidade em Itajubá.
+
+Toda a energia gerada por este sistema é monitorada por uma central de medição incluindo um sistema meteorológico para acompanhar o desempenho da conversão de energia solar em eletricidade. Desta forma é possível fazer um balanço diário entre esta energia gerada e a consumida pela planta de eletrólise. Importante mencionar que os recursos recebidos estão sendo aplicados na montagem de um laboratório responsável pela operação e manutenção das instalações ao longo de sua vida útil. Foram adquiridos uma série de equipamentos também para o desenvolvimento de pesquisas, como traçadores de curva I-V, termocâmera, Analisadores de Energia - Power Quality surveys and diagnostics, Solar Pathfinder, Softwares de dimensionamento como PVSYST e PVSOL além dos medidores para o monitoramento do desempenho dessa usina FV.
+
+Além desse sistema FV, a UNIFEI recebe energia da CEMIG que possui cerca de 98% da sua capacidade de geração de energia oriunda de energia limpa, preponderantemente a energia hidrelétrica.
 
 ```{r figura12, fig.cap="Sistema FV instalado no bloco X1 de salas de aulas"}
 knitr::include_graphics(path = 'figura_12.png')
 ```
 
-Figura \@ref(fig:figura13)
-
 ```{r figura13, fig.cap="Sistema FV instalado no bloco X2 do instituto IEM"}
 knitr::include_graphics(path = 'figura_13.png')
 ```
-
-Figura \@ref(fig:figura14)
 
 ```{r figura14, fig.cap="Sistema FV instalado nos blocos dos institutos ISEE e IEST"}
 knitr::include_graphics(path = 'figura_14.png')
 ```
 
-Figura \@ref(fig:figura15)
+## Instalação da Planta de Produção de H~2~
+
+A proposta inicial apresentada a GIZ, quando da elaboração do projeto no início de 2022, era instalar a planta de eletrólise numa área aproximada de 3.000 m^2^ próxima a edificação do Centro de Hidrogênio Verde (CH2V) localizado numa área do campus da Universidade Federal de Itajubá (UNIFEI), conforme mostrado na Figura \@ref(fig:figura15).
 
 ```{r figura15, fig.cap="Projeto original da área para o CH2V"}
 knitr::include_graphics(path = 'figura_15.png')
 ```
 
-Figura \@ref(fig:figura16)
+Naquele momento considerava-se que esta área era suficiente para comportar a edificação, um container com o banco de ensaios em motores com H~2~ (não representado na Figura \@ref(fig:figura15)) e a planta de eletrólise, cujo eletrolisador seria fornecido em outro container. Enquanto a GIZ da Alemanha desenvolvia a licitação internacional para a aquisição da planta de eletrólise, a FAPEPE licitava a contratação dos projetos executivos do CH2V e, em seguida, no início do segundo semestre a contratação da empresa responsável pela construção do CH2V.
+
+Após a contratação do fornecedor da planta de eletrólise, a GIZ da Alemanha confirmou a aquisição da planta de eletrólise (purchase order confirmation) da empresa NEA Energy em 28 de novembro de 2022. A reunião inicial do contrato com a empresa NEA Energy (Kick-Off Meeting) ocorreu em 19 de janeiro de 2023.
+
+Em 02 de fevereiro de 2023, recebemos o layout preliminar da planta de eletrólise (documento HYT111-01-00 - Preliminary General Arrangement) e, em 09 de março de 2023, um arranjo mais detalhado (BS48.0557 - General Arragement), conforme apresentado nas Figuras \@ref(fig:figura16) e \@ref(fig:figura17).
 
 ```{r figura16, fig.cap="Primeiro desenho da planta de eletrólise sugerida pela NEA"}
 knitr::include_graphics(path = 'figura_16.png')
 ```
 
-Figura \@ref(fig:figura17)
-
 ```{r figura17, fig.cap="Vista em perspectiva da planta sugerida pela NEA"}
 knitr::include_graphics(path = 'figura_17.png')
 ```
 
-Figura \@ref(fig:figura18)
+Inicialmente pensou-se que o layout apresentado no documento BS48.0557 - GENERAL ARRANGEMENT.pdf estava adequado, mas, em seguida, passamos para uma análise mais detalhada observando, principalmente outros aspectos relacionados com a questão da localização e segurança. Um dos documentos consultados foi o “Requirements for Hydrogen Storage and Use”, do Grupo “Fire and Life-Safety Group (FLS)”. Este documento é um resumo dos requisitos do código de incêndio e construção para o armazenamento e uso de hidrogênio. Esses requisitos de código são baseados na edição de 2005 do “Compressed Gases and Cryogenic Fluids Code (NFPA 55)”, na edição de 2009 do “International Fire Code (IFC)”, e na edição de 2009 do “International Building Code (IBC)”.
+
+Considerando as distâncias mínimas de segurança recomendadas conforme mostrado na Figura \@ref(fig:figura18), foi verificado que seria inviável a instalação da planta de eletrólise na área inicialmente prevista. Foi também considerado os aspectos de segurança na operação da planta devido à proximidade com os vizinhos externos da universidade e com uma ampliação futura do Laboratório de Alta Tensão. Além disso, com a possibilidade de futuras expansões do CH2V, verificou-se a necessidade da instalação da planta de eletrólise em uma área maior. 
 
 ```{r figura18, fig.cap="Limites de segurança recomendados pela NFPA"}
 knitr::include_graphics(path = 'figura_18.png')
 ```
 
-Figura \@ref(fig:figura19)
+A solução encontrada foi utilizar o Campus de Expansão da UNIFEI na região do Parque Científico e Tecnológico de Itajubá (PCTI), próxima à Prefeitura Municipal de Itajubá, conforme indicado na Figura \@ref(fig:figura19). O local abriga alguns projetos que podem gerar retorno significativo para a qualidade do ensino e da pesquisa na Instituição, como o Centro Tecnológico do Pré-sal Brasileiro (CTPB) e o Parque Científico e Tecnológico de Itajubá (PCTI).
 
 ```{r figura19, fig.cap="Novo local para instalação da planta de produção de hidrogênio"}
 knitr::include_graphics(path = 'figura_19.png')
 ```
 
-Figura \@ref(fig:figura20)
+Assim, a Reitoria da UNIFEI propôs para o Comitê Gestor de Infraestrutura da UNIFEI (CGInfra), a cessão de área para a planta de eletrólise do CH2V na área de expansão da universidade, em um terreno próximo ao Centro Tecnológico para o Pré-Sal Brasileiro (CTPB). O CGInfra aprovou esta solicitação em reunião realizada no dia 14 de abril de 2023.
+
+As Figuras de \@ref(fig:figura20) a \@ref(fig:figura23) mostram as instalações do CTPB e parte da área cedida pelo CGInfra para a instalação da planta de eletrólise do CH2V. Importante mencionar que a área do CTPB pertence também a UNIFEI e possui toda infraestrutura (rede elétrica, água de poço artesiano, rede pluvial, etc) necessária para a instalação da planta de eletrólise.
 
 ```{r figura20, fig.cap="Vista aérea do CTPB"}
 knitr::include_graphics(path = 'figura_20.png')
 ```
 
-Figura \@ref(fig:figura21)
-
 ```{r figura21, fig.cap="Instalação do CTPB"}
 knitr::include_graphics(path = 'figura_21.png')
 ```
-
-Figura \@ref(fig:figura22)
 
 ```{r figura22, fig.cap="Instalação do CTPB (portão de acesso)"}
 knitr::include_graphics(path = 'figura_22.png')
 ```
 
-Figura \@ref(fig:figura23)
-
 ```{r figura23, fig.cap="Parte da área cedida para a instalação da planta de eletrólise do CH2V)"}
 knitr::include_graphics(path = 'figura_23.png')
 ```
 
-Figura \@ref(fig:figura24)
+A Figura \@ref(fig:figura24) mostra uma vista (via Google Earth) da área do CTPB cedida pelo CGInfra para a instalação da planta de eletrólise do CH2V.
 
 ```{r figura24, fig.cap="Detalhe da área selecionada com a localização aproximada da planta de eletrólise"}
 knitr::include_graphics(path = 'figura_24.png')
 ```
 
-Figura \@ref(fig:figura25)
+A Figura \@ref(fig:figura25) apresenta um layout preliminar da planta de produção de hidrogênio juntamente com o sistema de abastecimento veicular do CH2V.
 
 ```{r figura25, fig.cap="Layout preliminar da planta de eletrólise do CH2V"}
 knitr::include_graphics(path = 'figura_25.png')
 ```
 
-Figura \@ref(fig:figura26)
+## Alguns Desafios Durante as Obras da Edificação do CH2V e da Infraestrutura para Instalação da Planta de Produção de H~2~
+
+Após a aprovação dos projetos executivos do CH2V pelo Departamento de Engenharia da GIZ, na Alemanha, foi realizada, pela FAPEPE, a licitação para a construção da edificação do CH2V.
+
+Esse edifício faz parte do Centro de Hidrogênio Verde (CH2V), juntamente com a planta de eletrólise e o sistema de abastecimento de veículos movidos a hidrogênio (Postos de Abastecimento de Hidrogênio - HRS), utilizando o combustível disponível nas unidades de produção e armazenamento.
+
+Para o projeto, a UNIFEI reservou uma área total de aproximadamente 3.000 m², dos quais 800 m² são destinados exclusivamente ao edifício. Este edifício, para a instalação de laboratórios de testes e pesquisa que utilizam hidrogênio produzido no CH2V, contará, além deste espaço para laboratórios, com sala de escritórios, depósito de peças sobressalentes, sala de atividades administrativas, escritório, salas para pesquisadores, sala de reuniões, banheiros, elevador, sala de aula, acesso para pessoas com necessidades especiais e equipamentos de grande porte, dutos de água e hidrogênio, etc.
+
+A avaliação das propostas apresentadas e dos respectivos documentos de qualificação técnica foi realizada pela Diretoria de Obras da UNIFEI (DOBI).
+
+De acordo com o regulamento de licitações e contratos da FAPEPE, na modalidade de Concorrência Pública, o edital especifica que as empresas interessadas em participar do processo devem enviar a proposta e os documentos de qualificação até a data estipulada. Dessa forma, as propostas e os documentos são analisados simultaneamente, e a empresa que oferecer o melhor preço, com comprovação e aprovação do parecer técnico, será a vencedora.
+
+Em 16/08/2022 ocorreu a abertura de propostas referente a Seleção Pública nº 035/2022, Processo nº 7076/2022/FAPEPE, com a participação das seguintes empresas:
+
+-	Engeply Engenharia Serviços e Suprimentos Ltda
+
+-	Minas Sul Instalações Elétricas EPP
+
+-	Martins Oliveira Ltda
+
+Em 16/08/2022 a FAPEPE solicitou o envio dos documentos de habilitação conforme item 07 do edital, dando o prazo de até 05 dias úteis a contar dessa data, sob pena de desclassificação. O prazo terminou em 23/08/2022 e como as 3 empresas não enviaram todos os documentos de habilitação solicitados, a FAPEPE publicou a revogação desse processo de licitação, passando a preparar um segundo processo de licitação.
+
+Assim, em 12 de setembro de 2022, foi publicado o Aviso de Leilão nº 042/2022 na modalidade “Seleção Pública”, Tipo: Menor Preço / Envio Eletrônico, Processo nº 8595/2022/FAPEPE, com as seguintes datas e horários:
+
+- Prazo para Envio Eletrônico de Propostas: 09/12/2022 às 9h30 (horário de Brasília).
+
+- Data da Sessão de Abertura: 09/12/2022 às 10h00 (horário de Brasília).
+
+A abertura das propostas recebidas ocorreu no dia 12/09/2022 às 10h. Foram recebidas as propostas das seguintes empresas:
+
+- Engeplay Engenharia Serviços e Suprimentos LTDA
+
+- Martins Oliveira LTDA
+
+- EPP Minas Sul Instalações
+
+- Simões Empreendimentos LTDA
+
+- MGM Construtora LTDA
+
+Os dois primeiros (Engeplay e Martins Oliveira) foram desclassificados, pois não apresentaram nenhum documento de habilitação conforme cláusula 7 do Edital de Seleção Pública. A empresa Minas Sul não apresentou planilha analítica. A empresa Simões Empreendimentos não apresentou planilha analítica nem certidão negativa de falência. A empresa MGM Construções não apresentou as certidões negativas de débitos (Anexo I e Cadastro de Empresas Penalizadas pela Administração Pública) e apresentou uma Certidão Negativa de Débitos Federais vencida.
+
+Foram analisadas as taxas econômico-financeiras das empresas Minas Sul, Simões Empreendimentos e MGM Construções. Conforme o disposto na cláusula 7.5 do Edital, foi concedida prorrogação de 2 dias úteis à empresa Minas Sul (primeira classificada) para apresentação da planilha analítica, sob pena de desclassificação. Após o recebimento deste documento, a proposta e os documentos técnicos da primeira classificada foram encaminhados para avaliação e parecer da Diretoria de Obras e Infraestrutura (DOBI) da UNIFEI.
+
+Após análise dos documentos técnicos apresentados pela empresa Minas Sul Instalações Elétricas Ltda., a Diretoria de Obras e Infraestrutura da UNIFEI informou que a referida empresa atendeu a todos os requisitos do item 7.2.2 - Qualificação Técnica da Notificação. Foram analisados os seguintes documentos: Certificados do Conselho Regional de Engenharia e Arquitetura (CREA) dos profissionais; Certificado CREA da empresa; Certificado Profissional com Aquisição Técnica (CAT); Certificado Operacional; Planilha Sintética, Planilha Analítica e Cronograma Físico-Financeiro.
+
+A análise das Leis BDI e Social foi realizada pela Diretoria de Contabilidade e Finanças da UNIFEI, que emitiu parecer favorável por meio do Memorando Eletrônico nº 64/2022 CCO (11.38.05.03) Código: 202383625 e protocolo nº 23088.0276451/2022-96 de 15/09/2022.
+
+Assim, inicialmente, a Comissão de Leilão, composta por representantes da fundação e pelos assessores jurídicos da FAPEPE, entregou a ata de encerramento em 19/09/2022, declarando, por qualificação jurídico-técnica e por classificação, em primeiro lugar, a empresa MINAS SUL INSTALAÇÕES ELÉTRICAS LTDA.-EPP, apta a executar a obra de construção, objeto deste Leilão.
+
+Mas, logo em seguida, quando foi aberto o prazo para recursos, a pela empresa Simões Empreendimentos Ltda., entrou com um recurso administrativo em 21/09/2022, questionando a habilitação técnica no certame da empresa Minas Sul Instalações Elétricas Ltda e, ao final, requer a reconsideração da decisão da Comissão de Licitação e inabilitação técnica da Recorrida Minas Sul.
+
+Primeiramente, alegou a Recorrente que a empresa Recorrida não possui objeto social compatível com a realização do objeto licitado, pois seu CNAE – Classificação de atividades econômicas não possui o código “construções de edifício”, que engloba construção de edifícios, obras de infraestrutura e serviços especializados para construções.
+
+Alegou ainda a Recorrente, que a empresa Minas Sul não comprovou a capacidade técnica operacional exigida no edital da seleção pública, uma vez que os atestados de capacidade técnica apresentados não são similares ao objeto licitado, uma vez que comprovam apenas pequenos itens de obras, tais como execução de instalações elétricas e sistema de proteção contra incêndio.
+
+A Recorrida apresentou contrarrazões, alegando que cumpre os requisitos do edital e requerendo a improcedência do recurso administrativo.
+
+A Diretoria de Obras da UNIFEI também se manifestou quanto à capacidade técnica da Recorrida, opinando por sua inabilitação técnica, uma vez que não atende os requisitos do item 7.2.2 do edital.
+
+Dessa forma, a Comissão Permanente de Licitações, em 28 de setembro de 2.022, tomou a decisão administrativa relatada a seguir.
+
+“Em relação ao objeto social da empresa Recorrida, entendemos ser uma questão de menor relevância, pois há na Classificação de atividades econômicas da empresa “obras de alvenaria” e “serviços de engenharia”, estando o objeto social compatível com o objeto licitado.
+
+Tem decido nossos tribunais de contas, que a classificação da atividade econômica do objeto social da empresa não é a única forma de averiguar a compatibilidade social da empresa com o objeto licitado. Em casos de discordância, as Comissões de Licitação poderão averiguar a compatibilidade da empresa para a execução do objeto licitado através de documentos, tais como a apresentação de atestados de capacidade técnica.
+
+No entanto, na avaliação da capacidade técnica, que será analisada no próximo item desta decisão, a Diretoria de Obras da UNIFEI concluiu que não há no processo a demonstração da aptidão técnica da empresa com o objeto licitado.
+Assim sendo, a discussão deste tópico, compatibilidade do objeto social da empresa com o objeto da licitação acaba se confundindo com a análise da capacidade técnica que será realizada a seguir.
+
+Em relação à alegada ausência de demonstração da capacidade técnica operacional da empresa, é necessário analisar o edital, item 7.2.2 – IV:
+
+7.2.2 (...)
+
+IV - Capacidade Técnica-Operacional: para atendimento à qualificação técnico-operacional, apresentar atestado(s) de capacidade operacional, em nome do licitante, que comprove(m) que o licitante tenha executado para órgão ou entidade
+da administração pública direta ou indireta, federal, estadual, municipal ou do Distrito Federal, ou ainda, para empresas privadas, os seguintes serviços com as respectivas quantidades mínimas:
+
+- Execução de área mínima de construção civil de 400m^2^;
+
+- Execução de instalações elétricas em média tenção (13.800 V).
+
+E, realmente, conforme orientou a Diretoria de Obras da UNIFEI, a empresa Recorrida apresentou capacidade técnico operacional para obras de infraestrutura para instalações de prevenção e combate a incêndios, o que não é similar ao objeto licitado, embora a área seja superior à mínima exigida.
+
+A Diretoria de Obras esclarece que uma obra de construção civil, no aspecto técnico, envolve fundação, infraestrutura, superestrutura, cobertura, fechamentos, revestimentos, instalações elétricas, hidráulicas e prevenção e combate a incêndios, esquadrias, pinturas e acabamentos.
+
+Por todas estas razões, conhecemos o recurso da empresa Simões Empreendimentos Ltda., e, no mérito, julgamos procedente o recurso administrativo, para reformar a decisão anterior e inabilitar tecnicamente do certame a empresa Minas Sul Instalações Elétricas Ltda. por não cumprimento do item 7.2.2 - IV do edital da seleção pública, não tendo demonstrado a execução de objeto similar ao licitado.
+
+Em face desta decisão, encaminhamos o processo à Diretoria de Obras da UNIFEI para análise do cumprimento dos requisitos de habilitação técnica da empresa Simões Empreendimentos Ltda., nos termos do item 7.2.2 do edital da seleção pública.”
+
+Em 05/10/2022, a Comissão emitiu a seguinte ata de encerramento:
+
+“Considerando as deliberações da Comissão de Licitação em 12/09/2022, bem como considerando que a empresa Minas Sul Instalações Elétricas foi inabilitada de acordo com a decisão do recurso administrativo e, considerando ainda que a empresa Simões Empreendimentos apresentou planilha analítica e a Diretoria de Obras da UNIFEI (DOBI) manifestou pelo atendimento do item 7.2.2 – Habilitação Técnica, essa Comissão decide, por unanimidade, pela habilitação jurídica e técnica e pela classificação da empresa Simões Empreendimentos Ltda para realizar a obra, objeto da presente seleção. Fica aberto o prazo de recurso, na forma do art. 34 do Regulamento de Contratações da Fapepe”.
+
+Após a publicação da Ata de encerramento, tem-se ainda 03 dias úteis de prazo para recursos, com término em 10/10/2022. A empresa Minas Sul entrou com recurso em 10/10/2022 e, a FAPEPE abriu prazo de 3 dias úteis para contrarrazões da empresa Simões construtora e do departamento de obras da UNIFEI, com término em 17/10/2022. Após a análise de todos esses documentos e respeitando o devido processo legal e os prazos envolvidos, a FAPEPE emitiu sua Decisão Administrativa em 19/10/2022 julgando improcedente o Recurso Administrativo da empresa Minas Sul, mantendo a decisão anterior de habilitação técnica e jurídica da empresa Simões Empreendimentos Ltda.
+
+Assim, a empresa Simões Empreendimentos foi àquela vencedora do processo de licitação para a construção da edificação do CH2V. Logo em seguida, todo esse processo foi encaminhado para a análise da GIZ, na Alemanha, que deu parecer favorável. Como solicitado pela GIZ, a UNIFEI conseguiu obter em 21/10/2022 junto à Prefeitura Municipal de Itajubá, o Alvará de Construção nº 264/2022 da edificação do CH2V, conforme Figura \@ref(fig:figura26). 
 
 ```{r figura26, fig.cap="Alvará de Construção nº 264/2022 da edificação do CH2V"}
 knitr::include_graphics(path = 'figura_26.png')
 ```
 
-Figura \@ref(fig:figura27)
+Assim, com todo esse processo, o início da obra foi atrasado, começando apenas em 22 de novembro de 2022. As Figuras \@ref(fig:figura27) a \@ref(fig:figura35) apresentam algumas imagens desde o início das obras até a inauguração da edificação do CH2V, ocorrida em 28/09/2023.
 
 ```{r figura27, fig.cap="Preparativos iniciais de preparação do terreno para a construção do CH2V"}
 knitr::include_graphics(path = 'figura_27.png')
 ```
 
-Figura \@ref(fig:figura28)
-
 ```{r figura28, fig.cap="Preparativos iniciais de preparação do terreno para a construção do CH2V"}
 knitr::include_graphics(path = 'figura_28.png')
 ```
-
-Figura \@ref(fig:figura29)
 
 ```{r figura29, fig.cap="Preparativos iniciais de preparação do terreno para a construção do CH2V"}
 knitr::include_graphics(path = 'figura_29.png')
 ```
 
-Figura \@ref(fig:figura30)
-
 ```{r figura30, fig.cap="Estaqueamento para a construção do CH2V"}
 knitr::include_graphics(path = 'figura_30.png')
 ```
-
-Figura \@ref(fig:figura31)
 
 ```{r figura31, fig.cap="Bloco da fundação concretado"}
 knitr::include_graphics(path = 'figura_31.png')
 ```
 
-Figura \@ref(fig:figura32)
-
 ```{r figura32, fig.cap="Escoramento da laje do primeiro pavimento do CH2V"}
 knitr::include_graphics(path = 'figura_32.png')
 ```
-
-Figura \@ref(fig:figura33)
 
 ```{r figura33, fig.cap="Enchimento da laje do primeiro pavimento do CH2V"}
 knitr::include_graphics(path = 'figura_33.png')
 ```
 
-Figura \@ref(fig:figura34)
-
 ```{r figura34, fig.cap="Término da obra da edificação do CH2V"}
 knitr::include_graphics(path = 'figura_34.png')
 ```
-
-Figura \@ref(fig:figura35)
 
 ```{r figura35, fig.cap="Inauguração da edificação do CH2V"}
 knitr::include_graphics(path = 'figura_35.png')
 ```
 
-Figura \@ref(fig:figura36)
+A inauguração da edificação do CH2V ocorreu no dia 28 de setembro com a presença do ministro de Minas e Energia, Alexandre Silveira de Oliveira, recebido pelo reitor, professor Edson da Costa Bortoni. Além do ministro e do reitor da UNIFEI, compuseram o dispositivo de honra os deputados federais Odair Cunha e Rafael Simões; o prefeito municipal de Itajubá, Christian Gonçalves Tiburzio e Silva; o diretor do Projeto H2Brasil, da agência alemã GIZ, Markus Francke; o coordenador executivo do CH2V, professor Jamil Haddad, e a professora associada do Instituto de Engenharia Mecânica (IEM) Lucilene de Oliveira Rodrigues Chaves.
+
+Durante as obras do CH2V foram retirados os resíduos conforme a legislação ambiental por meio de declaração de destinação dos resíduos sólidos da obra. A empresa responsável pela destinação conforme normas vigentes foi a Transareia Boa Vista Ltda (Figura \@ref(fig:figura36)).
 
 ```{r figura36, fig.cap="Declaração de destinação dos resíduos sólidos da obra do CH2V"}
 knitr::include_graphics(path = 'figura_36.png')
 ```
 
-Figura \@ref(fig:figura37)
+Com a mudança do local de instalação da planta de produção de hidrogênio, novos desafios se apresentaram, pois as despesas com essas obras de terraplanagem não estavam previstas quando da proposta inicial do projeto. As figuras de \@ref(fig:figura37) a \@ref(fig:figura51) apresentam detalhes da obra, chegada e instalação dos equipamentos da planta de produção de hidrogênio do CH2V. 
 
 ```{r figura37, fig.cap="Primeiros trabalhos de terraplanagem para instalação da planta de produção de H2"}
 knitr::include_graphics(path = 'figura_37.png')
 ```
 
-Figura \@ref(fig:figura38)
-
 ```{r figura38, fig.cap="Abertura das brocas de fundação e concretagem"}
 knitr::include_graphics(path = 'figura_38.png')
 ```
-
-Figura \@ref(fig:figura39)
 
 ```{r figura39, fig.cap="Escavação das bases e canaletas"}
 knitr::include_graphics(path = 'figura_39.png')
 ```
 
-Figura \@ref(fig:figura40)
-
 ```{r figura40, fig.cap="Concretagem das bases e canaletas"}
 knitr::include_graphics(path = 'figura_40.png')
 ```
-
-Figura \@ref(fig:figura41)
 
 ```{r figura41, fig.cap="Colocação das grades de piso sobre as canaletas"}
 knitr::include_graphics(path = 'figura_41.png')
 ```
 
-Figura \@ref(fig:figura42)
-
 ```{r figura42, fig.cap="Colocação das grades de piso sobre as canaletas"}
 knitr::include_graphics(path = 'figura_42.png')
 ```
-
-Figura \@ref(fig:figura43)
 
 ```{r figura43, fig.cap="Guindaste usado para movimentação dos equipamentos pesados"}
 knitr::include_graphics(path = 'figura_43.png')
 ```
 
-Figura \@ref(fig:figura44)
-
 ```{r figura44, fig.cap="Chegada e descarregamento do contêiner do eletrolisador"}
 knitr::include_graphics(path = 'figura_44.png')
 ```
-
-Figura \@ref(fig:figura45)
 
 ```{r figura45, fig.cap="Descarregamento e colocação dos equipamentos em suas bases"}
 knitr::include_graphics(path = 'figura_45.png')
 ```
 
-Figura \@ref(fig:figura46)
-
 ```{r figura46, fig.cap="Montagem da infraestrutura para passagem dos dutos e cabos"}
 knitr::include_graphics(path = 'figura_46.png')
 ```
-
-Figura \@ref(fig:figura47)
 
 ```{r figura47, fig.cap="Trocador de calor e dispenser usados para o abastecimento de veículos"}
 knitr::include_graphics(path = 'figura_47.png')
 ```
 
-Figura \@ref(fig:figura48)
-
 ```{r figura48, fig.cap="Reservatório de H2 de baixa pressão"}
 knitr::include_graphics(path = 'figura_48.png')
 ```
-
-Figura \@ref(fig:figura49)
 
 ```{r figura49, fig.cap="Compressor de H2"}
 knitr::include_graphics(path = 'figura_49.png')
 ```
 
-Figura \@ref(fig:figura50)
-
 ```{r figura50, fig.cap="Vista lateral da planta de produção de H2"}
 knitr::include_graphics(path = 'figura_50.png')
 ```
-
-Figura \@ref(fig:figura51)
 
 ```{r figura51, fig.cap="Outra vista da planta de produção de H2"}
 knitr::include_graphics(path = 'figura_51.png')
 ```
 
-Figura \@ref(fig:figura52)
+# CONSIDERAÇÕES TÉCNICAS SOBRE A PLANTA DE PRODUÇÃO DE HIDROGÊNIO DO CH2V
+
+A seguir, tem-se a especificação dos equipamentos e o dimensionamento básico da planta para produção de hidrogênio do Centro de Hidrogênio Verde (CH2V), da Universidade Federal de Itajubá (UNIFEI), onde foi instalado um eletrolisador do tipo PEM, com potência de 300 kW e 100 kg/dia de capacidade de produção.
+
+Como comentado anteriormente, essa unidade de produção de hidrogênio verde do CH2V é um dos resultados concretos da cooperação entre o Brasil e a Alemanha para o desenvolvimento sustentável. Um trabalho que vem sendo desenvolvido a décadas nas áreas de energia limpa e eficiência energética, ampliando dessa maneira, a oferta de energias renováveis.
+
+O projeto do CH2V na Unifei é parte de um programa mais amplo, o H2Brasil, uma parceria entre o Ministério de Minas e Energia, MME, e a Deutsche Gesellschaft für Internationale Zusammenarbeit, GIZ. Foram investidos cerca de € 34 milhões em várias instituições de pesquisa e universidades brasileiras. Desse valor, o CH2V foi contemplado com uma parcela da ordem de € 6,0 milhões e foi elaborado com os seguintes objetivos principais:
+
+- Promover a economia do hidrogênio verde, a redução da emissão de gases de efeito estufa, contribuindo para a descarbonização da sociedade.
+
+- Criar oportunidades para o Brasil no mercado mundial do hidrogênio verde.
+
+- Fornecer subsídios para a formação das pessoas, desenvolvimento científico, planejamento energético, atualização do marco regulatório e das normas.
+
+- Implantar infraestrutura e laboratórios para o desenvolvimento de estudos práticos e teóricos sobre a produção, rendimentos, vida útil dos equipamentos, procedimentos de operação e segurança e aplicações do hidrogênio verde.
+
+Mais adiante nesse tópico, essa unidade de produção do CH2V será estudada com maiores detalhes, apresentando os diversos sistemas e componentes por meio de desenhos, e diagramas esquemáticos. Também serão avaliados os consumos de água e de energia elétrica necessários para o funcionamento da planta. Fatores estes cruciais para se entender a eficiência e a viabilidade do processo de produção de hidrogênio. Serão apresentados dados específicos sobre a quantidade de água utilizada no eletrolisador e o consumo energético associado ao processo de eletrólise, fornecendo mais informações sobre os recursos necessários para a operação dessa planta.
+
+## Premissas Iniciais
+
+O dimensionamento básico de uma unidade de produção de hidrogênio tem como base duas informações essenciais: a quantidade e a finalidade do hidrogênio produzido. Somente depois que esses parâmetros estivem bem definidos será possível estabelecer o tipo e o porte dos equipamentos que deverão ser instalados.
+As principais informações técnicas da planta de hidrogênio que foi implantada no CH2V estão resumidas na Tabela \@ref(tab:tabela2).
+
+```{r tabela2, echo=FALSE, message=FALSE, warning=FALSE, tab.cap="Características da unidade de Produção de Hidrogênio do CH2V"}
+library(magrittr, include.only = '%>%')
+library(gt)
+
+param_tec <- data.frame(
+  item = c(
+    'Reserva de Água Bruta',
+    'Tensão Elétrica de Alimentação',
+    'Potência Instalada em Transformadores',
+    'Quantidade e Tipo do Eletrolisador',
+    'Potência Nominal Total do Eletrolisador',
+    'Capacidade Nominal do Eletrolisador',
+    'Pressão de Produção do Eletrolisador',
+    'Pressão de Entrega no Dispenser'
+  ),
+  valor = c(
+    '20',
+    '13,8',
+    '675',
+    'Duas células PEM',
+    '300',
+    '60',
+    '3',
+    '70'
+  ),
+  unidade = c(
+    'm³',
+    'kV',
+    'kVA',
+    '-',
+    'kW',
+    'Nm³/h',
+    'MPa',
+    'MPa'
+  )
+)
+
+param_tec %>%
+  gt(
+    caption = 'Características da unidade de Produção de Hidrogênio do CH2V'
+  ) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#2e7d32"),
+      cell_text(color = "#e8f5e9", weight = "bold")
+    ),
+    locations = cells_column_labels()
+  ) %>%
+  cols_label(
+    item = 'Item',
+    valor = 'Valor',
+    unidade = 'Unidade'
+  ) %>%
+  cols_align(
+    align = "center",
+    columns = everything()
+  )
+```
+
+## Finalidade da Unidade
+
+O hidrogênio é um gás muito leve e com um poder calorífico muito elevado. Por esse motivo resulta em uma substância com baixa densidade energética, ou seja, a quantidade de energia por quantidade de massa é pequena quando comparada com outros combustíveis. Por esse motivo são empregadas pressões bastante elevadas na estocagem desse gás.
+
+Esse fato divide as plantas de geração de hidrogênio em duas classes. A primeira é aquela em que a utilização do hidrogênio pode ser dar de forma direta, em pressões da ordem de 30 bar ou inferiores, ou seja, nas pressões normalmente encontrada na saída do gás nos sistemas de eletrólise. Esse é o caso da maior parte das aplicações onde o hidrogênio é usado sem a necessidade de estocagem ou transporte.
 
 ```{r figura52, out.width = "70%", fig.cap="Esquema de produção de hidrogênio sem compressão"}
 knitr::include_graphics(path = 'figura_52.png')
 ```
 
-Figura \@ref(fig:figura53)
+Na outra classe das plantas de produção de hidrogênio, depois da produção do gás é feita a compressão em pressões elevadas de modo que seja possível o armazenamento e o transporte em tanques e reservatórios com volumes tecnicamente viáveis.
 
 ```{r figura53, fig.cap="Reservatório de H2 de baixa pressão"}
 knitr::include_graphics(path = 'figura_53.png')
 ```
 
-Figura \@ref(fig:figura54)
+As unidades de produção também podem ser classificadas quanto a qualidade do gás produzido. Como a água empregada no processo de eletrólise é muito pura e possível obter depois desse processo hidrogênio com pureza em torno de 99,5%vol, suficiente para a queima direta ou uso em motores comuns à combustão. No entanto, quando o hidrogênio é usado em células de combustível, a pureza deve ser igual ou melhor que 99,999%vol. Para isso são usados processos adicionais como aquecimento e colunas de absorção para eliminação da umidade e reações com catalizadores para retirada de traços de oxigênio que possam contaminar o gás produzido. Devido ao número de ‘noves’ esse produto é correntemente nomeado de H2 5.0.
+
+## Espaço Necessário, Disposição dos Equipamentos
+
+Os equipamentos a serem instalados em uma unidade de produção de hidrogênio dependem de onde e como esse gás produzido será consumido, conforme foi comentado no item anterior. Fatores como a quantidade produzida, requisitos de qualidade e pureza do gás e a distância entre a locais de produção e de consumo de hidrogênio são determinantes para a seleção dos equipamentos instalados.
+
+A unidade usada como exemplo para esse texto é a mais completa, pois além dos equipamentos destinados a produção do hidrogênio por eletrólise, ela ainda conta com sistemas de purificação, compressão, armazenamento e abastecimento de veículo e caminhões, atendendo as especificações quanto a pureza e pressão para o abastecimento de veículos e caminhões dotados de células de combustível com hidrogênio.
+
+As instalações de produção de hidrogênio são compactas e necessitam de pouco espaço. A unidade do CH2V ocupa um terreno com aproximadamente 1.800 m², já incluindo as áreas de circulação interna e vias de acesso. Isso pode ser visto no desenho da Figura \@ref(fig:figura54), onde estão mostradas as principais dimensões principais. Os equipamentos foram colocados sobre uma laje de concreto armado com 33 m de comprimento e 10 m de largura totalizando 328 m². Nos locais onde foram assentados o contêiner do eletrolisador, o reservatório pulmão e o compressor de hidrogênio foram usadas fundações especiais, com as bases isoladas da laje de concreto. Isso está mostrado no desenho da Figura \@ref(fig:figura55) onde pode se ver a disposição adotada para os equipamentos dessa unidade.
 
 ```{r figura54, fig.cap="Planta da unidade de produção de hidrogênio"}
 knitr::include_graphics(path = 'figura_54.png')
 ```
 
-Figura \@ref(fig:figura55)
-
 ```{r figura55, fig.cap="Distribuição dos equipamentos na unidade de produção de hidrogênio"}
 knitr::include_graphics(path = 'figura_55.png')
 ```
 
-Figura \@ref(fig:figura56)
+Para a passagem das tubulações entre os diversos equipamentos e do cabeamento elétrico de força e de comunicação foram implantados na laje do piso cerca de 90 m de canaletas, cobertas com grades metálicas galvanizadas, permitindo passagem de veículos leves. O fundo dessas canaletas foi assentado a uma profundidade mínima de 0,7 m e no ponto mais baixo com 1,5 m, resultando em uma boa declividade para o escoamento da chuva e do rejeito do tratamento na osmose reversa, também lançado na rede de água pluvial. As principais dimensões dessas canaletas estão mostradas na Figura \@ref(fig:figura56). Mais alguns detalhes e o arranjo dos leitos e bandejas podem ser vistos nas duas próximas figuras.
 
 ```{r figura56, fig.cap="Vista em corte de uma canaleta de utilidades"}
 knitr::include_graphics(path = 'figura_56.png')
 ```
 
-Figura \@ref(fig:figura57)
-
 ```{r figura57, fig.cap="Canaletas de utilidades com bandejas de cabos e leito de tubos"}
 knitr::include_graphics(path = 'figura_57.png')
 ```
 
-Figura \@ref(fig:figura58)
+## Abastecimento de Água
+
+Atualmente o abastecimento de água para a planta do CH2V é feito com água de um poço artesiano instalado no Centro Tecnológico do Pré-sal Brasileiro – CTPB, vizinho da planta de produção de hidrogênio. Essa água é extraída por meio de uma bomba submersa do tipo tubular e recalcada para uma caixa intermediária. Desta caixa a água é enviada para o reservatório elevado por uma de bomba centrífuga. Esse reservatório é compartilhado para atender a demanda do abastecimento do CTPB e as necessidades do CH2V.
+
+Essa água então é transportada por gravidade, através de tubulação enterrada de PVC DN40, com um comprimento aproximado de 210 m, até dois reservatórios de 10 m³ cada um, instalados na parte de superior da planta de produção de hidrogênio. Caso seja necessário, esse local e a base civil desses reservatórios estão preparados para receber mais dois desses, dobrando-se o volume de armazenamento de água bruta para a planta.
+
+Depois de armazenada a água é distribuída também por gravidade, atendendo os diversos pontos de consumo usando tubulação de PVC DN25. Para garantir a qualidade dessa água, foram instalados sistemas de filtros tipo cartucho na entrada e na saída desses reservatórios. Para operação com perdas de carga reduzidas foram selecionados filtros com tamanho nominal DN50 usando elementos filtrantes de celulose, sendo o primeiro com malha de 50 μm e o seguinte com malha de 20 μm. Adicionalmente foi instalado um sistema de pressurização com bomba centrífuga e mais um filtro cartucho com malha 5 μm para atender o consumo de água exclusivo para a eletrólise, como pode ser visto na Figura \@ref(fig:figura58).
 
 ```{r figura58, fig.cap="Esquema do abastecimento de água unidade do CH2V"}
 knitr::include_graphics(path = 'figura_58.png')
 ```
 
-Figura \@ref(fig:figura59)
+Estão instalados três hidrômetros totalizadores de vazão para medição do consumo de água na planta. Um deles mede a reposição de água evaporada na torre de resfriamento. Os outros dois foram colocados na entrada e na saída do eletrolisador. Desse modo, por diferença entre esses dois medidores, tem-se o consumo usado somente na produção do hidrogênio.
+
+A concessionária responsável pelo fornecimento de água no local da planta de produção de hidrogênio poderá atender a demanda da planta de produção de hidrogênio, prevendo-se em breve a conexão com a rede de distribuição. Desse modo, a planta de produção de hidrogênio poderá contar com uma alternativa para o abastecimento de água.
+
+## Consumo de Água
+
+As plantas de produção de hidrogênio por eletrólise usam basicamente dois insumos na sua operação, a água e a energia elétrica. Nesse item agora será detalhado o consumo da água, o consumo da energia elétrica será abordado logo mais. 
+
+Uma planta de produção de hidrogênio por eletrólise consume uma pequena quantidade de água quando comparada com outros processos industriais. O consumo teórico pode ser determinado por meio de um cálculo estequiométrico simples. Desse cálculo resulta um consumo de 9 kg de água para se produzir 1 kg de hidrogênio, considerando a massa atômica do hidrogênio 1 e do oxigênio 8, conforme pode ser mostrado a seguir.
+
+\begin{equation}
+\begin{aligned}
+1\ \mathrm{mol}\ \mathrm{H_2} &\Rightarrow 2{,}0\ \mathrm{g} \\
+1\ \mathrm{mol}\ \mathrm{O} &\Rightarrow 16{,}0\ \mathrm{g} \\
+1\ \mathrm{mol}\ \mathrm{H_2O} &\Rightarrow 18{,}0\ \mathrm{g}
+\end{aligned}
+(\#eq:equacao1)
+\end{equation}
+
+Então
+
+\begin{equation}
+\begin{aligned}
+500\ \mathrm{mol}\ \mathrm{H_2} &\Rightarrow 1{,}0\ \mathrm{kg} \\
+500\ \mathrm{mol}\ \mathrm{O} &\Rightarrow 8{,}0\ \mathrm{kg} \\
+500\ \mathrm{mol}\ \mathrm{H_2O} &\Rightarrow 9{,}0\ \mathrm{kg}
+\end{aligned}
+(\#eq:equacao2)
+\end{equation}
+
+No entanto, na prática o consumo de água é bem maior, pois a água empregada no processo de produção de hidrogênio por eletrólise em células do tipo PEM deve ser muito pura. Para isso são usados equipamentos de desmineralização por osmose reversa, que rejeitam uma quantidade significativa de água durante essa etapa de tratamento. Nesse processo perde-se cerca de 80% da quantidade de água tratada. Sendo que esse valor é um dado típico médio, pois ele depende muito das características de qualidade da água bruta. Assim, para produzir um quilograma de água pura é necessário tratar cerca de cinco ou mais quilogramas de água bruta. 
+
+Desse modo, no caso da planta do CH2V o consumo de água bruta na entrada do tratamento de purificação é de aproximadamente 45 kg de água bruta para cada kg de hidrogênio produzido.
+
+Além disso, em uma planta de produção de hidrogênio alguns equipamentos geram de calor, sendo necessário o controle de temperatura e dissipação dessa energia para o meio ambiente. Normalmente isso é feito usando-se circuitos de água industrial e torres de resfriamento. Essas torres, por sua vez, também consomem água para a reposição da parcela que se evapora nos processos de troca térmica. Essa quantidade de água reposta pode ser estimada como uma porcentagem da vazão circulante nas torres de resfriamento. No caso presente esse consumo foi avaliado como sendo no máximo 1,0 % da vazão circulante no equipamento, que é de 24 m³/h, resultando em cerca de 5,8 m³/dia, ou seja, aproximadamente 58 kg de água bruta para cada kg de hidrogênio produzido.
+
+Assim o consumo total de água estimado para essa planta está em torno de 103 kg de água bruta para cada kg de hidrogênio produzido. Observa-se desse montante, aproximadamente 36 kg de água de rejeito podem ser reaproveitadas em outras aplicações. A distribuição do consumo de água em uma planta de produção de hidrogênio por eletrólise usando células PEM pode ser visualizado na Figura \@ref(fig:figura59) que segue.
 
 ```{r figura59, fig.cap="Consumo de água na planta de produção de hidrogênio"}
 knitr::include_graphics(path = 'figura_59.png')
 ```
 
-Figura \@ref(fig:figura60)
+## Fornecimento de Energia Elétrica
+
+A energia elétrica é entregue pela concessionária local na tensão de 13,8 kV, em um posto de medição separado da restante da universidade, montado exclusivamente para o atendimento da área de expansão, do CTPB e da planta de produção do CH2V.
+
+Depois da medição pela concessionária a energia em média tensão é levada por meio de cabos subterrâneos até a subestação do CTPB. Nessa subestação foram montadas duas baias, uma para a interligação de um sistema fotovoltaico de 500 kW e outra para conexão da planta de produção do CH2V.Isso pode ser visto no diagrama mostrado na Figura \@ref(fig:figura60).
 
 ```{r figura60, fig.cap="Esquema unifilar da distribuição da em média tensão"}
 knitr::include_graphics(path = 'figura_60.png')
 ```
 
-Figura \@ref(fig:figura61)
+Na planta do CH2V foi montada outra subestação para a colocação de um disjuntor de proteção e chaves seccionadoras para a separação e distribuição da energia em média tensão até os transformadores e depois, deles até os pontos de consumo.
+
+O hidrogênio produzido pela planta do CH2V é considerado “verde”, pois a energia usada no processo de produção é proveniente de fontes renováveis. Isso porque Unifei tem aproximadamente 1.500 kWp instalados em painéis fotovoltaicos e ainda está operando uma usina hidrelétrica com capacidade em torno de 600 kWmed resultando sempre excedentes que são injetados no sistema elétrico, gerando saldos positivos ao fim de cada mês. O processo de certificação pela Câmara de Comércio de Energia Elétrica, CCEE, está em andamento.
+
+## Consumo de Energia Elétrica
+
+O consumo de energia elétrica de uma planta de produção de hidrogênio por eletrólise é uma função direta da sua capacidade de produção. O equipamento instalado na planta do CH2V pode ser operado em uma ampla faixa, de 10 até 100 % da sua capacidade nominal, 60 Nm³/h. A condição operacional de maior eficiência está em torno de 83% dessa capacidade, por isso o consumo de energia elétrica foi determinado para essa situação. 
+
+A Tabela \@ref(tab:tabela3) apresenta uma lista das potências dos equipamentos elétricos mais significativas e uma estimativa dos seus tempos de operação considerando 24 horas de funcionamento e a produção diária de 107 kg de hidrogênio.
+
+```{r tabela3, echo=FALSE, message=FALSE, warning=FALSE, tab.cap="Principais cargas elétricas da planta de hidrogênio"}
+library(magrittr, include.only = '%>%')
+library(gt)
+
+param_tec <- data.frame(
+  equipamento = c(
+    'Células PEM',
+    'Bomba de circulação O₂',
+    'Bomba de circulação H₂',
+    'Bomba de osmose/purificação',
+    'Bomba de retorno H₂',
+    'Bomba de circulação da torre',
+    'Ventilador da torre',
+    'Bomba de água de resfriamento',
+    'Compressor de hidrogênio',
+    'Bomba de óleo do compressor',
+    'Compressor de ar para instrumentos',
+    'Secador de ar para instrumentos',
+    'Sistema frigorífico',
+    'Dispenser de hidrogênio',
+    'Outras cargas'
+  ),
+  potencia = c(
+    '250,0',
+    '11,0',
+    '2,2',
+    '1,1',
+    '1,1',
+    '1,1',
+    '1,1',
+    '5,5',
+    '27,0',
+    '1,5',
+    '12,0',
+    '0,3',
+    '45,0',
+    '15,0',
+    '2,0'
+  ),
+  carregamento = c(
+    '100',
+    '100',
+    '100',
+    '50',
+    '100',
+    '100',
+    '100',
+    '100',
+    '100',
+    '100',
+    '10',
+    '100',
+    '25',
+    '25',
+    '100'
+  ),
+  consumo_24h = c(
+    '6.000',
+    '264',
+    '53',
+    '13',
+    '26',
+    '26',
+    '26',
+    '132',
+    '648',
+    '36',
+    '29',
+    '7',
+    '270',
+    '90',
+    '48'
+  )
+)
+
+param_tec %>%
+  gt(
+    caption = 'Principais cargas elétricas da planta de hidrogênio'
+  ) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#2e7d32"),
+      cell_text(color = "#e8f5e9", weight = "bold")
+    ),
+    locations = cells_column_labels()
+  ) %>%
+  cols_label(
+    equipamento = 'Equipamento',
+    potencia = 'Potência (kW)',
+    carregamento = 'Carregamento (%)',
+    consumo_24h = 'Consumo em 24 h (kWh)'
+  ) %>%
+  cols_align(
+    align = "center",
+    columns = everything()
+  ) %>%
+  summary_rows(
+    groups = NULL,
+    columns = c(consumo_24h),
+    fns = list("Consumo em 24 horas" = ~ "7.669 kWh")
+  ) %>%
+  grand_summary_rows(
+    columns = c(consumo_24h),
+    fns = list(
+      "Produção de hidrogênio em 24 horas" = ~ "108 kg",
+      "Consumo específico de energia elétrica" = ~ "71,11 kWh/kg"
+    )
+  )
+```
+
+Ressalta-se que um dos objetivos dessa unidade de produção de hidrogênio do CH2V é o levantamento mais exato desses indicadores de consumo e de rendimentos, determinando-se também o decaimento desses valores à medida que o equipamento opera, atestando-se a vida útil que foi prevista para esses equipamentos.
+
+## Distribuição da Energia Elétrica em Baixa Tensão
+
+A energia elétrica é distribuída aos pontos de consumo por meio de cabos elétricos alojados nas bandejas no interior das canaletas. Os diversos circuitos derivam dos disjuntores instalados nos painéis elétricos e chegam até os pontos de consumo.
+A Figura \@ref(fig:figura61) apresenta o diagrama unifilar da distribuição na tensão de 380 V. Esse transformador (TR 01) tem uma construção especial, com dois enrolamentos no secundário, evitando a circulação de correntes harmônicas geradas pelos módulos eletrônicos de potência, sendo exclusivo para alimentação do retificador do equipamento de eletrólise.
 
 ```{r figura61, fig.cap="Diagrama unifilar da distribuição de energia elétrica em 380 V"}
 knitr::include_graphics(path = 'figura_61.png')
 ```
 
-Figura \@ref(fig:figura62)
+A alimentação das outras cargas elétricas e dos serviços de utilidades se faz usando a tensão de 440 V reduzindo-se desse modo as correntes e economizando-se no cobre para os cabos. A Figura \@ref(fig:figura62) mostra o diagrama unifilar desde o transformador (TR 02) até as diversas cargas que são alimentadas. 
 
 ```{r figura62, fig.cap="Diagrama unifilar da distribuição de energia elétrica em 440 V"}
 knitr::include_graphics(path = 'figura_62.png')
 ```
 
-Figura \@ref(fig:figura63)
+Para o atendimento dos circuitos de iluminação, tomadas de energia, casa de apoio e para a comunicação de dados é usado um transformador (TR 03) para tensão de 220/127 V. O diagrama unifilar para esse caso está apresentado na Figura \@ref(fig:figura63).
 
 ```{r figura63, fig.cap="Diagrama unifilar da distribuição de energia elétrica em 220/127 V"}
 knitr::include_graphics(path = 'figura_63.png')
 ```
 
-Figura \@ref(fig:figura64)
+## Principais Equipamentos da Unidade de Produção
+Os processos de fabricação do hidrogênio são conhecidos a bastante tempo. No caso da eletrólise, os primeiros registros sobre a decomposição da água foram feitos no ano de 1800. Nesse mesmo ano, poucos meses antes, Alessandro Volta havia mostrado o seu invento, a pilha eletroquímica. Usando uma dessas pilhas William Nicholsonem e Anthony Carlisle estavam fazendo seus experimentos e acabaram descobrindo um fenômeno bem interessante: quando a corrente elétrica contínua passa pela água ela se decompõe e forma dois tipos de gases, sendo que duas partes são de hidrogênio e uma parte de oxigênio.
+
+Essa experiência é muito didática e simples de ser feita, podendo ser realizada em qualquer laboratório e até mesmo em casa. Assim, podemos continuar produzir hidrogênio até a pilha se esgotar ou então quando a água secar...  Logicamente que, para a produção de hidrogênio em grandes quantidades, com maiores pressões e purezas elevadas, são exigidos equipamentos muito mais complexos que uma simples pilha, dois eletrodos e um copo de becker com água. No entanto, os princípios físicos básicos são os mesmos.
+
+Então na continuação desse item serão mostrados os principais sistemas e os diversos equipamentos que compõe uma unidade de produção de hidrogênio por eletrólise.
+
+### Sistema de eletrólise
+
+Sem dúvida, o sistema de eletrólise é a parte principal dessa unidade de produção de hidrogênio verde. Na unidade do CH2V esse sistema está inteiramente contido em um contêiner padrão com 12 m de comprimento, montado especificamente para essa finalidade. O interior desse contêiner foi dividido em duas partes, criando dois recintos separados por uma parede metálica hermética.
+
+No primeiro deles estão colocados os equipamentos usados na preparação da matéria prima utilizada no processo de eletrólise, ou seja: tratamento da água bruta para obtenção da água pura e transformação da energia elétrica de corrente alternada trifásica em corrente contínua de dois polos. Nesse local também estão instalados os painéis elétricos para o controle do sistema de eletrólise, comunicação de dados e segurança da operação.
+
+No segundo recinto, considerado zona controlada e de acesso restrito, estão instalados os equipamentos que realmente fazem a separação por eletrólise da água. Nesse espaço estão colocadas as duas células PEM que recebem a água pura e a eletricidade em corrente contínua fazendo a decomposição em hidrogênio e oxigênio. Além dessas células também estão instalados um tanque de água pura, vasos de separação da água dos gases gerados, sistema de secagem e purificação do hidrogênio produzido, módulos para medição e garantia da pureza desse produto e um conjunto para o polimento e recirculação da água.
+
+A disposição desses diversos sistemas e equipamentos está mostrada na Figura \@ref(fig:figura64) em um desenho com a vista em planta desse contêiner.
 
 ```{r figura64, fig.cap="Disposição dos equipamentos no contêiner do eletrolisador"}
 knitr::include_graphics(path = 'figura_64.png')
 ```
 
-Figura \@ref(fig:figura65)
+### Compressor
+
+Quando são utilizadas células PEM para a produção de hidrogênio, a pressão de saída do sistema de eletrólise é da ordem de 3 MPa. Mesmo considerando o seu elevado poder calorífico, a densidade energética específica do hidrogênio é muito baixa nesse nível de pressão, tornando difícil a estocagem e o transporte desse gás. Em razão, disso os reservatórios de hidrogênio operam normalmente em maiores pressões. E para se alcançar essas pressões são empregados os compressores.
+
+Esses compressores são máquinas são projetadas especialmente para operação com hidrogênio. Como as pressões de descarga são elevadas normalmente utilizam-se equipamentos do tipo alternativo com dois estágios e resfriamento intermediário e posterior usando trocadores de calor resfriados com água. Em cada um desses estágios operam pistões comprimindo óleo hidráulico. E esse óleo, por sua vez, pressiona e movimenta os diafragmas metálicos que comprimem o gás. Com esse tipo de construção não há risco de contaminação com o lubrificante garantindo a pureza do processo.
+
+O compressor instalado na planta do CH2V opera em dois níveis de pressão de forma a atender a demanda de hidrogênio para os reservatórios de baixa pressão, a 20 Mpa, ou então armazenando gás em pressões maiores para abastecer um dispenser para uso veicular na pressão de 70 Mpa, conforme o diagrama mostrado na Figura \@ref(fig:figura65).
 
 ```{r figura65, fig.cap="Diagrama simplificado do compressor de hidrogênio"}
 knitr::include_graphics(path = 'figura_65.png')
 ```
 
-Figura \@ref(fig:figura66)
+### Reservatórios de estocagem 
+
+A planta do CH2V faz o armazenamento do hidrogênio comprimido em reservatórios usando três níveis de pressão. O primeiro deles é um reservatório móvel operando na pressão de 20 MPa, concebido para atender o consumo de hidrogênio no laboratório de motores e de células de combustível localizado no campus da Unifei e demais usuários interessados nessa aplicação. Os demais reservatórios são usados no sistema de abastecimento de hidrogênio em veículos e caminhões na pressão nominal de 70 Mpa.
+
+A Tabela \@ref(tab:tabela4) apresenta as principais características desses reservatórios. Também foi incluído o reservatório pulmão, instalado a montante do compressor de hidrogênio.
+
+```{r tabela4, echo=FALSE, message=FALSE, warning=FALSE, tab.cap="Principais características dos reservatórios de hidrogênio. Fonte: Elaboração própria."}
+library(magrittr, include.only = '%>%')
+library(gt)
+
+param_tec <- data.frame(
+  reservatorio = c(
+    'Pulmão',
+    'Baixa Pressão',
+    'Média Pressão I',
+    'Média Pressão II',
+    'Alta Pressão'
+  ),
+  tipo = c(
+    'Aço soldado',
+    'Aço carbono sem costura',
+    'Aço carbono sem costura',
+    'Aço carbono sem costura',
+    'Aço carbono, fibra de carbono e resina'
+  ),
+  pressao = c(
+    '3',
+    '20',
+    '45',
+    '45',
+    '90'
+  ),
+  quantidade = c(
+    '1',
+    '6',
+    '8',
+    '8',
+    '1'
+  ),
+  volume_unitario = c(
+    '8.400',
+    '40',
+    '57',
+    '57',
+    '213'
+  ),
+  volume_total = c(
+    '8,400',
+    '0,240',
+    '0,456',
+    '0,456',
+    '0,213'
+  ),
+  massa = c(
+    '20,1',
+    '3,5',
+    '13,0',
+    '13,0',
+    '9,9'
+  )
+)
+
+param_tec %>%
+  gt(
+    caption = 'Principais características dos reservatórios de hidrogênio. Fonte: Elaboração própria.'
+  ) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#2e7d32"),
+      cell_text(color = "#e8f5e9", weight = "bold")
+    ),
+    locations = cells_column_labels()
+  ) %>%
+  cols_label(
+    reservatorio = 'Reservatório',
+    tipo = 'Tipo',
+    pressao = 'Pressão (MPa)',
+    quantidade = 'Quant. (unid.)',
+    volume_unitario = 'Vol. Unit. (L)',
+    volume_total = 'Vol. Total (m³)',
+    massa = 'Massa (kg)'
+  ) %>%
+  cols_align(
+    align = "center",
+    columns = everything()
+  )
+```
+
+As massas indicadas na tabela anterior foram determinadas considerando a temperatura de 25 °C, usando-se a Equação dos Geral dos Gases corrigida pelo Fator de Compressibilidade Z. Esse fator foi determinado usando-se a equação mostrada a seguir, de acordo com a Referência 1 (Lemmon, Huber e Leachman 2008).
+
+\begin{equation}
+Z(p,T)=\frac{p}{\rho RT}
+=
+1+\sum_{i=1}^{9}
+a_i
+\left(\frac{100\ \mathrm{K}}{T}\right)^{b_i}
+\left(\frac{p}{1\ \mathrm{MPa}}\right)^{c_i}
+(\#eq:equacao3)
+\end{equation}
+
+Os coeficientes que são usados na equação do fator Z estão listados na Tabela \@ref(tab:tabela5). Para a massa molecular do hidrogênio utiliza-se o valor 2,01588 kg / kmol e para a Constante Universal dos Gases 8,314472 kJ / (kmol K).
+
+```{r tabela5, echo=FALSE, message=FALSE, warning=FALSE, tab.cap="Constantes para o cálculo do fator de compressibilidade. Fonte: Elaboração própria."}
+library(magrittr, include.only = '%>%')
+library(gt)
+
+param_tec <- data.frame(
+  i = c(
+    1, 2, 3, 4, 5, 6, 7, 8, 9
+  ),
+  ai = c(
+    '0,058884600',
+    '-0,061361110',
+    '-0,002650473',
+    '0,002731125',
+    '0,001802374',
+    '-0,001150707',
+    '9,588528 × 10⁻⁵',
+    '-1,109040 × 10⁻⁷',
+    '1,264403 × 10⁻¹⁰'
+  ),
+  bi = c(
+    '1,325',
+    '1,87',
+    '2,5',
+    '2,8',
+    '2,938',
+    '3,14',
+    '3,37',
+    '3,75',
+    '4'
+  ),
+  ci = c(
+    '1',
+    '1',
+    '2',
+    '2',
+    '2,42',
+    '2,63',
+    '3',
+    '4',
+    '5'
+  )
+)
+
+param_tec %>%
+  gt(
+    caption = 'Constantes para o cálculo do fator de compressibilidade. Fonte: Elaboração própria.'
+  ) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#2e7d32"),
+      cell_text(color = "#e8f5e9", weight = "bold")
+    ),
+    locations = cells_column_labels()
+  ) %>%
+  cols_label(
+    i = 'i',
+    ai = 'aᵢ',
+    bi = 'bᵢ',
+    ci = 'cᵢ'
+  ) %>%
+  cols_align(
+    align = "center",
+    columns = everything()
+  )
+```
+
+A Figura \@ref(fig:figura66) mostra como é feita a conexão do compressor de hidrogênio com o conjunto dos reservatórios móveis em baixa pressão. Para atender os requisitos de segurança na operação são usadas mangueiras flexíveis metálicas e engates rápidos especiais.
 
 ```{r figura66, fig.cap="Esquema do estoque de hidrogênio em baixa pressão"}
 knitr::include_graphics(path = 'figura_66.png')
 ```
 
-Figura \@ref(fig:figura67)
+A Figura \@ref(fig:figura67) mostra o esquema da ligação entre o compressor com os reservatórios de armazenamento de média e alta pressão e destes com o dispenser de hidrogênio. Nessa figura é possível observar as diversas válvulas de acionamento pneumático para o controle desses reservatórios. 
 
 ```{r figura67, fig.cap="Esquema do estoque de hidrogênio em média e alta pressão"}
 knitr::include_graphics(path = 'figura_67.png')
 ```
 
-Figura \@ref(fig:figura68)
+A equação que fornece o Fator de Compressibilidade Z também é empregada para o monitoramento diário das condições de estanqueidade desses reservatórios. Pois mesmo nos períodos em que não há produção de hidrogênio pela planta, eles permanecem pressurizados. Por isso a importância desse controle.
+
+Como os volumes internos são constantes, as variações de pressão são causadas somente pelas mudanças de temperatura e ou então quando há algum vazamento. Como exemplo desse procedimento, na Figura \@ref(fig:figura68) o gráfico representa o comportamento ao longo do tempo da massa de hidrogênio em um reservatório com a pressão inicial em torno de 800 bar. Fica evidente que está havendo perda de gás.
 
 ```{r figura68, fig.cap="Monitoramento da estanqueidade em um reservatório de hidrogênio"}
 knitr::include_graphics(path = 'figura_68.png')
 ```
 
-Figura \@ref(fig:figura69)
+O problema foi corrigido com a substituição de uma válvula agulha defeituosa. Essa situação pode então ser vista no gráfico da Figura \@ref(fig:figura69).
 
 ```{r figura69, fig.cap="Mesmo reservatório após correção do vazamento"}
 knitr::include_graphics(path = 'figura_69.png')
 ```
 
-Figura \@ref(fig:figura70)
+Pelo primeiro gráfico observa-se que em 42 dias ocorreu uma perda em torno de 260 g de hidrogênio. Depois da correção desse vazamento, pelo segundo gráfico, verifica-se que ainda existe uma pequena perda, cerca de 40 g em 33 dias. No entanto, essa agora é quantidade é pouco significativa e se encontra dentro das normas e recomendações de estanquidade em vasos de pressão.
+
+Outro exemplo de aplicação interessante usando o Fator de Compressibilidade para o hidrogênio é o cálculo da quantidade de hidrogênio em 1,0 Nm³. Ou seja, determinar qual é a massa desse gás nas condições normais padronizadas, isto é, contida em um volume de 1,0 m³, a uma temperatura de 0 °C e sujeita a uma pressão atmosférica igual a 760 mmHg, ou 101,325 kPa. 
+
+O resultado obtido para essa quantidade de massa nessas condições é de 0,08988 kg, ou seja, 1,0 Nm³ equivale a essa massa. Com isso também reforçamos que a unidade Nm³ é uma unidade de massa. Ela é de uso corriqueiro quando se trabalha com fluidos compressíveis como os gases e ar comprimido.
+
+Aqui é oportuno fazer uma observação com relação ao reservatório de alta pressão. Esse vaso é construído com uma parede dupla: um corpo de formato cilíndrico, sem costura, feito de aço carbono e depois recoberto na parte externa por várias camadas de fibra de carbono coladas entre si com resina. Esse tipo de construção possibilita operar em pressões elevadas usando equipamentos com menores espessura de parede e mais leves.
+
+Essa vantagem na redução na espessura das paredes e peso dos reservatórios de altas pressões implica em uma desvantagem. Enquanto os demais reservatórios não têm restrições quanto ao número de ciclos de pressurização e despressurização, pois não estão sujeitos a falhas por fadiga porque eles são construídos com apenas uma camada, de aço carbono no caso do CH2V. Nos reservatórios construídos com mais de uma camada, as pequenas deformações que ocorrem quando ele é pressurizado (ou despressurizado) podem causar descolamentos entre essas camadas comprometendo a sua integridade estrutural. Por essa razão os reservatórios desse tipo são sempre mantidos em um nível mínimo de pressão.
+
+O monitoramento da pressão mínima desse reservatório é feito de forma automática pelo sistema de controle do dispenser de hidrogênio, conforme será comentado no próximo item.
+
+### Sistema de abastecimento de veículos
+
+O abastecimento de veículos (ou caminhões) é feito usando-se o hidrogênio armazenado nos reservatórios de média e alta pressão conforme foi mostrado na Figura Figura \@ref(fig:figura70). Como o gás vai ser transferido desse estoque, em pressões mais elevadas, para um reservatório que, em princípio está vazio, em baixa pressão, o hidrogênio passa por um processo de expansão e, ao contrário do que acontece com a maioria dos outros gases, ele se aquece. Esse estranho comportamento é facilmente explicado pela Termodinâmica observando-se o coeficiente de Joule-Thomson, que é negativo no caso desse gás.
+
+Por isso, antes de iniciar a operação de transferência do hidrogênio o sistema de controle do dispenser estabelece comunicação com o veículo por meio de um sensor infravermelho instalado na extremidade do bocal de enchimento. Com isso o sistema de controle tem as informações sobre o veículo e os valores de pressão e de temperatura e volume do reservatório que será abastecido. A partir desses dados determina-se qual a proporção de mistura entre o hidrogênio armazenado à temperatura ambiente com hidrogênio resfriado a -40°C.
+
+Desse modo, a temperatura do gás no interior do reservatório do veículo é controlada e mantida abaixo dos limites de segurança. Com isso os riscos de explosão são minimizados e o material usado para a construção dos reservatórios veiculares não sofre enfraquecimento.
+
+Depois que os parâmetros abastecimento foram determinados, é feita uma primeira injeção de hidrogênio durante alguns segundos e é realizada uma verificação de vazamentos. Se estiver tudo correto o abastecimento continua até alcançar a pressão nominal do dispenser, 70 Mpa. Em condições normais, a vazão média de hidrogênio é da ordem de 1,0 kg/minuto. Caso for desejado, o abastecimento pode ser interrompido a qualquer momento,
+
+O sistema de controle do dispenser tem um procedimento automático de seleção dos reservatórios do estoque de maneira a respeitar a pressão mínima do reservatório de alta pressão, preservando a vida útil desse equipamento.
+
+Se sistema de controle não consiga se comunicar com o veículo, o abastecimento é feito de forma mais lenta monitorando a temperatura do hidrogênio no bocal de enchimento.
 
 ```{r figura70, fig.cap="Diagrama do sistema de abastecimento de veículos e caminhões"}
 knitr::include_graphics(path = 'figura_70.png')
 ```
 
-Figura \@ref(fig:figura71)
+No exemplo de aplicação mostrado a seguir é feita a simulação do abastecimento de um veículo leve movido com hidrogênio. O reservatório deste veículo, construído totalmente em materiais compósitos, foi projetado para a pressão máxima de trabalho de 70 MPa e tem a capacidade 4,3 kg de hidrogênio, o que representa cerca de 430 km de autonomia.
+
+Considera-se que, para o início da operação de abastecimento, os reservatórios da planta de produção estejam completamente cheios, isto é, nas suas pressões máximas de trabalho. Além disso, supõe-se que o reservatório do veículo esteja ainda com uma certa quantidade de hidrogênio, a uma determinada pressão mínima, de acordo com as recomendações de segurança, pois com esse procedimento evitam-se as baixas pressões e a entrada do oxigênio do ar e a consequente necessidade de inertização desse reservatório.
+
+Como as pressões envolvidas são elevadas, os resultados serão sempre corrigidos usando-se o fator de compressibilidade Z. Apesar do efeito do aumento da temperatura em razão das expansões considera-se ao final desses processos uma temperatura de equilíbrio igual a temperatura ambiente, adotada como 25°C. 
+
+Montou-se uma planilha com o fator Z como função da pressão e temperatura. Com esse fator determina-se massa para um volume conhecido ou vice-versa, com massa conhecida calcula-se o volume correspondente. Quando for necessário determinar as pressões, o cálculo tem que ser feito de forma interativa, pois a equação que fornece Z também é uma função da pressão. A sequência utilizada é a seguinte:
+
+Determinar a pressão de equilíbrio no primeiro estágio de enchimento, quando o dispenser utiliza hidrogênio do armazenamento de média pressão.
+Com o reservatório do veículo parcialmente cheio e com a pressão em equilíbrio com o armazenamento de média pressão, o sistema de controle faz as manobras das válvulas pneumáticas e comuta para o reservatório de alta pressão.
+
+Abastecer o reservatório do veículo até a pressão de 70 MPa ou até atingir a pressão de equilíbrio para esse caso.
+
+Seguem abaixo os resultados que foram obtidos:
+
+Com os dados fornecidos para o reservatório do veículo, calculou-se o seu volume.
+
+- Mv	=	4,3	kg
+- pv	= 	70	MPa
+- Tv	=	25	°C
+- Vv	=	0,110	m³
+
+Com esse volume e a pressão inicial desse reservatório determina-se a massa de hidrogênio antes do abastecimento do veículo.
+
+- pv	= 	35	MPa
+- Tv	=	25	°C
+- Vv	=	0,110	m³
+- Mv	=	0,306	kg
+
+Das informações da planta de produção do CH2V sabe-se que:
+
+- pMP	= 	45	MPa
+- TMP	=	25	°C
+- VMP	=	0,912	m³
+- MMP	=	25,938	kg
+
+No primeiro estágio do abastecimento calcula-se a pressão de equilíbrio para a soma das massas e dos volumes do reservatório do veículo e do armazenamento de média pressão. 
+
+- T	=	25	°C
+- V	=	1,022	m³
+- M	=	25,965	kg
+- p	= 	39,5	MPa
+
+O reservatório do veículo então é isolado momentaneamente do armazenamento e para essas condições calcula-se a massa de hidrogênio. 
+
+- pv	= 	39,5	MPa
+- Tv	=	25	°C
+- Vv	=	0,110	m³
+- Mv	=	2,816	kg
+
+Como foi feito anteriormente, calcula-se a pressão de equilíbrio para o segundo estágio do abastecimento, quando o hidrogênio é retirado do armazenamento de alta pressão e considerando as somas das massas e volumes desse reservatório e o do veículo.
+
+- T	=	25	°C
+- V	=	0,323	m³
+- M	=	12,645	kg
+- p	= 	70,2	MPa
+
+Observa-se que a pressão de equilíbrio é maior que a pressão máxima admitida para o reservatório do veículo. Desse modo, esse reservatório será abastecido até seu limite máximo, como mostrado abaixo.
+
+- pv	= 	70	MPa
+- Tv	=	25	°C
+- Vv	=	0,110	m³
+- Mv	=	4,30	kg
+
+A quantidade de hidrogênio que foi abastecida na segunda etapa é dada pela diferença entre as massas desse reservatório antes e depois do abastecimento. Essa massa será subtraída da massa do reservatório de alta pressão e daí será determinada a sua pressão final.
+
+- MAP	=	8,375	kg
+- TAP	=	25	°C
+- VAP	=	0,213	m³
+- pAP	= 	70,3	MPa
+
+Observa-se que nesse caso o abastecimento pode ser feito sem a necessidade recarregar os reservatórios de armazenamento. No entanto, quando o estoque estiver baixo ou então quando for feito abastecimento de um veículo com reservatório de maior capacidade será preciso fazer essa operação em mais de uma fase, produzindo e armazenando mais hidrogênio.
+
+Como outro exemplo de aplicação, considerando as mesmas condições anteriores, mas para o abastecimento de um caminhão leve, com um reservatório com capacidade de 20 kg de hidrogênio a 70 MPa, foram obtidos os seguintes resultados:  
+
+Determina-se primeiramente o volume do reservatório do caminhão
+
+- Mv	=	20,0	kg
+- pv	= 	70	MPa
+- Tv	=	25	°C
+- Vv	=	0,510	m³
+
+A pressão de equilíbrio quando se usa os reservatórios de média pressão é calculada como anteriormente e resulta a massa no reservatório:
+
+- pv	= 	27,8	MPa
+- Tv	=	25	°C
+- Vv	=	0,510	m³
+- Mv	=	9,811	kg
+
+É feita a comutação para o abastecimento a partir do armazenamento de alta pressão. Calculam-se a pressão de equilíbrio é a massa de hidrogênio no reservatório.
+
+- pv	= 	42,5	MPa
+- Tv	=	25	°C
+- Vv	=	0,510	m³
+- Mv	=	13,874	kg
+
+Nesse momento a planta deverá entrar em produção e completar a carga do armazenamento de alta pressão. O próximo passo para o abastecimento será feito até as seguintes condições:
+
+- pv	= 	54,5	MPa
+- Tv	=	25	°C
+- Vv	=	0,510	m³
+- Mv	=	16,740	kg
+
+Novamente será feito nova interrupção do abastecimento e mais uma carga do reservatório de alta pressão chegando nas condições seguintes:
+
+- pv	= 	64,2	MPa
+- Tv	=	25	°C
+- Vv	=	0,510	m³
+- Mv	=	18,836	kg
+
+Nesse passo, completa-se a carga do reservatório de alta pressão mais uma vez e finaliza-se o abastecimento do reservatório do caminhão.
+
+- pv	= 	70,0	MPa
+- Tv	=	25	°C
+- Vv	=	0,510	m³
+- Mv	=	20,000	kg
+
+Resultam então para o reservatório de alta pressão as seguintes condições finais: 
+
+- MAP	=	8,695	kg
+- TAP	=	25	°C
+- VAP	=	0,213	m³
+- pAP	= 	74,2	MPa
+
+## Utilidades e Sistemas Auxiliares
+
+### Ar comprimido
+
+As instalações que manipulam hidrogênio e outros gases inflamáveis ou explosivos devem cumprir uma série de requisitos e normas de segurança. Entre elas recomenda-se a que as válvulas motorizadas sejam operadas pneumaticamente, evitando-se acionamentos e atuadores elétricos, pois se esses forem usados, devem ser totalmente estanques e a prova de explosão e, consequentemente, de maior custo.
+
+Para atender essa demanda de ar comprimido para a instrumentação foi instalado um compressor de parafusos com reservatório e sistema integrado de secagem frigorifica para redução da umidade. A capacidade nominal desse equipamento é de 40 Nm³/h (FAD) na pressão de descarga de 1,0 Mpa.
+
+O ar comprimido é entregue nos pontos de consumo através de uma rede de distribuição feita de tubos de PPR (polipropileno copolímero randômico), DN 32, espessura de 4,5 mm, instalado sobre leito no interior das canaletas. Próximo aos equipamentos é usada tubulação de aço inox (correntemente denominada por tubing) ou tubos de nylon para os menores diâmetros. 
+
+Na Figura \@ref(fig:figura71) está mostrado o diagrama usado para o sistema de produção e distribuição do ar comprimido de instrumentação.
 
 ```{r figura71, fig.cap="Diagrama do sistema ar comprimido de instrumentação"}
 knitr::include_graphics(path = 'figura_71.png')
 ```
 
-Figura \@ref(fig:figura72)
+### Nitrogênio
+
+Nas plantas de produção de hidrogênio são tomadas diversas precauções para evitar a contaminação com o ar, devido presença de oxigênio. Há risco iminente de explosão quando a concentração de hidrogênio no ar estiver na concentração entre 4 e 75 % vol. Por essa razão são imprescindíveis sistemas para a retirada do oxigênio das tubulações, equipamentos e reservatórios.
+
+Isso é feito usando-se gases inertes, normalmente o nitrogênio, como é usado na planta do CH2V. Por isso essa operação é nomeada como inertização, mas também é comum o termo purga. Nas tubulações isso é feito deixando-se escoar nitrogênio durante um tempo suficiente que garanta a limpeza do todo o comprimento dessa tubulação. Essa limpeza que é feita nas tubulações também é conhecida por flushing. Um procedimento semelhante, mas executado de maneira automática, é empregado pelo compressor de hidrogênio. Para os reservatórios a inertização consiste em pressurizar o vaso com nitrogênio, aguardar um pouco para que ocorra a mistura por difusão e depois descartar todo conteúdo no ambiente, tomando o cuidado para que a pressão desse reservatório não fique muito baixa, prevenindo-se a entrada de ar novamente. Depois essa manobra é repetida até que a concentração de nitrogênio fique acima de 99 % VOL, garantindo-se margem segura em relação aos limites de explosividade.
+
+Não é necessário realizar novos procedimentos de inertização se houver a garantia segura que as tubulações, equipamentos e reservatórios foram mantidos pressurizados.
+
+A Figura \@ref(fig:figura72) a seguir apresenta o diagrama do sistema de inertização.
 
 ```{r figura72, fig.cap="Esquema do sistema de inertização com nitrogênio"}
 knitr::include_graphics(path = 'figura_72.png')
 ```
 
-Figura \@ref(fig:figura73)
+Como mais um exemplo de aplicação demostra-se como pode ser feita a inertização do reservatório pulmão da planta do CH2V. Esse vaso tem um volume de 8,4 m³ e foi projetado para uma pressão de trabalho igual 3 MPa. Na condição inicial o vaso estava aberto para o ambiente, cheio de ar na pressão atmosférica. Para a inertização desse vaso estão disponíveis seis cilindros de 0,05 m³ a 20 MPa de nitrogênio industrial com pureza de 99,9%VOL.
 
-```{r figura73, fig.cap="Gráfico com a concentração de O2 após as operações de inertização"}
+Nesse exemplo considera-se que o ar atmosférico técnico seja uma mistura de 21%VOL de oxigênio e 79%VOL de nitrogênio e supõe-se o único contaminante do nitrogênio industrial seja o oxigênio. Como as pressões envolvidas nesse processo são mais baixas, os cálculos serão feitos usando equações simples envolvendo apenas pressões e volumes, desconsiderando os efeitos da temperatura
+
+Como estão disponíveis seis cilindros de nitrogênio foram simuladas quatro diferentes combinações para a inertização desse vaso. Os resultados obtidos estão resumidos a seguir.
+
+```{r tabela6, echo=FALSE, message=FALSE, warning=FALSE, tab.cap="Concentração de O~2~ no vaso ao fim de cada inertização. Fonte: Elaboração própria."}
+library(magrittr, include.only = '%>%')
+library(gt)
+
+param_tec <- data.frame(
+  numero_cilindros = c(
+    '1',
+    '2',
+    '3',
+    '6'
+  ),
+  concentracao_inicial = c(
+    '21',
+    '21',
+    '21',
+    '21'
+  ),
+  concentracoes_intermediarias = c(
+    '9,6; 4,4; 2,0; 0,9; 0,4',
+    '6,2; 1,8',
+    '4,6',
+    '-'
+  ),
+  concentracao_final = c(
+    '0,2',
+    '0,5',
+    '1,0',
+    '2,6'
+  ),
+  pressao = c(
+    '0,22',
+    '0,33',
+    '0,45',
+    '0,79'
+  )
+)
+
+param_tec %>%
+  gt(
+    caption = 'Concentração de O~2~ no vaso ao fim de cada inertização. Fonte: Elaboração própria.'
+  ) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#2e7d32"),
+      cell_text(color = "#e8f5e9", weight = "bold")
+    ),
+    locations = cells_column_labels()
+  ) %>%
+  cols_label(
+    numero_cilindros = 'Número de Cilindros Utilizados',
+    concentracao_inicial = 'O₂ Inicial (%)',
+    concentracoes_intermediarias = 'Concentrações Intermediárias (%)',
+    concentracao_final = 'O₂ Final (%)',
+    pressao = 'Pressão (MPa)'
+  ) %>%
+  cols_align(
+    align = "center",
+    columns = everything()
+  )
+```
+
+Os valores obtidos foram plotados em um gráfico, mostrado na Figura \@ref(fig:figura73). Observa-se que a concentração de O~2~ alcançada ao fim de cada processo é cada vez menor quanto mais operações de inertização sejam feitas.
+
+```{r figura73, fig.cap="Gráfico com a concentração de O~2~ após as operações de inertização"}
 knitr::include_graphics(path = 'figura_73.png')
 ```
 
-Figura \@ref(fig:figura74)
+Ressalta-se que a concentração final de O~2~ depende diretamente da pureza do nitrogênio utilizado no processo de inertização. Depois de muitas operações, essa concentração tende de forma assintótica para a nível de contaminação do O~2~ no gás de inertização.
+
+### Água de resfriamento
+
+A produção de hidrogênio por eletrólise através de células PEM é processo exotérmico, por isso é necessário a retirada do calor gerado de maneira a manter temperatura de operação dentro dos limites recomendados pelo fabricante do equipamento, abaixo de 70 °C. Ademais durante a fase de purificação é preciso extrair mais calor para o resfriamento e condensação da umidade presente no hidrogênio que foi produzido. O retificador AC/DC também é um equipamento onde necessita-se controle de temperatura, nele a energia térmica gerada pelos componentes eletrônicos de potência é retirada com resfriamento com água gelada. Toda essa energia térmica deve então ser dissipada no ambiente. 
+
+Para cumprir essa tarefa foi implantado na planta do CH2V um sistema com capacidade térmica de aproximadamente 195 kW T, composto por torre de resfriamento, bombas centrífugas e dois circuitos de água independentes com vazão em torno de 24 m³/h e um diferencial de temperatura de 5,0 °C, entre a entrada e a saída no circuito secundário. A configuração adotada nesse sistema é vantajosa, pois a maior parte da evaporação se dá no circuito primário, onde também ocorre a contaminação com as poeiras suspensas no ambiente. 
+
+E justo nesse circuito primário é onde se faz a reposição de água, controlando a concentração de sais na água circulante. O circuito secundário é praticamente fechado e a evaporação é insignificante, consequentemente a concentração é reduzida. Foram empregados tubos de CPVC montados com cola e com conexões flangeadas na ligação com os diversos equipamentos. 
+
+A Figura \@ref(fig:figura74) mostra o esquema que foi adotado na planta do CH2V para o sistema de água industrial de resfriamento.
 
 ```{r figura74, fig.cap="Diagrama do sistema de água industrial de resfriamento"}
 knitr::include_graphics(path = 'figura_74.png')

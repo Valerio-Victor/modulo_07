@@ -1,0 +1,3159 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>CAPÍTULO 4 CONSIDERAÇÕES TÉCNICAS SOBRE A PLANTA DE PRODUÇÃO DE HIDROGÊNIO DO CH2V | DESAFIOS DE INSTALAÇÃO DE UMA PLANTA DE PRODUÇÃO DE H₂</title>
+  <meta name="description" content="CAPÍTULO 4 CONSIDERAÇÕES TÉCNICAS SOBRE A PLANTA DE PRODUÇÃO DE HIDROGÊNIO DO CH2V | DESAFIOS DE INSTALAÇÃO DE UMA PLANTA DE PRODUÇÃO DE H₂" />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="CAPÍTULO 4 CONSIDERAÇÕES TÉCNICAS SOBRE A PLANTA DE PRODUÇÃO DE HIDROGÊNIO DO CH2V | DESAFIOS DE INSTALAÇÃO DE UMA PLANTA DE PRODUÇÃO DE H₂" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="CAPÍTULO 4 CONSIDERAÇÕES TÉCNICAS SOBRE A PLANTA DE PRODUÇÃO DE HIDROGÊNIO DO CH2V | DESAFIOS DE INSTALAÇÃO DE UMA PLANTA DE PRODUÇÃO DE H₂" />
+  
+  
+  
+
+<meta name="author" content="Autores:  Prof. Dr. Jamil Haddad  Prof. Me. Fábio José Horta Nogueira" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="considerações-gerais-sobre-a-implantação-do-ch2v.html"/>
+<link rel="next" href="referências.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">DESAFIOS DE INSTALAÇÃO DE UMA PLANTA DE PRODUÇÃO DE H₂</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> INTRODUÇÃO</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#h2brasil"><i class="fa fa-check"></i><b>1.1</b> H2Brasil</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#unifei"><i class="fa fa-check"></i><b>1.2</b> UNIFEI</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="uma-visão-geral-do-projeto-apresentado-para-a-alemanha-e-alguns-resultados.html"><a href="uma-visão-geral-do-projeto-apresentado-para-a-alemanha-e-alguns-resultados.html"><i class="fa fa-check"></i><b>2</b> UMA VISÃO GERAL DO PROJETO APRESENTADO PARA A ALEMANHA E ALGUNS RESULTADOS</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="uma-visão-geral-do-projeto-apresentado-para-a-alemanha-e-alguns-resultados.html"><a href="uma-visão-geral-do-projeto-apresentado-para-a-alemanha-e-alguns-resultados.html#alguns-resultados"><i class="fa fa-check"></i><b>2.1</b> Alguns Resultados</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="considerações-gerais-sobre-a-implantação-do-ch2v.html"><a href="considerações-gerais-sobre-a-implantação-do-ch2v.html"><i class="fa fa-check"></i><b>3</b> CONSIDERAÇÕES GERAIS SOBRE A IMPLANTAÇÃO DO CH2V</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="considerações-gerais-sobre-a-implantação-do-ch2v.html"><a href="considerações-gerais-sobre-a-implantação-do-ch2v.html#instala%C3%A7%C3%A3o-da-edifica%C3%A7%C3%A3o-do-ch2v"><i class="fa fa-check"></i><b>3.1</b> Instalação da Edificação do CH2V</a></li>
+<li class="chapter" data-level="3.2" data-path="considerações-gerais-sobre-a-implantação-do-ch2v.html"><a href="considerações-gerais-sobre-a-implantação-do-ch2v.html#caracter%C3%ADsticas-principais-da-edifica%C3%A7%C3%A3o-do-ch2v"><i class="fa fa-check"></i><b>3.2</b> Características Principais da Edificação do CH2V</a></li>
+<li class="chapter" data-level="3.3" data-path="considerações-gerais-sobre-a-implantação-do-ch2v.html"><a href="considerações-gerais-sobre-a-implantação-do-ch2v.html#sobre-a-licen%C3%A7a-ambiental-e-outorga-de-uso-da-%C3%A1gua"><i class="fa fa-check"></i><b>3.3</b> Sobre a Licença Ambiental e Outorga de Uso da Água</a></li>
+<li class="chapter" data-level="3.4" data-path="considerações-gerais-sobre-a-implantação-do-ch2v.html"><a href="considerações-gerais-sobre-a-implantação-do-ch2v.html#sobre-a-fonte-de-energia-el%C3%A9trica-renov%C3%A1vel-utilizada-para-produ%C3%A7%C3%A3o-de-hidrog%C3%AAnio"><i class="fa fa-check"></i><b>3.4</b> Sobre a Fonte de Energia Elétrica Renovável Utilizada para Produção de Hidrogênio</a></li>
+<li class="chapter" data-level="3.5" data-path="considerações-gerais-sobre-a-implantação-do-ch2v.html"><a href="considerações-gerais-sobre-a-implantação-do-ch2v.html#instala%C3%A7%C3%A3o-da-planta-de-produ%C3%A7%C3%A3o-de-h2"><i class="fa fa-check"></i><b>3.5</b> Instalação da Planta de Produção de H<sub>2</sub></a></li>
+<li class="chapter" data-level="3.6" data-path="considerações-gerais-sobre-a-implantação-do-ch2v.html"><a href="considerações-gerais-sobre-a-implantação-do-ch2v.html#alguns-desafios-durante-as-obras-da-edifica%C3%A7%C3%A3o-do-ch2v-e-da-infraestrutura-para-instala%C3%A7%C3%A3o-da-planta-de-produ%C3%A7%C3%A3o-de-h2"><i class="fa fa-check"></i><b>3.6</b> Alguns Desafios Durante as Obras da Edificação do CH2V e da Infraestrutura para Instalação da Planta de Produção de H<sub>2</sub></a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html"><a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html"><i class="fa fa-check"></i><b>4</b> CONSIDERAÇÕES TÉCNICAS SOBRE A PLANTA DE PRODUÇÃO DE HIDROGÊNIO DO CH2V</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html"><a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#premissas-iniciais"><i class="fa fa-check"></i><b>4.1</b> Premissas Iniciais</a></li>
+<li class="chapter" data-level="4.2" data-path="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html"><a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#finalidade-da-unidade"><i class="fa fa-check"></i><b>4.2</b> Finalidade da Unidade</a></li>
+<li class="chapter" data-level="4.3" data-path="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html"><a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#espa%C3%A7o-necess%C3%A1rio-disposi%C3%A7%C3%A3o-dos-equipamentos"><i class="fa fa-check"></i><b>4.3</b> Espaço Necessário, Disposição dos Equipamentos</a></li>
+<li class="chapter" data-level="4.4" data-path="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html"><a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#abastecimento-de-%C3%A1gua"><i class="fa fa-check"></i><b>4.4</b> Abastecimento de Água</a></li>
+<li class="chapter" data-level="4.5" data-path="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html"><a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#consumo-de-%C3%A1gua"><i class="fa fa-check"></i><b>4.5</b> Consumo de Água</a></li>
+<li class="chapter" data-level="4.6" data-path="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html"><a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#fornecimento-de-energia-el%C3%A9trica"><i class="fa fa-check"></i><b>4.6</b> Fornecimento de Energia Elétrica</a></li>
+<li class="chapter" data-level="4.7" data-path="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html"><a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#consumo-de-energia-el%C3%A9trica"><i class="fa fa-check"></i><b>4.7</b> Consumo de Energia Elétrica</a></li>
+<li class="chapter" data-level="4.8" data-path="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html"><a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#distribui%C3%A7%C3%A3o-da-energia-el%C3%A9trica-em-baixa-tens%C3%A3o"><i class="fa fa-check"></i><b>4.8</b> Distribuição da Energia Elétrica em Baixa Tensão</a></li>
+<li class="chapter" data-level="4.9" data-path="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html"><a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#principais-equipamentos-da-unidade-de-produ%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>4.9</b> Principais Equipamentos da Unidade de Produção</a>
+<ul>
+<li class="chapter" data-level="4.9.1" data-path="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html"><a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#sistema-de-eletr%C3%B3lise"><i class="fa fa-check"></i><b>4.9.1</b> Sistema de eletrólise</a></li>
+<li class="chapter" data-level="4.9.2" data-path="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html"><a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#compressor"><i class="fa fa-check"></i><b>4.9.2</b> Compressor</a></li>
+<li class="chapter" data-level="4.9.3" data-path="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html"><a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#reservat%C3%B3rios-de-estocagem"><i class="fa fa-check"></i><b>4.9.3</b> Reservatórios de estocagem</a></li>
+<li class="chapter" data-level="4.9.4" data-path="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html"><a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#sistema-de-abastecimento-de-ve%C3%ADculos"><i class="fa fa-check"></i><b>4.9.4</b> Sistema de abastecimento de veículos</a></li>
+</ul></li>
+<li class="chapter" data-level="4.10" data-path="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html"><a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#utilidades-e-sistemas-auxiliares"><i class="fa fa-check"></i><b>4.10</b> Utilidades e Sistemas Auxiliares</a>
+<ul>
+<li class="chapter" data-level="4.10.1" data-path="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html"><a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#ar-comprimido"><i class="fa fa-check"></i><b>4.10.1</b> Ar comprimido</a></li>
+<li class="chapter" data-level="4.10.2" data-path="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html"><a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#nitrog%C3%AAnio"><i class="fa fa-check"></i><b>4.10.2</b> Nitrogênio</a></li>
+<li class="chapter" data-level="4.10.3" data-path="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html"><a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#%C3%A1gua-de-resfriamento"><i class="fa fa-check"></i><b>4.10.3</b> Água de resfriamento</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="referências.html"><a href="referências.html"><i class="fa fa-check"></i>REFERÊNCIAS</a></li>
+<li class="divider"></li>
+<li><a href="https://ch2v.unifei.edu.br/" target="blank">CH2V</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">DESAFIOS DE INSTALAÇÃO DE UMA PLANTA DE PRODUÇÃO DE H₂</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">CAPÍTULO 4</span> CONSIDERAÇÕES TÉCNICAS SOBRE A PLANTA DE PRODUÇÃO DE HIDROGÊNIO DO CH2V<a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#considera%C3%A7%C3%B5es-t%C3%A9cnicas-sobre-a-planta-de-produ%C3%A7%C3%A3o-de-hidrog%C3%AAnio-do-ch2v" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>A seguir, tem-se a especificação dos equipamentos e o dimensionamento básico da planta para produção de hidrogênio do Centro de Hidrogênio Verde (CH2V), da Universidade Federal de Itajubá (UNIFEI), onde foi instalado um eletrolisador do tipo PEM, com potência de 300 kW e 100 kg/dia de capacidade de produção.</p>
+<p>Como comentado anteriormente, essa unidade de produção de hidrogênio verde do CH2V é um dos resultados concretos da cooperação entre o Brasil e a Alemanha para o desenvolvimento sustentável. Um trabalho que vem sendo desenvolvido a décadas nas áreas de energia limpa e eficiência energética, ampliando dessa maneira, a oferta de energias renováveis.</p>
+<p>O projeto do CH2V na Unifei é parte de um programa mais amplo, o H2Brasil, uma parceria entre o Ministério de Minas e Energia, MME, e a Deutsche Gesellschaft für Internationale Zusammenarbeit, GIZ. Foram investidos cerca de € 34 milhões em várias instituições de pesquisa e universidades brasileiras. Desse valor, o CH2V foi contemplado com uma parcela da ordem de € 6,0 milhões e foi elaborado com os seguintes objetivos principais:</p>
+<ul>
+<li><p>Promover a economia do hidrogênio verde, a redução da emissão de gases de efeito estufa, contribuindo para a descarbonização da sociedade.</p></li>
+<li><p>Criar oportunidades para o Brasil no mercado mundial do hidrogênio verde.</p></li>
+<li><p>Fornecer subsídios para a formação das pessoas, desenvolvimento científico, planejamento energético, atualização do marco regulatório e das normas.</p></li>
+<li><p>Implantar infraestrutura e laboratórios para o desenvolvimento de estudos práticos e teóricos sobre a produção, rendimentos, vida útil dos equipamentos, procedimentos de operação e segurança e aplicações do hidrogênio verde.</p></li>
+</ul>
+<p>Mais adiante nesse tópico, essa unidade de produção do CH2V será estudada com maiores detalhes, apresentando os diversos sistemas e componentes por meio de desenhos, e diagramas esquemáticos. Também serão avaliados os consumos de água e de energia elétrica necessários para o funcionamento da planta. Fatores estes cruciais para se entender a eficiência e a viabilidade do processo de produção de hidrogênio. Serão apresentados dados específicos sobre a quantidade de água utilizada no eletrolisador e o consumo energético associado ao processo de eletrólise, fornecendo mais informações sobre os recursos necessários para a operação dessa planta.</p>
+<div id="premissas-iniciais" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Premissas Iniciais<a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#premissas-iniciais" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>O dimensionamento básico de uma unidade de produção de hidrogênio tem como base duas informações essenciais: a quantidade e a finalidade do hidrogênio produzido. Somente depois que esses parâmetros estivem bem definidos será possível estabelecer o tipo e o porte dos equipamentos que deverão ser instalados.
+As principais informações técnicas da planta de hidrogênio que foi implantada no CH2V estão resumidas na Tabela <a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#tab:tabela2">4.1</a>.</p>
+<div id="neenlfeyqf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#neenlfeyqf table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#neenlfeyqf thead, #neenlfeyqf tbody, #neenlfeyqf tfoot, #neenlfeyqf tr, #neenlfeyqf td, #neenlfeyqf th {
+  border-style: none;
+}
+
+#neenlfeyqf p {
+  margin: 0;
+  padding: 0;
+}
+
+#neenlfeyqf .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#neenlfeyqf .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#neenlfeyqf .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#neenlfeyqf .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#neenlfeyqf .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#neenlfeyqf .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#neenlfeyqf .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#neenlfeyqf .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#neenlfeyqf .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#neenlfeyqf .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#neenlfeyqf .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#neenlfeyqf .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#neenlfeyqf .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#neenlfeyqf .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#neenlfeyqf .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#neenlfeyqf .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#neenlfeyqf .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#neenlfeyqf .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#neenlfeyqf .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#neenlfeyqf .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#neenlfeyqf .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#neenlfeyqf .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#neenlfeyqf .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#neenlfeyqf .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#neenlfeyqf .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#neenlfeyqf .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#neenlfeyqf .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#neenlfeyqf .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#neenlfeyqf .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#neenlfeyqf .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#neenlfeyqf .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#neenlfeyqf .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#neenlfeyqf .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#neenlfeyqf .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#neenlfeyqf .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#neenlfeyqf .gt_left {
+  text-align: left;
+}
+
+#neenlfeyqf .gt_center {
+  text-align: center;
+}
+
+#neenlfeyqf .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#neenlfeyqf .gt_font_normal {
+  font-weight: normal;
+}
+
+#neenlfeyqf .gt_font_bold {
+  font-weight: bold;
+}
+
+#neenlfeyqf .gt_font_italic {
+  font-style: italic;
+}
+
+#neenlfeyqf .gt_super {
+  font-size: 65%;
+}
+
+#neenlfeyqf .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#neenlfeyqf .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#neenlfeyqf .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#neenlfeyqf .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#neenlfeyqf .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#neenlfeyqf .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#neenlfeyqf .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#neenlfeyqf .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#neenlfeyqf div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <caption><span id="tab:tabela2">Tabela 4.1: </span>Características da unidade de Produção de Hidrogênio do CH2V</caption>
+  <thead>
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="background-color: #2E7D32; color: #E8F5E9; font-weight: bold;" scope="col" id="item">Item</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="background-color: #2E7D32; color: #E8F5E9; font-weight: bold;" scope="col" id="valor">Valor</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="background-color: #2E7D32; color: #E8F5E9; font-weight: bold;" scope="col" id="unidade">Unidade</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="item" class="gt_row gt_center">Reserva de Água Bruta</td>
+<td headers="valor" class="gt_row gt_center">20</td>
+<td headers="unidade" class="gt_row gt_center">m³</td></tr>
+    <tr><td headers="item" class="gt_row gt_center">Tensão Elétrica de Alimentação</td>
+<td headers="valor" class="gt_row gt_center">13,8</td>
+<td headers="unidade" class="gt_row gt_center">kV</td></tr>
+    <tr><td headers="item" class="gt_row gt_center">Potência Instalada em Transformadores</td>
+<td headers="valor" class="gt_row gt_center">675</td>
+<td headers="unidade" class="gt_row gt_center">kVA</td></tr>
+    <tr><td headers="item" class="gt_row gt_center">Quantidade e Tipo do Eletrolisador</td>
+<td headers="valor" class="gt_row gt_center">Duas células PEM</td>
+<td headers="unidade" class="gt_row gt_center">-</td></tr>
+    <tr><td headers="item" class="gt_row gt_center">Potência Nominal Total do Eletrolisador</td>
+<td headers="valor" class="gt_row gt_center">300</td>
+<td headers="unidade" class="gt_row gt_center">kW</td></tr>
+    <tr><td headers="item" class="gt_row gt_center">Capacidade Nominal do Eletrolisador</td>
+<td headers="valor" class="gt_row gt_center">60</td>
+<td headers="unidade" class="gt_row gt_center">Nm³/h</td></tr>
+    <tr><td headers="item" class="gt_row gt_center">Pressão de Produção do Eletrolisador</td>
+<td headers="valor" class="gt_row gt_center">3</td>
+<td headers="unidade" class="gt_row gt_center">MPa</td></tr>
+    <tr><td headers="item" class="gt_row gt_center">Pressão de Entrega no Dispenser</td>
+<td headers="valor" class="gt_row gt_center">70</td>
+<td headers="unidade" class="gt_row gt_center">MPa</td></tr>
+  </tbody>
+  
+</table>
+</div>
+</div>
+<div id="finalidade-da-unidade" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Finalidade da Unidade<a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#finalidade-da-unidade" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>O hidrogênio é um gás muito leve e com um poder calorífico muito elevado. Por esse motivo resulta em uma substância com baixa densidade energética, ou seja, a quantidade de energia por quantidade de massa é pequena quando comparada com outros combustíveis. Por esse motivo são empregadas pressões bastante elevadas na estocagem desse gás.</p>
+<p>Esse fato divide as plantas de geração de hidrogênio em duas classes. A primeira é aquela em que a utilização do hidrogênio pode ser dar de forma direta, em pressões da ordem de 30 bar ou inferiores, ou seja, nas pressões normalmente encontrada na saída do gás nos sistemas de eletrólise. Esse é o caso da maior parte das aplicações onde o hidrogênio é usado sem a necessidade de estocagem ou transporte.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura52"></span>
+<img src="figura_52.png" alt="Esquema de produção de hidrogênio sem compressão" width="70%" />
+<p class="caption">
+Figura 4.1: Esquema de produção de hidrogênio sem compressão
+</p>
+</div>
+<p>Na outra classe das plantas de produção de hidrogênio, depois da produção do gás é feita a compressão em pressões elevadas de modo que seja possível o armazenamento e o transporte em tanques e reservatórios com volumes tecnicamente viáveis.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura53"></span>
+<img src="figura_53.png" alt="Reservatório de H2 de baixa pressão" width="80%" />
+<p class="caption">
+Figura 4.2: Reservatório de H2 de baixa pressão
+</p>
+</div>
+<p>As unidades de produção também podem ser classificadas quanto a qualidade do gás produzido. Como a água empregada no processo de eletrólise é muito pura e possível obter depois desse processo hidrogênio com pureza em torno de 99,5%vol, suficiente para a queima direta ou uso em motores comuns à combustão. No entanto, quando o hidrogênio é usado em células de combustível, a pureza deve ser igual ou melhor que 99,999%vol. Para isso são usados processos adicionais como aquecimento e colunas de absorção para eliminação da umidade e reações com catalizadores para retirada de traços de oxigênio que possam contaminar o gás produzido. Devido ao número de ‘noves’ esse produto é correntemente nomeado de H2 5.0.</p>
+</div>
+<div id="espaço-necessário-disposição-dos-equipamentos" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Espaço Necessário, Disposição dos Equipamentos<a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#espa%C3%A7o-necess%C3%A1rio-disposi%C3%A7%C3%A3o-dos-equipamentos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Os equipamentos a serem instalados em uma unidade de produção de hidrogênio dependem de onde e como esse gás produzido será consumido, conforme foi comentado no item anterior. Fatores como a quantidade produzida, requisitos de qualidade e pureza do gás e a distância entre a locais de produção e de consumo de hidrogênio são determinantes para a seleção dos equipamentos instalados.</p>
+<p>A unidade usada como exemplo para esse texto é a mais completa, pois além dos equipamentos destinados a produção do hidrogênio por eletrólise, ela ainda conta com sistemas de purificação, compressão, armazenamento e abastecimento de veículo e caminhões, atendendo as especificações quanto a pureza e pressão para o abastecimento de veículos e caminhões dotados de células de combustível com hidrogênio.</p>
+<p>As instalações de produção de hidrogênio são compactas e necessitam de pouco espaço. A unidade do CH2V ocupa um terreno com aproximadamente 1.800 m², já incluindo as áreas de circulação interna e vias de acesso. Isso pode ser visto no desenho da Figura <a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#fig:figura54">4.3</a>, onde estão mostradas as principais dimensões principais. Os equipamentos foram colocados sobre uma laje de concreto armado com 33 m de comprimento e 10 m de largura totalizando 328 m². Nos locais onde foram assentados o contêiner do eletrolisador, o reservatório pulmão e o compressor de hidrogênio foram usadas fundações especiais, com as bases isoladas da laje de concreto. Isso está mostrado no desenho da Figura <a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#fig:figura55">4.4</a> onde pode se ver a disposição adotada para os equipamentos dessa unidade.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura54"></span>
+<img src="figura_54.png" alt="Planta da unidade de produção de hidrogênio" width="80%" />
+<p class="caption">
+Figura 4.3: Planta da unidade de produção de hidrogênio
+</p>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura55"></span>
+<img src="figura_55.png" alt="Distribuição dos equipamentos na unidade de produção de hidrogênio" width="80%" />
+<p class="caption">
+Figura 4.4: Distribuição dos equipamentos na unidade de produção de hidrogênio
+</p>
+</div>
+<p>Para a passagem das tubulações entre os diversos equipamentos e do cabeamento elétrico de força e de comunicação foram implantados na laje do piso cerca de 90 m de canaletas, cobertas com grades metálicas galvanizadas, permitindo passagem de veículos leves. O fundo dessas canaletas foi assentado a uma profundidade mínima de 0,7 m e no ponto mais baixo com 1,5 m, resultando em uma boa declividade para o escoamento da chuva e do rejeito do tratamento na osmose reversa, também lançado na rede de água pluvial. As principais dimensões dessas canaletas estão mostradas na Figura <a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#fig:figura56">4.5</a>. Mais alguns detalhes e o arranjo dos leitos e bandejas podem ser vistos nas duas próximas figuras.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura56"></span>
+<img src="figura_56.png" alt="Vista em corte de uma canaleta de utilidades" width="80%" />
+<p class="caption">
+Figura 4.5: Vista em corte de uma canaleta de utilidades
+</p>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura57"></span>
+<img src="figura_57.png" alt="Canaletas de utilidades com bandejas de cabos e leito de tubos" width="80%" />
+<p class="caption">
+Figura 4.6: Canaletas de utilidades com bandejas de cabos e leito de tubos
+</p>
+</div>
+</div>
+<div id="abastecimento-de-água" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> Abastecimento de Água<a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#abastecimento-de-%C3%A1gua" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Atualmente o abastecimento de água para a planta do CH2V é feito com água de um poço artesiano instalado no Centro Tecnológico do Pré-sal Brasileiro – CTPB, vizinho da planta de produção de hidrogênio. Essa água é extraída por meio de uma bomba submersa do tipo tubular e recalcada para uma caixa intermediária. Desta caixa a água é enviada para o reservatório elevado por uma de bomba centrífuga. Esse reservatório é compartilhado para atender a demanda do abastecimento do CTPB e as necessidades do CH2V.</p>
+<p>Essa água então é transportada por gravidade, através de tubulação enterrada de PVC DN40, com um comprimento aproximado de 210 m, até dois reservatórios de 10 m³ cada um, instalados na parte de superior da planta de produção de hidrogênio. Caso seja necessário, esse local e a base civil desses reservatórios estão preparados para receber mais dois desses, dobrando-se o volume de armazenamento de água bruta para a planta.</p>
+<p>Depois de armazenada a água é distribuída também por gravidade, atendendo os diversos pontos de consumo usando tubulação de PVC DN25. Para garantir a qualidade dessa água, foram instalados sistemas de filtros tipo cartucho na entrada e na saída desses reservatórios. Para operação com perdas de carga reduzidas foram selecionados filtros com tamanho nominal DN50 usando elementos filtrantes de celulose, sendo o primeiro com malha de 50 μm e o seguinte com malha de 20 μm. Adicionalmente foi instalado um sistema de pressurização com bomba centrífuga e mais um filtro cartucho com malha 5 μm para atender o consumo de água exclusivo para a eletrólise, como pode ser visto na Figura <a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#fig:figura58">4.7</a>.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura58"></span>
+<img src="figura_58.png" alt="Esquema do abastecimento de água unidade do CH2V" width="80%" />
+<p class="caption">
+Figura 4.7: Esquema do abastecimento de água unidade do CH2V
+</p>
+</div>
+<p>Estão instalados três hidrômetros totalizadores de vazão para medição do consumo de água na planta. Um deles mede a reposição de água evaporada na torre de resfriamento. Os outros dois foram colocados na entrada e na saída do eletrolisador. Desse modo, por diferença entre esses dois medidores, tem-se o consumo usado somente na produção do hidrogênio.</p>
+<p>A concessionária responsável pelo fornecimento de água no local da planta de produção de hidrogênio poderá atender a demanda da planta de produção de hidrogênio, prevendo-se em breve a conexão com a rede de distribuição. Desse modo, a planta de produção de hidrogênio poderá contar com uma alternativa para o abastecimento de água.</p>
+</div>
+<div id="consumo-de-água" class="section level2 hasAnchor" number="4.5">
+<h2><span class="header-section-number">4.5</span> Consumo de Água<a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#consumo-de-%C3%A1gua" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>As plantas de produção de hidrogênio por eletrólise usam basicamente dois insumos na sua operação, a água e a energia elétrica. Nesse item agora será detalhado o consumo da água, o consumo da energia elétrica será abordado logo mais.</p>
+<p>Uma planta de produção de hidrogênio por eletrólise consume uma pequena quantidade de água quando comparada com outros processos industriais. O consumo teórico pode ser determinado por meio de um cálculo estequiométrico simples. Desse cálculo resulta um consumo de 9 kg de água para se produzir 1 kg de hidrogênio, considerando a massa atômica do hidrogênio 1 e do oxigênio 8, conforme pode ser mostrado a seguir.</p>
+<p><span class="math display" id="eq:equacao1">\[\begin{equation}
+\begin{aligned}
+1\ \mathrm{mol}\ \mathrm{H_2} &amp;\Rightarrow 2{,}0\ \mathrm{g} \\
+1\ \mathrm{mol}\ \mathrm{O} &amp;\Rightarrow 16{,}0\ \mathrm{g} \\
+1\ \mathrm{mol}\ \mathrm{H_2O} &amp;\Rightarrow 18{,}0\ \mathrm{g}
+\end{aligned}
+\tag{4.1}
+\end{equation}\]</span></p>
+<p>Então</p>
+<p><span class="math display" id="eq:equacao2">\[\begin{equation}
+\begin{aligned}
+500\ \mathrm{mol}\ \mathrm{H_2} &amp;\Rightarrow 1{,}0\ \mathrm{kg} \\
+500\ \mathrm{mol}\ \mathrm{O} &amp;\Rightarrow 8{,}0\ \mathrm{kg} \\
+500\ \mathrm{mol}\ \mathrm{H_2O} &amp;\Rightarrow 9{,}0\ \mathrm{kg}
+\end{aligned}
+\tag{4.2}
+\end{equation}\]</span></p>
+<p>No entanto, na prática o consumo de água é bem maior, pois a água empregada no processo de produção de hidrogênio por eletrólise em células do tipo PEM deve ser muito pura. Para isso são usados equipamentos de desmineralização por osmose reversa, que rejeitam uma quantidade significativa de água durante essa etapa de tratamento. Nesse processo perde-se cerca de 80% da quantidade de água tratada. Sendo que esse valor é um dado típico médio, pois ele depende muito das características de qualidade da água bruta. Assim, para produzir um quilograma de água pura é necessário tratar cerca de cinco ou mais quilogramas de água bruta.</p>
+<p>Desse modo, no caso da planta do CH2V o consumo de água bruta na entrada do tratamento de purificação é de aproximadamente 45 kg de água bruta para cada kg de hidrogênio produzido.</p>
+<p>Além disso, em uma planta de produção de hidrogênio alguns equipamentos geram de calor, sendo necessário o controle de temperatura e dissipação dessa energia para o meio ambiente. Normalmente isso é feito usando-se circuitos de água industrial e torres de resfriamento. Essas torres, por sua vez, também consomem água para a reposição da parcela que se evapora nos processos de troca térmica. Essa quantidade de água reposta pode ser estimada como uma porcentagem da vazão circulante nas torres de resfriamento. No caso presente esse consumo foi avaliado como sendo no máximo 1,0 % da vazão circulante no equipamento, que é de 24 m³/h, resultando em cerca de 5,8 m³/dia, ou seja, aproximadamente 58 kg de água bruta para cada kg de hidrogênio produzido.</p>
+<p>Assim o consumo total de água estimado para essa planta está em torno de 103 kg de água bruta para cada kg de hidrogênio produzido. Observa-se desse montante, aproximadamente 36 kg de água de rejeito podem ser reaproveitadas em outras aplicações. A distribuição do consumo de água em uma planta de produção de hidrogênio por eletrólise usando células PEM pode ser visualizado na Figura <a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#fig:figura59">4.8</a> que segue.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura59"></span>
+<img src="figura_59.png" alt="Consumo de água na planta de produção de hidrogênio" width="80%" />
+<p class="caption">
+Figura 4.8: Consumo de água na planta de produção de hidrogênio
+</p>
+</div>
+</div>
+<div id="fornecimento-de-energia-elétrica" class="section level2 hasAnchor" number="4.6">
+<h2><span class="header-section-number">4.6</span> Fornecimento de Energia Elétrica<a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#fornecimento-de-energia-el%C3%A9trica" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A energia elétrica é entregue pela concessionária local na tensão de 13,8 kV, em um posto de medição separado da restante da universidade, montado exclusivamente para o atendimento da área de expansão, do CTPB e da planta de produção do CH2V.</p>
+<p>Depois da medição pela concessionária a energia em média tensão é levada por meio de cabos subterrâneos até a subestação do CTPB. Nessa subestação foram montadas duas baias, uma para a interligação de um sistema fotovoltaico de 500 kW e outra para conexão da planta de produção do CH2V.Isso pode ser visto no diagrama mostrado na Figura <a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#fig:figura60">4.9</a>.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura60"></span>
+<img src="figura_60.png" alt="Esquema unifilar da distribuição da em média tensão" width="80%" />
+<p class="caption">
+Figura 4.9: Esquema unifilar da distribuição da em média tensão
+</p>
+</div>
+<p>Na planta do CH2V foi montada outra subestação para a colocação de um disjuntor de proteção e chaves seccionadoras para a separação e distribuição da energia em média tensão até os transformadores e depois, deles até os pontos de consumo.</p>
+<p>O hidrogênio produzido pela planta do CH2V é considerado “verde”, pois a energia usada no processo de produção é proveniente de fontes renováveis. Isso porque Unifei tem aproximadamente 1.500 kWp instalados em painéis fotovoltaicos e ainda está operando uma usina hidrelétrica com capacidade em torno de 600 kWmed resultando sempre excedentes que são injetados no sistema elétrico, gerando saldos positivos ao fim de cada mês. O processo de certificação pela Câmara de Comércio de Energia Elétrica, CCEE, está em andamento.</p>
+</div>
+<div id="consumo-de-energia-elétrica" class="section level2 hasAnchor" number="4.7">
+<h2><span class="header-section-number">4.7</span> Consumo de Energia Elétrica<a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#consumo-de-energia-el%C3%A9trica" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>O consumo de energia elétrica de uma planta de produção de hidrogênio por eletrólise é uma função direta da sua capacidade de produção. O equipamento instalado na planta do CH2V pode ser operado em uma ampla faixa, de 10 até 100 % da sua capacidade nominal, 60 Nm³/h. A condição operacional de maior eficiência está em torno de 83% dessa capacidade, por isso o consumo de energia elétrica foi determinado para essa situação.</p>
+<p>A Tabela <a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#tab:tabela3">4.2</a> apresenta uma lista das potências dos equipamentos elétricos mais significativas e uma estimativa dos seus tempos de operação considerando 24 horas de funcionamento e a produção diária de 107 kg de hidrogênio.</p>
+<div id="zstpnfcrwp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#zstpnfcrwp table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#zstpnfcrwp thead, #zstpnfcrwp tbody, #zstpnfcrwp tfoot, #zstpnfcrwp tr, #zstpnfcrwp td, #zstpnfcrwp th {
+  border-style: none;
+}
+
+#zstpnfcrwp p {
+  margin: 0;
+  padding: 0;
+}
+
+#zstpnfcrwp .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#zstpnfcrwp .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#zstpnfcrwp .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#zstpnfcrwp .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#zstpnfcrwp .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#zstpnfcrwp .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#zstpnfcrwp .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#zstpnfcrwp .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#zstpnfcrwp .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#zstpnfcrwp .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#zstpnfcrwp .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#zstpnfcrwp .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#zstpnfcrwp .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#zstpnfcrwp .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#zstpnfcrwp .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#zstpnfcrwp .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#zstpnfcrwp .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#zstpnfcrwp .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#zstpnfcrwp .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zstpnfcrwp .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#zstpnfcrwp .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#zstpnfcrwp .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#zstpnfcrwp .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zstpnfcrwp .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#zstpnfcrwp .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#zstpnfcrwp .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#zstpnfcrwp .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zstpnfcrwp .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#zstpnfcrwp .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#zstpnfcrwp .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#zstpnfcrwp .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#zstpnfcrwp .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#zstpnfcrwp .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zstpnfcrwp .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#zstpnfcrwp .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zstpnfcrwp .gt_left {
+  text-align: left;
+}
+
+#zstpnfcrwp .gt_center {
+  text-align: center;
+}
+
+#zstpnfcrwp .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#zstpnfcrwp .gt_font_normal {
+  font-weight: normal;
+}
+
+#zstpnfcrwp .gt_font_bold {
+  font-weight: bold;
+}
+
+#zstpnfcrwp .gt_font_italic {
+  font-style: italic;
+}
+
+#zstpnfcrwp .gt_super {
+  font-size: 65%;
+}
+
+#zstpnfcrwp .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#zstpnfcrwp .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#zstpnfcrwp .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#zstpnfcrwp .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#zstpnfcrwp .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#zstpnfcrwp .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#zstpnfcrwp .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#zstpnfcrwp .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#zstpnfcrwp div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <caption><span id="tab:tabela3">Tabela 4.2: </span>Principais cargas elétricas da planta de hidrogênio</caption>
+  <thead>
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="a::stub"></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="background-color: #2E7D32; color: #E8F5E9; font-weight: bold;" scope="col" id="equipamento">Equipamento</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="background-color: #2E7D32; color: #E8F5E9; font-weight: bold;" scope="col" id="potencia">Potência (kW)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="background-color: #2E7D32; color: #E8F5E9; font-weight: bold;" scope="col" id="carregamento">Carregamento (%)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="background-color: #2E7D32; color: #E8F5E9; font-weight: bold;" scope="col" id="consumo_24h">Consumo em 24 h (kWh)</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><th id="stub_1_1" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_1 equipamento" class="gt_row gt_center">Células PEM</td>
+<td headers="stub_1_1 potencia" class="gt_row gt_center">250,0</td>
+<td headers="stub_1_1 carregamento" class="gt_row gt_center">100</td>
+<td headers="stub_1_1 consumo_24h" class="gt_row gt_center">6.000</td></tr>
+    <tr><th id="stub_1_2" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_2 equipamento" class="gt_row gt_center">Bomba de circulação O₂</td>
+<td headers="stub_1_2 potencia" class="gt_row gt_center">11,0</td>
+<td headers="stub_1_2 carregamento" class="gt_row gt_center">100</td>
+<td headers="stub_1_2 consumo_24h" class="gt_row gt_center">264</td></tr>
+    <tr><th id="stub_1_3" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_3 equipamento" class="gt_row gt_center">Bomba de circulação H₂</td>
+<td headers="stub_1_3 potencia" class="gt_row gt_center">2,2</td>
+<td headers="stub_1_3 carregamento" class="gt_row gt_center">100</td>
+<td headers="stub_1_3 consumo_24h" class="gt_row gt_center">53</td></tr>
+    <tr><th id="stub_1_4" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_4 equipamento" class="gt_row gt_center">Bomba de osmose/purificação</td>
+<td headers="stub_1_4 potencia" class="gt_row gt_center">1,1</td>
+<td headers="stub_1_4 carregamento" class="gt_row gt_center">50</td>
+<td headers="stub_1_4 consumo_24h" class="gt_row gt_center">13</td></tr>
+    <tr><th id="stub_1_5" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_5 equipamento" class="gt_row gt_center">Bomba de retorno H₂</td>
+<td headers="stub_1_5 potencia" class="gt_row gt_center">1,1</td>
+<td headers="stub_1_5 carregamento" class="gt_row gt_center">100</td>
+<td headers="stub_1_5 consumo_24h" class="gt_row gt_center">26</td></tr>
+    <tr><th id="stub_1_6" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_6 equipamento" class="gt_row gt_center">Bomba de circulação da torre</td>
+<td headers="stub_1_6 potencia" class="gt_row gt_center">1,1</td>
+<td headers="stub_1_6 carregamento" class="gt_row gt_center">100</td>
+<td headers="stub_1_6 consumo_24h" class="gt_row gt_center">26</td></tr>
+    <tr><th id="stub_1_7" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_7 equipamento" class="gt_row gt_center">Ventilador da torre</td>
+<td headers="stub_1_7 potencia" class="gt_row gt_center">1,1</td>
+<td headers="stub_1_7 carregamento" class="gt_row gt_center">100</td>
+<td headers="stub_1_7 consumo_24h" class="gt_row gt_center">26</td></tr>
+    <tr><th id="stub_1_8" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_8 equipamento" class="gt_row gt_center">Bomba de água de resfriamento</td>
+<td headers="stub_1_8 potencia" class="gt_row gt_center">5,5</td>
+<td headers="stub_1_8 carregamento" class="gt_row gt_center">100</td>
+<td headers="stub_1_8 consumo_24h" class="gt_row gt_center">132</td></tr>
+    <tr><th id="stub_1_9" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_9 equipamento" class="gt_row gt_center">Compressor de hidrogênio</td>
+<td headers="stub_1_9 potencia" class="gt_row gt_center">27,0</td>
+<td headers="stub_1_9 carregamento" class="gt_row gt_center">100</td>
+<td headers="stub_1_9 consumo_24h" class="gt_row gt_center">648</td></tr>
+    <tr><th id="stub_1_10" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_10 equipamento" class="gt_row gt_center">Bomba de óleo do compressor</td>
+<td headers="stub_1_10 potencia" class="gt_row gt_center">1,5</td>
+<td headers="stub_1_10 carregamento" class="gt_row gt_center">100</td>
+<td headers="stub_1_10 consumo_24h" class="gt_row gt_center">36</td></tr>
+    <tr><th id="stub_1_11" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_11 equipamento" class="gt_row gt_center">Compressor de ar para instrumentos</td>
+<td headers="stub_1_11 potencia" class="gt_row gt_center">12,0</td>
+<td headers="stub_1_11 carregamento" class="gt_row gt_center">10</td>
+<td headers="stub_1_11 consumo_24h" class="gt_row gt_center">29</td></tr>
+    <tr><th id="stub_1_12" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_12 equipamento" class="gt_row gt_center">Secador de ar para instrumentos</td>
+<td headers="stub_1_12 potencia" class="gt_row gt_center">0,3</td>
+<td headers="stub_1_12 carregamento" class="gt_row gt_center">100</td>
+<td headers="stub_1_12 consumo_24h" class="gt_row gt_center">7</td></tr>
+    <tr><th id="stub_1_13" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_13 equipamento" class="gt_row gt_center">Sistema frigorífico</td>
+<td headers="stub_1_13 potencia" class="gt_row gt_center">45,0</td>
+<td headers="stub_1_13 carregamento" class="gt_row gt_center">25</td>
+<td headers="stub_1_13 consumo_24h" class="gt_row gt_center">270</td></tr>
+    <tr><th id="stub_1_14" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_14 equipamento" class="gt_row gt_center">Dispenser de hidrogênio</td>
+<td headers="stub_1_14 potencia" class="gt_row gt_center">15,0</td>
+<td headers="stub_1_14 carregamento" class="gt_row gt_center">25</td>
+<td headers="stub_1_14 consumo_24h" class="gt_row gt_center">90</td></tr>
+    <tr><th id="stub_1_15" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_15 equipamento" class="gt_row gt_center">Outras cargas</td>
+<td headers="stub_1_15 potencia" class="gt_row gt_center">2,0</td>
+<td headers="stub_1_15 carregamento" class="gt_row gt_center">100</td>
+<td headers="stub_1_15 consumo_24h" class="gt_row gt_center">48</td></tr>
+    <tr><th id="grand_summary_stub_1" scope="row" class="gt_row gt_left gt_stub gt_grand_summary_row gt_first_grand_summary_row">Consumo em 24 horas</th>
+<td headers="grand_summary_stub_1 equipamento" class="gt_row gt_center gt_grand_summary_row gt_first_grand_summary_row">—</td>
+<td headers="grand_summary_stub_1 potencia" class="gt_row gt_center gt_grand_summary_row gt_first_grand_summary_row">—</td>
+<td headers="grand_summary_stub_1 carregamento" class="gt_row gt_center gt_grand_summary_row gt_first_grand_summary_row">—</td>
+<td headers="grand_summary_stub_1 consumo_24h" class="gt_row gt_center gt_grand_summary_row gt_first_grand_summary_row">7.669 kWh</td></tr>
+    <tr><th id="grand_summary_stub_2" scope="row" class="gt_row gt_left gt_stub gt_grand_summary_row">Produção de hidrogênio em 24 horas</th>
+<td headers="grand_summary_stub_2 equipamento" class="gt_row gt_center gt_grand_summary_row">—</td>
+<td headers="grand_summary_stub_2 potencia" class="gt_row gt_center gt_grand_summary_row">—</td>
+<td headers="grand_summary_stub_2 carregamento" class="gt_row gt_center gt_grand_summary_row">—</td>
+<td headers="grand_summary_stub_2 consumo_24h" class="gt_row gt_center gt_grand_summary_row">108 kg</td></tr>
+    <tr><th id="grand_summary_stub_3" scope="row" class="gt_row gt_left gt_stub gt_grand_summary_row gt_last_summary_row">Consumo específico de energia elétrica</th>
+<td headers="grand_summary_stub_3 equipamento" class="gt_row gt_center gt_grand_summary_row gt_last_summary_row">—</td>
+<td headers="grand_summary_stub_3 potencia" class="gt_row gt_center gt_grand_summary_row gt_last_summary_row">—</td>
+<td headers="grand_summary_stub_3 carregamento" class="gt_row gt_center gt_grand_summary_row gt_last_summary_row">—</td>
+<td headers="grand_summary_stub_3 consumo_24h" class="gt_row gt_center gt_grand_summary_row gt_last_summary_row">71,11 kWh/kg</td></tr>
+  </tbody>
+  
+</table>
+</div>
+<p>Ressalta-se que um dos objetivos dessa unidade de produção de hidrogênio do CH2V é o levantamento mais exato desses indicadores de consumo e de rendimentos, determinando-se também o decaimento desses valores à medida que o equipamento opera, atestando-se a vida útil que foi prevista para esses equipamentos.</p>
+</div>
+<div id="distribuição-da-energia-elétrica-em-baixa-tensão" class="section level2 hasAnchor" number="4.8">
+<h2><span class="header-section-number">4.8</span> Distribuição da Energia Elétrica em Baixa Tensão<a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#distribui%C3%A7%C3%A3o-da-energia-el%C3%A9trica-em-baixa-tens%C3%A3o" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A energia elétrica é distribuída aos pontos de consumo por meio de cabos elétricos alojados nas bandejas no interior das canaletas. Os diversos circuitos derivam dos disjuntores instalados nos painéis elétricos e chegam até os pontos de consumo.
+A Figura <a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#fig:figura61">4.10</a> apresenta o diagrama unifilar da distribuição na tensão de 380 V. Esse transformador (TR 01) tem uma construção especial, com dois enrolamentos no secundário, evitando a circulação de correntes harmônicas geradas pelos módulos eletrônicos de potência, sendo exclusivo para alimentação do retificador do equipamento de eletrólise.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura61"></span>
+<img src="figura_61.png" alt="Diagrama unifilar da distribuição de energia elétrica em 380 V" width="80%" />
+<p class="caption">
+Figura 4.10: Diagrama unifilar da distribuição de energia elétrica em 380 V
+</p>
+</div>
+<p>A alimentação das outras cargas elétricas e dos serviços de utilidades se faz usando a tensão de 440 V reduzindo-se desse modo as correntes e economizando-se no cobre para os cabos. A Figura <a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#fig:figura62">4.11</a> mostra o diagrama unifilar desde o transformador (TR 02) até as diversas cargas que são alimentadas.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura62"></span>
+<img src="figura_62.png" alt="Diagrama unifilar da distribuição de energia elétrica em 440 V" width="80%" />
+<p class="caption">
+Figura 4.11: Diagrama unifilar da distribuição de energia elétrica em 440 V
+</p>
+</div>
+<p>Para o atendimento dos circuitos de iluminação, tomadas de energia, casa de apoio e para a comunicação de dados é usado um transformador (TR 03) para tensão de 220/127 V. O diagrama unifilar para esse caso está apresentado na Figura <a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#fig:figura63">4.12</a>.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura63"></span>
+<img src="figura_63.png" alt="Diagrama unifilar da distribuição de energia elétrica em 220/127 V" width="80%" />
+<p class="caption">
+Figura 4.12: Diagrama unifilar da distribuição de energia elétrica em 220/127 V
+</p>
+</div>
+</div>
+<div id="principais-equipamentos-da-unidade-de-produção" class="section level2 hasAnchor" number="4.9">
+<h2><span class="header-section-number">4.9</span> Principais Equipamentos da Unidade de Produção<a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#principais-equipamentos-da-unidade-de-produ%C3%A7%C3%A3o" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Os processos de fabricação do hidrogênio são conhecidos a bastante tempo. No caso da eletrólise, os primeiros registros sobre a decomposição da água foram feitos no ano de 1800. Nesse mesmo ano, poucos meses antes, Alessandro Volta havia mostrado o seu invento, a pilha eletroquímica. Usando uma dessas pilhas William Nicholsonem e Anthony Carlisle estavam fazendo seus experimentos e acabaram descobrindo um fenômeno bem interessante: quando a corrente elétrica contínua passa pela água ela se decompõe e forma dois tipos de gases, sendo que duas partes são de hidrogênio e uma parte de oxigênio.</p>
+<p>Essa experiência é muito didática e simples de ser feita, podendo ser realizada em qualquer laboratório e até mesmo em casa. Assim, podemos continuar produzir hidrogênio até a pilha se esgotar ou então quando a água secar… Logicamente que, para a produção de hidrogênio em grandes quantidades, com maiores pressões e purezas elevadas, são exigidos equipamentos muito mais complexos que uma simples pilha, dois eletrodos e um copo de becker com água. No entanto, os princípios físicos básicos são os mesmos.</p>
+<p>Então na continuação desse item serão mostrados os principais sistemas e os diversos equipamentos que compõe uma unidade de produção de hidrogênio por eletrólise.</p>
+<div id="sistema-de-eletrólise" class="section level3 hasAnchor" number="4.9.1">
+<h3><span class="header-section-number">4.9.1</span> Sistema de eletrólise<a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#sistema-de-eletr%C3%B3lise" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Sem dúvida, o sistema de eletrólise é a parte principal dessa unidade de produção de hidrogênio verde. Na unidade do CH2V esse sistema está inteiramente contido em um contêiner padrão com 12 m de comprimento, montado especificamente para essa finalidade. O interior desse contêiner foi dividido em duas partes, criando dois recintos separados por uma parede metálica hermética.</p>
+<p>No primeiro deles estão colocados os equipamentos usados na preparação da matéria prima utilizada no processo de eletrólise, ou seja: tratamento da água bruta para obtenção da água pura e transformação da energia elétrica de corrente alternada trifásica em corrente contínua de dois polos. Nesse local também estão instalados os painéis elétricos para o controle do sistema de eletrólise, comunicação de dados e segurança da operação.</p>
+<p>No segundo recinto, considerado zona controlada e de acesso restrito, estão instalados os equipamentos que realmente fazem a separação por eletrólise da água. Nesse espaço estão colocadas as duas células PEM que recebem a água pura e a eletricidade em corrente contínua fazendo a decomposição em hidrogênio e oxigênio. Além dessas células também estão instalados um tanque de água pura, vasos de separação da água dos gases gerados, sistema de secagem e purificação do hidrogênio produzido, módulos para medição e garantia da pureza desse produto e um conjunto para o polimento e recirculação da água.</p>
+<p>A disposição desses diversos sistemas e equipamentos está mostrada na Figura <a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#fig:figura64">4.13</a> em um desenho com a vista em planta desse contêiner.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura64"></span>
+<img src="figura_64.png" alt="Disposição dos equipamentos no contêiner do eletrolisador" width="80%" />
+<p class="caption">
+Figura 4.13: Disposição dos equipamentos no contêiner do eletrolisador
+</p>
+</div>
+</div>
+<div id="compressor" class="section level3 hasAnchor" number="4.9.2">
+<h3><span class="header-section-number">4.9.2</span> Compressor<a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#compressor" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Quando são utilizadas células PEM para a produção de hidrogênio, a pressão de saída do sistema de eletrólise é da ordem de 3 MPa. Mesmo considerando o seu elevado poder calorífico, a densidade energética específica do hidrogênio é muito baixa nesse nível de pressão, tornando difícil a estocagem e o transporte desse gás. Em razão, disso os reservatórios de hidrogênio operam normalmente em maiores pressões. E para se alcançar essas pressões são empregados os compressores.</p>
+<p>Esses compressores são máquinas são projetadas especialmente para operação com hidrogênio. Como as pressões de descarga são elevadas normalmente utilizam-se equipamentos do tipo alternativo com dois estágios e resfriamento intermediário e posterior usando trocadores de calor resfriados com água. Em cada um desses estágios operam pistões comprimindo óleo hidráulico. E esse óleo, por sua vez, pressiona e movimenta os diafragmas metálicos que comprimem o gás. Com esse tipo de construção não há risco de contaminação com o lubrificante garantindo a pureza do processo.</p>
+<p>O compressor instalado na planta do CH2V opera em dois níveis de pressão de forma a atender a demanda de hidrogênio para os reservatórios de baixa pressão, a 20 Mpa, ou então armazenando gás em pressões maiores para abastecer um dispenser para uso veicular na pressão de 70 Mpa, conforme o diagrama mostrado na Figura <a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#fig:figura65">4.14</a>.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura65"></span>
+<img src="figura_65.png" alt="Diagrama simplificado do compressor de hidrogênio" width="80%" />
+<p class="caption">
+Figura 4.14: Diagrama simplificado do compressor de hidrogênio
+</p>
+</div>
+</div>
+<div id="reservatórios-de-estocagem" class="section level3 hasAnchor" number="4.9.3">
+<h3><span class="header-section-number">4.9.3</span> Reservatórios de estocagem<a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#reservat%C3%B3rios-de-estocagem" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A planta do CH2V faz o armazenamento do hidrogênio comprimido em reservatórios usando três níveis de pressão. O primeiro deles é um reservatório móvel operando na pressão de 20 MPa, concebido para atender o consumo de hidrogênio no laboratório de motores e de células de combustível localizado no campus da Unifei e demais usuários interessados nessa aplicação. Os demais reservatórios são usados no sistema de abastecimento de hidrogênio em veículos e caminhões na pressão nominal de 70 Mpa.</p>
+<p>A Tabela <a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#tab:tabela4">4.3</a> apresenta as principais características desses reservatórios. Também foi incluído o reservatório pulmão, instalado a montante do compressor de hidrogênio.</p>
+<div id="otnxvxmrin" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#otnxvxmrin table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#otnxvxmrin thead, #otnxvxmrin tbody, #otnxvxmrin tfoot, #otnxvxmrin tr, #otnxvxmrin td, #otnxvxmrin th {
+  border-style: none;
+}
+
+#otnxvxmrin p {
+  margin: 0;
+  padding: 0;
+}
+
+#otnxvxmrin .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#otnxvxmrin .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#otnxvxmrin .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#otnxvxmrin .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#otnxvxmrin .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#otnxvxmrin .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#otnxvxmrin .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#otnxvxmrin .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#otnxvxmrin .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#otnxvxmrin .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#otnxvxmrin .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#otnxvxmrin .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#otnxvxmrin .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#otnxvxmrin .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#otnxvxmrin .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#otnxvxmrin .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#otnxvxmrin .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#otnxvxmrin .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#otnxvxmrin .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#otnxvxmrin .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#otnxvxmrin .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#otnxvxmrin .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#otnxvxmrin .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#otnxvxmrin .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#otnxvxmrin .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#otnxvxmrin .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#otnxvxmrin .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#otnxvxmrin .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#otnxvxmrin .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#otnxvxmrin .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#otnxvxmrin .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#otnxvxmrin .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#otnxvxmrin .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#otnxvxmrin .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#otnxvxmrin .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#otnxvxmrin .gt_left {
+  text-align: left;
+}
+
+#otnxvxmrin .gt_center {
+  text-align: center;
+}
+
+#otnxvxmrin .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#otnxvxmrin .gt_font_normal {
+  font-weight: normal;
+}
+
+#otnxvxmrin .gt_font_bold {
+  font-weight: bold;
+}
+
+#otnxvxmrin .gt_font_italic {
+  font-style: italic;
+}
+
+#otnxvxmrin .gt_super {
+  font-size: 65%;
+}
+
+#otnxvxmrin .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#otnxvxmrin .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#otnxvxmrin .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#otnxvxmrin .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#otnxvxmrin .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#otnxvxmrin .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#otnxvxmrin .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#otnxvxmrin .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#otnxvxmrin div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <caption><span id="tab:tabela4">Tabela 4.3: </span>Principais características dos reservatórios de hidrogênio. Fonte: Elaboração própria.</caption>
+  <thead>
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="background-color: #2E7D32; color: #E8F5E9; font-weight: bold;" scope="col" id="reservatorio">Reservatório</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="background-color: #2E7D32; color: #E8F5E9; font-weight: bold;" scope="col" id="tipo">Tipo</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="background-color: #2E7D32; color: #E8F5E9; font-weight: bold;" scope="col" id="pressao">Pressão (MPa)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="background-color: #2E7D32; color: #E8F5E9; font-weight: bold;" scope="col" id="quantidade">Quant. (unid.)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="background-color: #2E7D32; color: #E8F5E9; font-weight: bold;" scope="col" id="volume_unitario">Vol. Unit. (L)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="background-color: #2E7D32; color: #E8F5E9; font-weight: bold;" scope="col" id="volume_total">Vol. Total (m³)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="background-color: #2E7D32; color: #E8F5E9; font-weight: bold;" scope="col" id="massa">Massa (kg)</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="reservatorio" class="gt_row gt_center">Pulmão</td>
+<td headers="tipo" class="gt_row gt_center">Aço soldado</td>
+<td headers="pressao" class="gt_row gt_center">3</td>
+<td headers="quantidade" class="gt_row gt_center">1</td>
+<td headers="volume_unitario" class="gt_row gt_center">8.400</td>
+<td headers="volume_total" class="gt_row gt_center">8,400</td>
+<td headers="massa" class="gt_row gt_center">20,1</td></tr>
+    <tr><td headers="reservatorio" class="gt_row gt_center">Baixa Pressão</td>
+<td headers="tipo" class="gt_row gt_center">Aço carbono sem costura</td>
+<td headers="pressao" class="gt_row gt_center">20</td>
+<td headers="quantidade" class="gt_row gt_center">6</td>
+<td headers="volume_unitario" class="gt_row gt_center">40</td>
+<td headers="volume_total" class="gt_row gt_center">0,240</td>
+<td headers="massa" class="gt_row gt_center">3,5</td></tr>
+    <tr><td headers="reservatorio" class="gt_row gt_center">Média Pressão I</td>
+<td headers="tipo" class="gt_row gt_center">Aço carbono sem costura</td>
+<td headers="pressao" class="gt_row gt_center">45</td>
+<td headers="quantidade" class="gt_row gt_center">8</td>
+<td headers="volume_unitario" class="gt_row gt_center">57</td>
+<td headers="volume_total" class="gt_row gt_center">0,456</td>
+<td headers="massa" class="gt_row gt_center">13,0</td></tr>
+    <tr><td headers="reservatorio" class="gt_row gt_center">Média Pressão II</td>
+<td headers="tipo" class="gt_row gt_center">Aço carbono sem costura</td>
+<td headers="pressao" class="gt_row gt_center">45</td>
+<td headers="quantidade" class="gt_row gt_center">8</td>
+<td headers="volume_unitario" class="gt_row gt_center">57</td>
+<td headers="volume_total" class="gt_row gt_center">0,456</td>
+<td headers="massa" class="gt_row gt_center">13,0</td></tr>
+    <tr><td headers="reservatorio" class="gt_row gt_center">Alta Pressão</td>
+<td headers="tipo" class="gt_row gt_center">Aço carbono, fibra de carbono e resina</td>
+<td headers="pressao" class="gt_row gt_center">90</td>
+<td headers="quantidade" class="gt_row gt_center">1</td>
+<td headers="volume_unitario" class="gt_row gt_center">213</td>
+<td headers="volume_total" class="gt_row gt_center">0,213</td>
+<td headers="massa" class="gt_row gt_center">9,9</td></tr>
+  </tbody>
+  
+</table>
+</div>
+<p>As massas indicadas na tabela anterior foram determinadas considerando a temperatura de 25 °C, usando-se a Equação dos Geral dos Gases corrigida pelo Fator de Compressibilidade Z. Esse fator foi determinado usando-se a equação mostrada a seguir, de acordo com a Referência 1 (Lemmon, Huber e Leachman 2008).</p>
+<p><span class="math display" id="eq:equacao3">\[\begin{equation}
+Z(p,T)=\frac{p}{\rho RT}
+=
+1+\sum_{i=1}^{9}
+a_i
+\left(\frac{100\ \mathrm{K}}{T}\right)^{b_i}
+\left(\frac{p}{1\ \mathrm{MPa}}\right)^{c_i}
+\tag{4.3}
+\end{equation}\]</span></p>
+<p>Os coeficientes que são usados na equação do fator Z estão listados na Tabela <a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#tab:tabela5">4.4</a>. Para a massa molecular do hidrogênio utiliza-se o valor 2,01588 kg / kmol e para a Constante Universal dos Gases 8,314472 kJ / (kmol K).</p>
+<div id="huxfjszlrd" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#huxfjszlrd table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#huxfjszlrd thead, #huxfjszlrd tbody, #huxfjszlrd tfoot, #huxfjszlrd tr, #huxfjszlrd td, #huxfjszlrd th {
+  border-style: none;
+}
+
+#huxfjszlrd p {
+  margin: 0;
+  padding: 0;
+}
+
+#huxfjszlrd .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#huxfjszlrd .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#huxfjszlrd .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#huxfjszlrd .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#huxfjszlrd .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#huxfjszlrd .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#huxfjszlrd .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#huxfjszlrd .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#huxfjszlrd .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#huxfjszlrd .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#huxfjszlrd .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#huxfjszlrd .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#huxfjszlrd .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#huxfjszlrd .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#huxfjszlrd .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#huxfjszlrd .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#huxfjszlrd .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#huxfjszlrd .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#huxfjszlrd .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#huxfjszlrd .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#huxfjszlrd .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#huxfjszlrd .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#huxfjszlrd .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#huxfjszlrd .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#huxfjszlrd .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#huxfjszlrd .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#huxfjszlrd .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#huxfjszlrd .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#huxfjszlrd .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#huxfjszlrd .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#huxfjszlrd .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#huxfjszlrd .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#huxfjszlrd .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#huxfjszlrd .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#huxfjszlrd .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#huxfjszlrd .gt_left {
+  text-align: left;
+}
+
+#huxfjszlrd .gt_center {
+  text-align: center;
+}
+
+#huxfjszlrd .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#huxfjszlrd .gt_font_normal {
+  font-weight: normal;
+}
+
+#huxfjszlrd .gt_font_bold {
+  font-weight: bold;
+}
+
+#huxfjszlrd .gt_font_italic {
+  font-style: italic;
+}
+
+#huxfjszlrd .gt_super {
+  font-size: 65%;
+}
+
+#huxfjszlrd .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#huxfjszlrd .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#huxfjszlrd .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#huxfjszlrd .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#huxfjszlrd .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#huxfjszlrd .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#huxfjszlrd .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#huxfjszlrd .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#huxfjszlrd div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <caption><span id="tab:tabela5">Tabela 4.4: </span>Constantes para o cálculo do fator de compressibilidade. Fonte: Elaboração própria.</caption>
+  <thead>
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="background-color: #2E7D32; color: #E8F5E9; font-weight: bold;" scope="col" id="i">i</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="background-color: #2E7D32; color: #E8F5E9; font-weight: bold;" scope="col" id="ai">aᵢ</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="background-color: #2E7D32; color: #E8F5E9; font-weight: bold;" scope="col" id="bi">bᵢ</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="background-color: #2E7D32; color: #E8F5E9; font-weight: bold;" scope="col" id="ci">cᵢ</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="i" class="gt_row gt_center">1</td>
+<td headers="ai" class="gt_row gt_center">0,058884600</td>
+<td headers="bi" class="gt_row gt_center">1,325</td>
+<td headers="ci" class="gt_row gt_center">1</td></tr>
+    <tr><td headers="i" class="gt_row gt_center">2</td>
+<td headers="ai" class="gt_row gt_center">-0,061361110</td>
+<td headers="bi" class="gt_row gt_center">1,87</td>
+<td headers="ci" class="gt_row gt_center">1</td></tr>
+    <tr><td headers="i" class="gt_row gt_center">3</td>
+<td headers="ai" class="gt_row gt_center">-0,002650473</td>
+<td headers="bi" class="gt_row gt_center">2,5</td>
+<td headers="ci" class="gt_row gt_center">2</td></tr>
+    <tr><td headers="i" class="gt_row gt_center">4</td>
+<td headers="ai" class="gt_row gt_center">0,002731125</td>
+<td headers="bi" class="gt_row gt_center">2,8</td>
+<td headers="ci" class="gt_row gt_center">2</td></tr>
+    <tr><td headers="i" class="gt_row gt_center">5</td>
+<td headers="ai" class="gt_row gt_center">0,001802374</td>
+<td headers="bi" class="gt_row gt_center">2,938</td>
+<td headers="ci" class="gt_row gt_center">2,42</td></tr>
+    <tr><td headers="i" class="gt_row gt_center">6</td>
+<td headers="ai" class="gt_row gt_center">-0,001150707</td>
+<td headers="bi" class="gt_row gt_center">3,14</td>
+<td headers="ci" class="gt_row gt_center">2,63</td></tr>
+    <tr><td headers="i" class="gt_row gt_center">7</td>
+<td headers="ai" class="gt_row gt_center">9,588528 × 10⁻⁵</td>
+<td headers="bi" class="gt_row gt_center">3,37</td>
+<td headers="ci" class="gt_row gt_center">3</td></tr>
+    <tr><td headers="i" class="gt_row gt_center">8</td>
+<td headers="ai" class="gt_row gt_center">-1,109040 × 10⁻⁷</td>
+<td headers="bi" class="gt_row gt_center">3,75</td>
+<td headers="ci" class="gt_row gt_center">4</td></tr>
+    <tr><td headers="i" class="gt_row gt_center">9</td>
+<td headers="ai" class="gt_row gt_center">1,264403 × 10⁻¹⁰</td>
+<td headers="bi" class="gt_row gt_center">4</td>
+<td headers="ci" class="gt_row gt_center">5</td></tr>
+  </tbody>
+  
+</table>
+</div>
+<p>A Figura <a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#fig:figura66">4.15</a> mostra como é feita a conexão do compressor de hidrogênio com o conjunto dos reservatórios móveis em baixa pressão. Para atender os requisitos de segurança na operação são usadas mangueiras flexíveis metálicas e engates rápidos especiais.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura66"></span>
+<img src="figura_66.png" alt="Esquema do estoque de hidrogênio em baixa pressão" width="80%" />
+<p class="caption">
+Figura 4.15: Esquema do estoque de hidrogênio em baixa pressão
+</p>
+</div>
+<p>A Figura <a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#fig:figura67">4.16</a> mostra o esquema da ligação entre o compressor com os reservatórios de armazenamento de média e alta pressão e destes com o dispenser de hidrogênio. Nessa figura é possível observar as diversas válvulas de acionamento pneumático para o controle desses reservatórios.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura67"></span>
+<img src="figura_67.png" alt="Esquema do estoque de hidrogênio em média e alta pressão" width="80%" />
+<p class="caption">
+Figura 4.16: Esquema do estoque de hidrogênio em média e alta pressão
+</p>
+</div>
+<p>A equação que fornece o Fator de Compressibilidade Z também é empregada para o monitoramento diário das condições de estanqueidade desses reservatórios. Pois mesmo nos períodos em que não há produção de hidrogênio pela planta, eles permanecem pressurizados. Por isso a importância desse controle.</p>
+<p>Como os volumes internos são constantes, as variações de pressão são causadas somente pelas mudanças de temperatura e ou então quando há algum vazamento. Como exemplo desse procedimento, na Figura <a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#fig:figura68">4.17</a> o gráfico representa o comportamento ao longo do tempo da massa de hidrogênio em um reservatório com a pressão inicial em torno de 800 bar. Fica evidente que está havendo perda de gás.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura68"></span>
+<img src="figura_68.png" alt="Monitoramento da estanqueidade em um reservatório de hidrogênio" width="80%" />
+<p class="caption">
+Figura 4.17: Monitoramento da estanqueidade em um reservatório de hidrogênio
+</p>
+</div>
+<p>O problema foi corrigido com a substituição de uma válvula agulha defeituosa. Essa situação pode então ser vista no gráfico da Figura <a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#fig:figura69">4.18</a>.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura69"></span>
+<img src="figura_69.png" alt="Mesmo reservatório após correção do vazamento" width="80%" />
+<p class="caption">
+Figura 4.18: Mesmo reservatório após correção do vazamento
+</p>
+</div>
+<p>Pelo primeiro gráfico observa-se que em 42 dias ocorreu uma perda em torno de 260 g de hidrogênio. Depois da correção desse vazamento, pelo segundo gráfico, verifica-se que ainda existe uma pequena perda, cerca de 40 g em 33 dias. No entanto, essa agora é quantidade é pouco significativa e se encontra dentro das normas e recomendações de estanquidade em vasos de pressão.</p>
+<p>Outro exemplo de aplicação interessante usando o Fator de Compressibilidade para o hidrogênio é o cálculo da quantidade de hidrogênio em 1,0 Nm³. Ou seja, determinar qual é a massa desse gás nas condições normais padronizadas, isto é, contida em um volume de 1,0 m³, a uma temperatura de 0 °C e sujeita a uma pressão atmosférica igual a 760 mmHg, ou 101,325 kPa.</p>
+<p>O resultado obtido para essa quantidade de massa nessas condições é de 0,08988 kg, ou seja, 1,0 Nm³ equivale a essa massa. Com isso também reforçamos que a unidade Nm³ é uma unidade de massa. Ela é de uso corriqueiro quando se trabalha com fluidos compressíveis como os gases e ar comprimido.</p>
+<p>Aqui é oportuno fazer uma observação com relação ao reservatório de alta pressão. Esse vaso é construído com uma parede dupla: um corpo de formato cilíndrico, sem costura, feito de aço carbono e depois recoberto na parte externa por várias camadas de fibra de carbono coladas entre si com resina. Esse tipo de construção possibilita operar em pressões elevadas usando equipamentos com menores espessura de parede e mais leves.</p>
+<p>Essa vantagem na redução na espessura das paredes e peso dos reservatórios de altas pressões implica em uma desvantagem. Enquanto os demais reservatórios não têm restrições quanto ao número de ciclos de pressurização e despressurização, pois não estão sujeitos a falhas por fadiga porque eles são construídos com apenas uma camada, de aço carbono no caso do CH2V. Nos reservatórios construídos com mais de uma camada, as pequenas deformações que ocorrem quando ele é pressurizado (ou despressurizado) podem causar descolamentos entre essas camadas comprometendo a sua integridade estrutural. Por essa razão os reservatórios desse tipo são sempre mantidos em um nível mínimo de pressão.</p>
+<p>O monitoramento da pressão mínima desse reservatório é feito de forma automática pelo sistema de controle do dispenser de hidrogênio, conforme será comentado no próximo item.</p>
+</div>
+<div id="sistema-de-abastecimento-de-veículos" class="section level3 hasAnchor" number="4.9.4">
+<h3><span class="header-section-number">4.9.4</span> Sistema de abastecimento de veículos<a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#sistema-de-abastecimento-de-ve%C3%ADculos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>O abastecimento de veículos (ou caminhões) é feito usando-se o hidrogênio armazenado nos reservatórios de média e alta pressão conforme foi mostrado na Figura Figura <a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#fig:figura70">4.19</a>. Como o gás vai ser transferido desse estoque, em pressões mais elevadas, para um reservatório que, em princípio está vazio, em baixa pressão, o hidrogênio passa por um processo de expansão e, ao contrário do que acontece com a maioria dos outros gases, ele se aquece. Esse estranho comportamento é facilmente explicado pela Termodinâmica observando-se o coeficiente de Joule-Thomson, que é negativo no caso desse gás.</p>
+<p>Por isso, antes de iniciar a operação de transferência do hidrogênio o sistema de controle do dispenser estabelece comunicação com o veículo por meio de um sensor infravermelho instalado na extremidade do bocal de enchimento. Com isso o sistema de controle tem as informações sobre o veículo e os valores de pressão e de temperatura e volume do reservatório que será abastecido. A partir desses dados determina-se qual a proporção de mistura entre o hidrogênio armazenado à temperatura ambiente com hidrogênio resfriado a -40°C.</p>
+<p>Desse modo, a temperatura do gás no interior do reservatório do veículo é controlada e mantida abaixo dos limites de segurança. Com isso os riscos de explosão são minimizados e o material usado para a construção dos reservatórios veiculares não sofre enfraquecimento.</p>
+<p>Depois que os parâmetros abastecimento foram determinados, é feita uma primeira injeção de hidrogênio durante alguns segundos e é realizada uma verificação de vazamentos. Se estiver tudo correto o abastecimento continua até alcançar a pressão nominal do dispenser, 70 Mpa. Em condições normais, a vazão média de hidrogênio é da ordem de 1,0 kg/minuto. Caso for desejado, o abastecimento pode ser interrompido a qualquer momento,</p>
+<p>O sistema de controle do dispenser tem um procedimento automático de seleção dos reservatórios do estoque de maneira a respeitar a pressão mínima do reservatório de alta pressão, preservando a vida útil desse equipamento.</p>
+<p>Se sistema de controle não consiga se comunicar com o veículo, o abastecimento é feito de forma mais lenta monitorando a temperatura do hidrogênio no bocal de enchimento.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura70"></span>
+<img src="figura_70.png" alt="Diagrama do sistema de abastecimento de veículos e caminhões" width="80%" />
+<p class="caption">
+Figura 4.19: Diagrama do sistema de abastecimento de veículos e caminhões
+</p>
+</div>
+<p>No exemplo de aplicação mostrado a seguir é feita a simulação do abastecimento de um veículo leve movido com hidrogênio. O reservatório deste veículo, construído totalmente em materiais compósitos, foi projetado para a pressão máxima de trabalho de 70 MPa e tem a capacidade 4,3 kg de hidrogênio, o que representa cerca de 430 km de autonomia.</p>
+<p>Considera-se que, para o início da operação de abastecimento, os reservatórios da planta de produção estejam completamente cheios, isto é, nas suas pressões máximas de trabalho. Além disso, supõe-se que o reservatório do veículo esteja ainda com uma certa quantidade de hidrogênio, a uma determinada pressão mínima, de acordo com as recomendações de segurança, pois com esse procedimento evitam-se as baixas pressões e a entrada do oxigênio do ar e a consequente necessidade de inertização desse reservatório.</p>
+<p>Como as pressões envolvidas são elevadas, os resultados serão sempre corrigidos usando-se o fator de compressibilidade Z. Apesar do efeito do aumento da temperatura em razão das expansões considera-se ao final desses processos uma temperatura de equilíbrio igual a temperatura ambiente, adotada como 25°C.</p>
+<p>Montou-se uma planilha com o fator Z como função da pressão e temperatura. Com esse fator determina-se massa para um volume conhecido ou vice-versa, com massa conhecida calcula-se o volume correspondente. Quando for necessário determinar as pressões, o cálculo tem que ser feito de forma interativa, pois a equação que fornece Z também é uma função da pressão. A sequência utilizada é a seguinte:</p>
+<p>Determinar a pressão de equilíbrio no primeiro estágio de enchimento, quando o dispenser utiliza hidrogênio do armazenamento de média pressão.
+Com o reservatório do veículo parcialmente cheio e com a pressão em equilíbrio com o armazenamento de média pressão, o sistema de controle faz as manobras das válvulas pneumáticas e comuta para o reservatório de alta pressão.</p>
+<p>Abastecer o reservatório do veículo até a pressão de 70 MPa ou até atingir a pressão de equilíbrio para esse caso.</p>
+<p>Seguem abaixo os resultados que foram obtidos:</p>
+<p>Com os dados fornecidos para o reservatório do veículo, calculou-se o seu volume.</p>
+<ul>
+<li>Mv = 4,3 kg</li>
+<li>pv = 70 MPa</li>
+<li>Tv = 25 °C</li>
+<li>Vv = 0,110 m³</li>
+</ul>
+<p>Com esse volume e a pressão inicial desse reservatório determina-se a massa de hidrogênio antes do abastecimento do veículo.</p>
+<ul>
+<li>pv = 35 MPa</li>
+<li>Tv = 25 °C</li>
+<li>Vv = 0,110 m³</li>
+<li>Mv = 0,306 kg</li>
+</ul>
+<p>Das informações da planta de produção do CH2V sabe-se que:</p>
+<ul>
+<li>pMP = 45 MPa</li>
+<li>TMP = 25 °C</li>
+<li>VMP = 0,912 m³</li>
+<li>MMP = 25,938 kg</li>
+</ul>
+<p>No primeiro estágio do abastecimento calcula-se a pressão de equilíbrio para a soma das massas e dos volumes do reservatório do veículo e do armazenamento de média pressão.</p>
+<ul>
+<li>T = 25 °C</li>
+<li>V = 1,022 m³</li>
+<li>M = 25,965 kg</li>
+<li>p = 39,5 MPa</li>
+</ul>
+<p>O reservatório do veículo então é isolado momentaneamente do armazenamento e para essas condições calcula-se a massa de hidrogênio.</p>
+<ul>
+<li>pv = 39,5 MPa</li>
+<li>Tv = 25 °C</li>
+<li>Vv = 0,110 m³</li>
+<li>Mv = 2,816 kg</li>
+</ul>
+<p>Como foi feito anteriormente, calcula-se a pressão de equilíbrio para o segundo estágio do abastecimento, quando o hidrogênio é retirado do armazenamento de alta pressão e considerando as somas das massas e volumes desse reservatório e o do veículo.</p>
+<ul>
+<li>T = 25 °C</li>
+<li>V = 0,323 m³</li>
+<li>M = 12,645 kg</li>
+<li>p = 70,2 MPa</li>
+</ul>
+<p>Observa-se que a pressão de equilíbrio é maior que a pressão máxima admitida para o reservatório do veículo. Desse modo, esse reservatório será abastecido até seu limite máximo, como mostrado abaixo.</p>
+<ul>
+<li>pv = 70 MPa</li>
+<li>Tv = 25 °C</li>
+<li>Vv = 0,110 m³</li>
+<li>Mv = 4,30 kg</li>
+</ul>
+<p>A quantidade de hidrogênio que foi abastecida na segunda etapa é dada pela diferença entre as massas desse reservatório antes e depois do abastecimento. Essa massa será subtraída da massa do reservatório de alta pressão e daí será determinada a sua pressão final.</p>
+<ul>
+<li>MAP = 8,375 kg</li>
+<li>TAP = 25 °C</li>
+<li>VAP = 0,213 m³</li>
+<li>pAP = 70,3 MPa</li>
+</ul>
+<p>Observa-se que nesse caso o abastecimento pode ser feito sem a necessidade recarregar os reservatórios de armazenamento. No entanto, quando o estoque estiver baixo ou então quando for feito abastecimento de um veículo com reservatório de maior capacidade será preciso fazer essa operação em mais de uma fase, produzindo e armazenando mais hidrogênio.</p>
+<p>Como outro exemplo de aplicação, considerando as mesmas condições anteriores, mas para o abastecimento de um caminhão leve, com um reservatório com capacidade de 20 kg de hidrogênio a 70 MPa, foram obtidos os seguintes resultados:</p>
+<p>Determina-se primeiramente o volume do reservatório do caminhão</p>
+<ul>
+<li>Mv = 20,0 kg</li>
+<li>pv = 70 MPa</li>
+<li>Tv = 25 °C</li>
+<li>Vv = 0,510 m³</li>
+</ul>
+<p>A pressão de equilíbrio quando se usa os reservatórios de média pressão é calculada como anteriormente e resulta a massa no reservatório:</p>
+<ul>
+<li>pv = 27,8 MPa</li>
+<li>Tv = 25 °C</li>
+<li>Vv = 0,510 m³</li>
+<li>Mv = 9,811 kg</li>
+</ul>
+<p>É feita a comutação para o abastecimento a partir do armazenamento de alta pressão. Calculam-se a pressão de equilíbrio é a massa de hidrogênio no reservatório.</p>
+<ul>
+<li>pv = 42,5 MPa</li>
+<li>Tv = 25 °C</li>
+<li>Vv = 0,510 m³</li>
+<li>Mv = 13,874 kg</li>
+</ul>
+<p>Nesse momento a planta deverá entrar em produção e completar a carga do armazenamento de alta pressão. O próximo passo para o abastecimento será feito até as seguintes condições:</p>
+<ul>
+<li>pv = 54,5 MPa</li>
+<li>Tv = 25 °C</li>
+<li>Vv = 0,510 m³</li>
+<li>Mv = 16,740 kg</li>
+</ul>
+<p>Novamente será feito nova interrupção do abastecimento e mais uma carga do reservatório de alta pressão chegando nas condições seguintes:</p>
+<ul>
+<li>pv = 64,2 MPa</li>
+<li>Tv = 25 °C</li>
+<li>Vv = 0,510 m³</li>
+<li>Mv = 18,836 kg</li>
+</ul>
+<p>Nesse passo, completa-se a carga do reservatório de alta pressão mais uma vez e finaliza-se o abastecimento do reservatório do caminhão.</p>
+<ul>
+<li>pv = 70,0 MPa</li>
+<li>Tv = 25 °C</li>
+<li>Vv = 0,510 m³</li>
+<li>Mv = 20,000 kg</li>
+</ul>
+<p>Resultam então para o reservatório de alta pressão as seguintes condições finais:</p>
+<ul>
+<li>MAP = 8,695 kg</li>
+<li>TAP = 25 °C</li>
+<li>VAP = 0,213 m³</li>
+<li>pAP = 74,2 MPa</li>
+</ul>
+</div>
+</div>
+<div id="utilidades-e-sistemas-auxiliares" class="section level2 hasAnchor" number="4.10">
+<h2><span class="header-section-number">4.10</span> Utilidades e Sistemas Auxiliares<a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#utilidades-e-sistemas-auxiliares" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="ar-comprimido" class="section level3 hasAnchor" number="4.10.1">
+<h3><span class="header-section-number">4.10.1</span> Ar comprimido<a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#ar-comprimido" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>As instalações que manipulam hidrogênio e outros gases inflamáveis ou explosivos devem cumprir uma série de requisitos e normas de segurança. Entre elas recomenda-se a que as válvulas motorizadas sejam operadas pneumaticamente, evitando-se acionamentos e atuadores elétricos, pois se esses forem usados, devem ser totalmente estanques e a prova de explosão e, consequentemente, de maior custo.</p>
+<p>Para atender essa demanda de ar comprimido para a instrumentação foi instalado um compressor de parafusos com reservatório e sistema integrado de secagem frigorifica para redução da umidade. A capacidade nominal desse equipamento é de 40 Nm³/h (FAD) na pressão de descarga de 1,0 Mpa.</p>
+<p>O ar comprimido é entregue nos pontos de consumo através de uma rede de distribuição feita de tubos de PPR (polipropileno copolímero randômico), DN 32, espessura de 4,5 mm, instalado sobre leito no interior das canaletas. Próximo aos equipamentos é usada tubulação de aço inox (correntemente denominada por tubing) ou tubos de nylon para os menores diâmetros.</p>
+<p>Na Figura <a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#fig:figura71">4.20</a> está mostrado o diagrama usado para o sistema de produção e distribuição do ar comprimido de instrumentação.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura71"></span>
+<img src="figura_71.png" alt="Diagrama do sistema ar comprimido de instrumentação" width="80%" />
+<p class="caption">
+Figura 4.20: Diagrama do sistema ar comprimido de instrumentação
+</p>
+</div>
+</div>
+<div id="nitrogênio" class="section level3 hasAnchor" number="4.10.2">
+<h3><span class="header-section-number">4.10.2</span> Nitrogênio<a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#nitrog%C3%AAnio" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Nas plantas de produção de hidrogênio são tomadas diversas precauções para evitar a contaminação com o ar, devido presença de oxigênio. Há risco iminente de explosão quando a concentração de hidrogênio no ar estiver na concentração entre 4 e 75 % vol. Por essa razão são imprescindíveis sistemas para a retirada do oxigênio das tubulações, equipamentos e reservatórios.</p>
+<p>Isso é feito usando-se gases inertes, normalmente o nitrogênio, como é usado na planta do CH2V. Por isso essa operação é nomeada como inertização, mas também é comum o termo purga. Nas tubulações isso é feito deixando-se escoar nitrogênio durante um tempo suficiente que garanta a limpeza do todo o comprimento dessa tubulação. Essa limpeza que é feita nas tubulações também é conhecida por flushing. Um procedimento semelhante, mas executado de maneira automática, é empregado pelo compressor de hidrogênio. Para os reservatórios a inertização consiste em pressurizar o vaso com nitrogênio, aguardar um pouco para que ocorra a mistura por difusão e depois descartar todo conteúdo no ambiente, tomando o cuidado para que a pressão desse reservatório não fique muito baixa, prevenindo-se a entrada de ar novamente. Depois essa manobra é repetida até que a concentração de nitrogênio fique acima de 99 % VOL, garantindo-se margem segura em relação aos limites de explosividade.</p>
+<p>Não é necessário realizar novos procedimentos de inertização se houver a garantia segura que as tubulações, equipamentos e reservatórios foram mantidos pressurizados.</p>
+<p>A Figura <a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#fig:figura72">4.21</a> a seguir apresenta o diagrama do sistema de inertização.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura72"></span>
+<img src="figura_72.png" alt="Esquema do sistema de inertização com nitrogênio" width="80%" />
+<p class="caption">
+Figura 4.21: Esquema do sistema de inertização com nitrogênio
+</p>
+</div>
+<p>Como mais um exemplo de aplicação demostra-se como pode ser feita a inertização do reservatório pulmão da planta do CH2V. Esse vaso tem um volume de 8,4 m³ e foi projetado para uma pressão de trabalho igual 3 MPa. Na condição inicial o vaso estava aberto para o ambiente, cheio de ar na pressão atmosférica. Para a inertização desse vaso estão disponíveis seis cilindros de 0,05 m³ a 20 MPa de nitrogênio industrial com pureza de 99,9%VOL.</p>
+<p>Nesse exemplo considera-se que o ar atmosférico técnico seja uma mistura de 21%VOL de oxigênio e 79%VOL de nitrogênio e supõe-se o único contaminante do nitrogênio industrial seja o oxigênio. Como as pressões envolvidas nesse processo são mais baixas, os cálculos serão feitos usando equações simples envolvendo apenas pressões e volumes, desconsiderando os efeitos da temperatura</p>
+<p>Como estão disponíveis seis cilindros de nitrogênio foram simuladas quatro diferentes combinações para a inertização desse vaso. Os resultados obtidos estão resumidos a seguir.</p>
+<div id="uzffseimmq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#uzffseimmq table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#uzffseimmq thead, #uzffseimmq tbody, #uzffseimmq tfoot, #uzffseimmq tr, #uzffseimmq td, #uzffseimmq th {
+  border-style: none;
+}
+
+#uzffseimmq p {
+  margin: 0;
+  padding: 0;
+}
+
+#uzffseimmq .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#uzffseimmq .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#uzffseimmq .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#uzffseimmq .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#uzffseimmq .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#uzffseimmq .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#uzffseimmq .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#uzffseimmq .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#uzffseimmq .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#uzffseimmq .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#uzffseimmq .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#uzffseimmq .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#uzffseimmq .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#uzffseimmq .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#uzffseimmq .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#uzffseimmq .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#uzffseimmq .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#uzffseimmq .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#uzffseimmq .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#uzffseimmq .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#uzffseimmq .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#uzffseimmq .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#uzffseimmq .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#uzffseimmq .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#uzffseimmq .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#uzffseimmq .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#uzffseimmq .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#uzffseimmq .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#uzffseimmq .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#uzffseimmq .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#uzffseimmq .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#uzffseimmq .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#uzffseimmq .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#uzffseimmq .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#uzffseimmq .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#uzffseimmq .gt_left {
+  text-align: left;
+}
+
+#uzffseimmq .gt_center {
+  text-align: center;
+}
+
+#uzffseimmq .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#uzffseimmq .gt_font_normal {
+  font-weight: normal;
+}
+
+#uzffseimmq .gt_font_bold {
+  font-weight: bold;
+}
+
+#uzffseimmq .gt_font_italic {
+  font-style: italic;
+}
+
+#uzffseimmq .gt_super {
+  font-size: 65%;
+}
+
+#uzffseimmq .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#uzffseimmq .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#uzffseimmq .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#uzffseimmq .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#uzffseimmq .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#uzffseimmq .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#uzffseimmq .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#uzffseimmq .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#uzffseimmq div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <caption><span id="tab:tabela6">Tabela 4.5: </span>Concentração de O~2~ no vaso ao fim de cada inertização. Fonte: Elaboração própria.</caption>
+  <thead>
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="background-color: #2E7D32; color: #E8F5E9; font-weight: bold;" scope="col" id="numero_cilindros">Número de Cilindros Utilizados</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="background-color: #2E7D32; color: #E8F5E9; font-weight: bold;" scope="col" id="concentracao_inicial">O₂ Inicial (%)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="background-color: #2E7D32; color: #E8F5E9; font-weight: bold;" scope="col" id="concentracoes_intermediarias">Concentrações Intermediárias (%)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="background-color: #2E7D32; color: #E8F5E9; font-weight: bold;" scope="col" id="concentracao_final">O₂ Final (%)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="background-color: #2E7D32; color: #E8F5E9; font-weight: bold;" scope="col" id="pressao">Pressão (MPa)</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="numero_cilindros" class="gt_row gt_center">1</td>
+<td headers="concentracao_inicial" class="gt_row gt_center">21</td>
+<td headers="concentracoes_intermediarias" class="gt_row gt_center">9,6; 4,4; 2,0; 0,9; 0,4</td>
+<td headers="concentracao_final" class="gt_row gt_center">0,2</td>
+<td headers="pressao" class="gt_row gt_center">0,22</td></tr>
+    <tr><td headers="numero_cilindros" class="gt_row gt_center">2</td>
+<td headers="concentracao_inicial" class="gt_row gt_center">21</td>
+<td headers="concentracoes_intermediarias" class="gt_row gt_center">6,2; 1,8</td>
+<td headers="concentracao_final" class="gt_row gt_center">0,5</td>
+<td headers="pressao" class="gt_row gt_center">0,33</td></tr>
+    <tr><td headers="numero_cilindros" class="gt_row gt_center">3</td>
+<td headers="concentracao_inicial" class="gt_row gt_center">21</td>
+<td headers="concentracoes_intermediarias" class="gt_row gt_center">4,6</td>
+<td headers="concentracao_final" class="gt_row gt_center">1,0</td>
+<td headers="pressao" class="gt_row gt_center">0,45</td></tr>
+    <tr><td headers="numero_cilindros" class="gt_row gt_center">6</td>
+<td headers="concentracao_inicial" class="gt_row gt_center">21</td>
+<td headers="concentracoes_intermediarias" class="gt_row gt_center">-</td>
+<td headers="concentracao_final" class="gt_row gt_center">2,6</td>
+<td headers="pressao" class="gt_row gt_center">0,79</td></tr>
+  </tbody>
+  
+</table>
+</div>
+<p>Os valores obtidos foram plotados em um gráfico, mostrado na Figura <a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#fig:figura73">4.22</a>. Observa-se que a concentração de O<sub>2</sub> alcançada ao fim de cada processo é cada vez menor quanto mais operações de inertização sejam feitas.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura73"></span>
+<img src="figura_73.png" alt="Gráfico com a concentração de O~2~ após as operações de inertização" width="80%" />
+<p class="caption">
+Figura 4.22: Gráfico com a concentração de O<sub>2</sub> após as operações de inertização
+</p>
+</div>
+<p>Ressalta-se que a concentração final de O<sub>2</sub> depende diretamente da pureza do nitrogênio utilizado no processo de inertização. Depois de muitas operações, essa concentração tende de forma assintótica para a nível de contaminação do O<sub>2</sub> no gás de inertização.</p>
+</div>
+<div id="água-de-resfriamento" class="section level3 hasAnchor" number="4.10.3">
+<h3><span class="header-section-number">4.10.3</span> Água de resfriamento<a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#%C3%A1gua-de-resfriamento" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A produção de hidrogênio por eletrólise através de células PEM é processo exotérmico, por isso é necessário a retirada do calor gerado de maneira a manter temperatura de operação dentro dos limites recomendados pelo fabricante do equipamento, abaixo de 70 °C. Ademais durante a fase de purificação é preciso extrair mais calor para o resfriamento e condensação da umidade presente no hidrogênio que foi produzido. O retificador AC/DC também é um equipamento onde necessita-se controle de temperatura, nele a energia térmica gerada pelos componentes eletrônicos de potência é retirada com resfriamento com água gelada. Toda essa energia térmica deve então ser dissipada no ambiente.</p>
+<p>Para cumprir essa tarefa foi implantado na planta do CH2V um sistema com capacidade térmica de aproximadamente 195 kW T, composto por torre de resfriamento, bombas centrífugas e dois circuitos de água independentes com vazão em torno de 24 m³/h e um diferencial de temperatura de 5,0 °C, entre a entrada e a saída no circuito secundário. A configuração adotada nesse sistema é vantajosa, pois a maior parte da evaporação se dá no circuito primário, onde também ocorre a contaminação com as poeiras suspensas no ambiente.</p>
+<p>E justo nesse circuito primário é onde se faz a reposição de água, controlando a concentração de sais na água circulante. O circuito secundário é praticamente fechado e a evaporação é insignificante, consequentemente a concentração é reduzida. Foram empregados tubos de CPVC montados com cola e com conexões flangeadas na ligação com os diversos equipamentos.</p>
+<p>A Figura <a href="considerações-técnicas-sobre-a-planta-de-produção-de-hidrogênio-do-ch2v.html#fig:figura74">4.23</a> mostra o esquema que foi adotado na planta do CH2V para o sistema de água industrial de resfriamento.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura74"></span>
+<img src="figura_74.png" alt="Diagrama do sistema de água industrial de resfriamento" width="80%" />
+<p class="caption">
+Figura 4.23: Diagrama do sistema de água industrial de resfriamento
+</p>
+</div>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="considerações-gerais-sobre-a-implantação-do-ch2v.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="referências.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": null,
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "section"
+  }
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

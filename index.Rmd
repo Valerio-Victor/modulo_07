@@ -1,7 +1,7 @@
 ---
 title: "DESAFIOS DE INSTALAÇÃO DE UMA PLANTA DE PRODUÇÃO DE H₂"
 subtitle: "Estudo de Caso da UNIFEI"
-author: "**Autores**: _<br>[**Prof. Dr. Jamil Haddad**](http://lattes.cnpq.br/3322615178606123) <br>[**Prof. Me. Fábio José Horta Nogueira**]()_"
+author: "**Autores**: _<br>[**Prof. Dr. Jamil Haddad**](http://lattes.cnpq.br/3322615178606123) <br>[**Prof. Me. Fábio José Horta Nogueira**]( http://lattes.cnpq.br/0705806528688854)_"
 date: "**Última Atualização**: `r format(Sys.Date(), '%d de %B de %Y')`"
 site: bookdown::bookdown_site
 documentclass: book
@@ -24,447 +24,655 @@ knitr::opts_chunk$set(
 
 # INTRODUÇÃO
 
-Figura \@ref(fig:figura_01)
+No contexto da atual transição para a sustentabilidade dos sistemas energéticos globais, incorporando de modo crescente fontes renováveis, adotando tecnologias avançadas e buscando ampliar a descarbonização das emissões associadas à produção de energia, o hidrogênio tem se destacado como vetor energético e insumo industrial de grande interesse, com um elevado potencial de produção por várias rotas e diversificadas alternativas de uso final. Não obstante, a geração e uso de hidrogênio verde depende de técnicas, processos e equipamentos ainda relativamente pouco conhecidos e em alguns casos em fase de maturação, sendo fundamentais estudos que promovam a consolidação das tecnologias, assim como sua difusão e demonstração para viabilizar, em bases sólidas, a efetiva expansão do hidrogênio na sociedade moderna.
 
-```{r figura_01, fig.cap=""}
+O projeto “Centro de Hidrogênio Verde (CH2V)”, da Universidade Federal de Itajubá (UNIFEI), foi concebido para, em uma primeira etapa, construir uma edificação com área aproximada de 800m², a ser utilizada por instituições e empresas interessadas no desenvolvimento de estudos e projetos de pesquisa em equipamentos e sistemas de produção e uso de hidrogênio como: avaliação, teste e validação das principais características (eficiência, dados nominais); estudo e aplicação dos protocolos e normas de segurança; durabilidade, manutenção, confiabilidade; desempenho sob carga parcial; resposta dinâmica dos sistemas; impacto do tempo de uso no desempenho; modelagem, simulação e otimização de sistemas e integração dos componentes dos sistemas. Como uma primeira atividade experimental, foi instalado no CH2V um banco de ensaio para teste de motores alimentados a hidrogênio, visando avaliar a operacionalidade, desempenho, emissões e economicidade do emprego deste combustível em motores alternativos. 
+
+Na segunda etapa, concluída em setembro de 2024, foi instalado na UNIFEI o sistema de produção e armazenamento de hidrogênio do CH2V, que inclui o eletrolisador utilizando tecnologia PEM (Proton Exchange Membrane) com 300 kW de potência, capaz de transformar energia elétrica gerada com fontes renováveis em 60 metros cúbicos de hidrogênio e 120 metros cúbicos de oxigênio por hora (volumes a 1 atm e 0ºC). O hidrogênio é produzido na pressão de 30 bar, e considerando seu armazenamento e a possibilidade de abastecer veículos utilizando esse combustível, são empregados compressores de membrana para elevar essa pressão até 900 bar. Esses equipamentos foram fornecidos pela NEA NEUMAN & ESSER Engenharia e Soluções Ltda.
+
+## H2Brasil
+
+O CH2V é uma realidade, graças ao apoio do projeto H2Brasil, que integra a Cooperação Brasil-Alemanha para o Desenvolvimento Sustentável e é implementado pela Deutsche Geselschaft für Internationale Zusammenarbeit (GIZ) GmbH em parceria com o Ministério de Minas e Energia (MME) e financiado pelo Ministério Federal da Cooperação Econômica e Desenvolvimento (BMZ, em alemão).
+
+O H2Brasil teve como objetivo principal apoiar a expansão do mercado de hidrogênio verde (H2V) no país, como peça fundamental na redução da emissão de gases de efeito estufa na atmosfera e para contribuir para a descarbonização da economia brasileira. Esse projeto foi realizado por meio da UNIFEI, com o apoio da Fundação de Apoio ao Ensino, Pesquisa e Extensão de Itajubá (FAPEPE).
+
+## UNIFEI
+
+A Universidade Federal de Itajubá (Unifei) foi fundada em 23 de novembro de 1913 como Instituto Eletrotécnico e Mecânico Itajubá por iniciativa de Theodomiro Carneiro Santiago, que buscou organizar em sua cidade um estabelecimento para a formação de engenheiros mecânicos e eletricistas, com o ensino voltado para a realidade prática e o ambiente de trabalho tão aproximado quanto possível da vida real. Seu fundador era, antes de tudo, um realizador e criou o aforismo: “Revelemo-nos, mais por atos do que por palavras, dignos de possuir este grande País”. A transformação em Universidade deu-se em abril de 2002, através da Lei 10.435. Até o final de 2025, as atividades da UNIFEI são desenvolvidas em dois campi (Itajubá e Itabira) com dez Institutos, mais de 100 laboratórios, mais de 50 cursos de Graduação e Pós-Graduação, cerca de 9.000 alunos e 467 professores (81% doutores ou equivalente). Ao longo de seus 110 anos de existência, a UNIFEI já formou aproximadamente 17.000 alunos de graduação e 4.000 alunos de pós-graduação, contribuindo na formação de profissionais em grande parte atuando no campo da geração, transporte e distribuição de energia. Por meio do Centro de Hidrogênio Verde, CH2V, com o apoio do governo federal e da cooperação alemã, a UNIFEI mantém o compromisso e o sonho de seu fundador, agora com ênfase na energia limpa e renovável. O conhecido ranking de universidades Times Higher Education (THE) em 2023 avaliou como essas instituições atendem aos Objetivos de Desenvolvimento Sustentável (ODS) da ONU. Entre 1.591 universidades em todo o mundo, considerando especialmente suas atividades visando promover e desenvolver sistemas energéticos sustentáveis e acessíveis, a UNIFEI alcançou o 29º lugar no ranking global, a melhor posição alcançada por uma universidade brasileira.
+
+# UMA VISÃO GERAL DO PROJETO APRESENTADO PARA A ALEMANHA E ALGUNS RESULTADOS
+
+Após algumas reuniões com a equipe técnica da GIZ, a UNIFEI encaminhou uma proposta de projeto em fevereiro de 2022, contendo 42 páginas com o seguinte conteúdo: 1. Apresentação, 2. Justificativa, 3. Objetivos, 4. Estratégias para disseminação do conhecimento, 5. Estratégias para inclusão de iniciativa privada, 6. Sinergia e integração com outras atividades, 9. Cronograma de atividades, 10. Equipe e matriz de responsabilidades, 11. Resultados esperados, 12. Planilha orçamentária, 13. Análise de riscos e 14. Considerações finais.
+
+O valor total destinado pela GIZ para esse projeto, denominado Centro de Hidrogênio Verde (CH2V), foi de 5 milhões de euros envolvendo a instalação de uma planta de produção de hidrogênio juntamente com um sistema de abastecimento veicular, construção de uma edificação (projetos, obras, estrutura interna, etc.) para abrigar pessoal técnico e laboratórios destinados a atividades com hidrogênio, banco de ensaios em motores com H2, desenvolvimento de um curso EAD, desenvolvimento de website, bolsas para alunos e pesquisadores, viagens nacionais e internacionais, desenvolvimento de estudos técnicos, estabelecimento de parcerias, workshops, entre outras ações. Inicialmente, o projeto estava previsto para ser desenvolvido entre março/2022 a dezembro/2023. A Figura \@ref(fig:figura01) ilustra as principais questões relacionadas ao projeto enquanto a Figura \@ref(fig:figura02) apresenta uma visão geral dos principais componentes da planta de produção de hidrogênio.
+
+```{r figura01, fig.cap="Atividades relacionadas ao projeto CH2V"}
 knitr::include_graphics(path = 'figura_01.png')
 ```
 
-Figura \@ref(fig:figura_02)
-
-```{r figura_02, fig.cap=""}
+```{r figura02, fig.cap="Visão geral dos componentes da planta de produção de hidrogênio"}
 knitr::include_graphics(path = 'figura_02.png')
 ```
 
-Figura \@ref(fig:figura_03)
+## Alguns Resultados
 
-```{r figura_03, fig.cap=""}
+Entre os principais resultados obtidos com o projeto CH2V, pode-se citar:
+
+- Instalação, no campus da UNIFEI, de uma planta de eletrólise com potência de 300 kW, tanques de armazenamento, compressores e um sistema de abastecimento para veículos movidos a hidrogênio (Postos de Abastecimento de Hidrogênio - HRS).
+
+- Construção de um edifício com área aproximada de 800 m² para o desenvolvimento de atividades e projetos de pesquisa relacionados ao uso de hidrogênio verde.
+
+- Aquisição e instalação de uma bancada de testes de motores em contêiner, com os instrumentos necessários para testar motores de até 600 HP e 2500 Nm de torque.
+
+- Criação, desenvolvimento e publicação de conteúdo para a modalidade de ensino a distância (EAD) de um curso de treinamento/qualificação em hidrogênio verde.
+
+- Realização de dois workshops para a comunidade acadêmica da UNIFEI.
+
+- Desenvolvimento e implementação de um portal web (website CH2V) para divulgação das atividades do CH2V.
+
+Além dos resultados mencionados anteriormente, com a orientação de professores pesquisadores e de alunos bolsistas envolvidos no projeto, foram elaborados nove estudos técnico-econômicos envolvendo a produção e utilização de hidrogênio verde em diferentes aplicações: “Desafios no Armazenamento de Hidrogênio” (Geovani Rodrigues, Luis Fernando Corrêa de Almeida); “Conversores Formadores de Rede Alimentados por Células de Combustível” (João Vítor Ambrosio Milani, Kethellyn Wendy Rivoli Gomes, Robson Bauwelz Gonzatti, Rondineli Rodrigues Pereira); “Como garantir a produção de hidrogênio verde em CH2V através do selo I-REC” (Igor Campos Junqueira, Samuel Lucas dos Santos Junior, Rafael Silva Capaz); “Como garantir a produção de Hidrogênio verde através do certificado CCEE (Brasil)” (Igor Campos Junqueira, Samuel Lucas dos Santos Junior, Rafael Silva Capaz); “Produção de hidrogênio a partir da gaseificação de biomassa: perspectivas e limitações” (Borges, T.P, Lora, E.E.S, Venturini. O., Errera, M. R, Isa, Y.M, K, A. e Zhang, S.); “Estudo de normas de segurança em instalações com produção e uso de hidrogênio” (Márcia Regina Baldissera Rodrigues, Lucia del RosarioGarrido Rios, Acsa Martins, Anne Karoline Tirelli); “Uso de hidrogênio em motores de combustão interna” (G. M. Pinto, T. A. Z. de Souza, R. B. R. da Costa, L. F. A. Roque, G. V. Frez, L. P. Vidigal, N. V. Perez, C. J. R. Coronado); “Qualidade da água necessária para a produção de hidrogênio verde a partir da eletrólise da água” (Regina Mambeli Barros, Lucia Garrido Rios, Marcia Regina Baldissera Rodrigues); “Modelagem numérica de CFD em aplicações de hidrogênio” (Caio Probst de Sá, Fagner Goulart Dias). A Figura \@ref(fig:figura03) apresenta a página inicial do site desenvolvido ([**https://ch2v.unifei.edu.br/**](https://ch2v.unifei.edu.br/)).
+
+```{r figura03, fig.cap="Site do CH2V"}
 knitr::include_graphics(path = 'figura_03.png')
 ```
 
-Figura \@ref(fig:figura_04)
+O curso na modalidade de ensino a distância (EAD) sobre hidrogênio verde foi desenvolvido pelos professores participantes do projeto CH2V. Para cada disciplina (ou módulo) foi elaborado um texto que serviu de referência ou material a ser consultado pelos futuros alunos, além de compor um livro digital para ser consultado. Em paralelo ao trabalho de desenvolvimento desse material, foi realizada uma licitação e contratada uma empresa especializada em projetos audiovisuais para produção de treinamentos para oferta de cursos na modalidade EAD a serem disponibilizados dentro do portal de comunicação do Centro. 
 
-```{r figura_04, fig.cap=""}
+A empresa contratada realizou a adaptação das disciplinas para o formato de roteiro de videoaulas, empregando também conteúdos complementares, como livros eletrônicos, peças visuais, inserções e peças de comunicação. Os módulos desse curso estão relacionados no Tabela \@ref(tab:tabela1).
+
+```{r tabela1, echo=FALSE, message=FALSE, warning=FALSE, tab.cap="Estrutura curricular do curso. Fonte: Elaboração própria."}
+library(magrittr, include.only = '%>%')
+library(gt)
+
+param_tec <- data.frame(
+  modulo = c(
+    'Módulo 1 - Introdução',
+    'Módulo 2 - Contextualização',
+    'Módulo 3 - Aspectos Técnicos na Produção e Logística',
+    'Módulo 4 - Aplicações do Hidrogênio',
+    'Módulo 5 - Aspectos Econômicos',
+    'Módulo 6 - Aspectos Ambientais',
+    'Módulo 7 - Aspectos Regulatórios e Normativos'
+  ),
+  
+  disciplinas = c(
+    paste(
+      '• Histórico e Perspectivas',
+      '• Conceitos Básicos',
+      '• Armazenamento Químico de Energia',
+      '• O Projeto CH2V',
+      sep = '<br>'
+    ),
+    
+    paste(
+      '• Transição Energética',
+      '• Experiência Internacional',
+      '• Exemplos de Projetos',
+      sep = '<br>'
+    ),
+    
+    paste(
+      '• Tecnologias',
+      '• Logística do Hidrogênio',
+      sep = '<br>'
+    ),
+    
+    paste(
+      '• Aplicação de H₂ na Geração de Energia Elétrica',
+      '• Aplicação de H₂ em Mobilidade',
+      '• Uso do Hidrogênio na Indústria',
+      '• Células a Combustível',
+      sep = '<br>'
+    ),
+    
+    paste(
+      '• Princípios de Matemática Financeira',
+      '• Custos de Capital em Projetos de Hidrogênio',
+      '• Custos de Operação e Manutenção em Projetos de Hidrogênio',
+      sep = '<br>'
+    ),
+    
+    paste(
+      '• Análise do Ciclo de Vida: Conceitos e Aplicações',
+      '• Pegada de Carbono da Produção de Hidrogênio',
+      '• Certificação do Hidrogênio Verde',
+      sep = '<br>'
+    ),
+    
+    paste(
+      '• Segurança',
+      '• Regulação da Produção de Hidrogênio',
+      '• Regulação do Uso de Hidrogênio',
+      '• Mecanismos de Incentivo ao Hidrogênio',
+      sep = '<br>'
+    )
+  )
+)
+
+param_tec %>%
+  gt(
+    caption = 'Estrutura curricular do curso. Fonte: Elaboração própria.'
+  ) %>%
+  fmt_markdown(columns = disciplinas) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#2e7d32"),
+      cell_text(color = "#e8f5e9", weight = "bold")
+    ),
+    locations = cells_column_labels()
+  ) %>%
+  cols_label(
+    modulo = 'Módulos',
+    disciplinas = 'Disciplinas'
+  ) %>%
+  cols_align(
+    align = "left",
+    columns = everything()
+  )
+
+```
+
+# CONSIDERAÇÕES GERAIS SOBRE A IMPLANTAÇÃO DO CH2V
+
+A seguir apresentam-se comentários sobre a infraestrutura para a instalação do CH2V incluindo a planta de produção de hidrogênio.
+
+## Instalação da Edificação do CH2V
+
+No início de 2022, após algumas reuniões internas com a equipe do projeto e visitas a algumas empresas que tinham instalações com hidrogênio, definiu-se um projeto conceitual do que seria a edificação a ser construída dentro do campus da universidade. Esse local destinado para construção da edificação (vide ilustração na Figura \@ref(fig:figura03)), situado em frente a um lago, compreende um lote com área aproximada de 3.000 m2, em terreno plano com acesso por rua pavimentada, conforme apresentado nas Figuras \@ref(fig:figura04) e \@ref(fig:figura05).
+
+```{r figura04, fig.cap="Área prevista para construção (em vermelho) – aproximadamente 3.000 m²"}
 knitr::include_graphics(path = 'figura_04.png')
 ```
 
-Figura \@ref(fig:figura_05)
-
-```{r figura_05, fig.cap=""}
+```{r figura05, fig.cap="Outra vista da área prevista para construção (em vermelho)"}
 knitr::include_graphics(path = 'figura_05.png')
 ```
 
-Figura \@ref(fig:figura_06)
+A edificação do CH2V a ser construída foi planejada para ter dois pavimentos e o vídeo do projeto conceitual, desenvolvido pela empresa júnior da UNIFEI chamada INLOCO disponível no seguinte endereço: [**https://youtu.be/hKvWCJ9BvEs**](https://youtu.be/hKvWCJ9BvEs). Uma vista frontal dessa edificação pode ser observada na Figura \@ref(fig:figura06).
 
-```{r figura_06, fig.cap=""}
+```{r figura06, fig.cap="Vista frontal da edificação que faz parte da infraestrutura do CH2V (ilustração)"}
 knitr::include_graphics(path = 'figura_06.png')
 ```
 
-Figura \@ref(fig:figura_07)
+Após a definição do local da construção da edificação do CH2V, foi realizada uma licitação, pela FAPEPE, para contratação de uma empresa especializada em sondagem de solo, processo de investigação técnica indispensável na construção civil, utilizado para mapear as camadas, resistência (SPT) e o lençol freático do subsolo, indicando o tipo de fundação ideal, garantindo segurança e evitando custos adicionais com superdimensionamento de estruturas. Após a realização do serviço, foi gerado em março de 2022 um relatório de sondagem. 
 
-```{r figura_07, fig.cap=""}
+Neste relatório, o resultado da sondagem geotécnica do subsolo, foi realizado de acordo com as normas da Associação de Normas Técnicas (ABNT), destacando-se a NBR 6484 - Sondagem de simples reconhecimento com SPT - Método de Ensaio e a NBR 8036 - Programa de sondagem de simples reconhecimento dos solos para fundações de edifício, além do manual de obras públicas edificações, das práticas SEAP, instituído pelo decreto nº 92.100 de 10/12/1985.
+
+A etapa seguinte foi contratar uma empresa para elaborar os projetos executivos do CH2V. Para tanto, foi elaborado um termo de referência para a realização de uma licitação para a contratação de empresa especializada em serviços de engenharia para a elaboração dos projetos executivos para implantação de Infraestrutura do Centro de Hidrogênio Verde da Universidade Federal de Itajubá. Esses projetos executivos estão relacionados a seguir.
+
+- Projeto de Pavimentação
+
+-	Projeto de Fundação
+
+-	Projeto Estrutural
+
+-	Projeto de Impermeabilização
+
+-	Projeto de Instalações Hidráulicas
+
+-	Projeto de Instalações Sanitárias/Esgoto
+
+-	Projeto de Drenagem de Águas Pluviais
+
+-	Projeto Arquitetônico	
+
+-	Projeto de Prevenção e Combate a Incêndio e Pânico
+
+-	Projeto de Prevenção e Combate a Incêndio e Pânico
+
+-	Projeto de Instalações Elétricas: Baixa e Média tensão
+
+-	Projeto de SPDA - Sistema de Proteção contra Descargas Atmosféricas
+
+-	Projeto de Luminotécnica
+
+-	Projeto de Dados e Voz
+
+-	Projeto de CFTV e TV - Circuito Fechado de TV para sistemas de vigilância
+
+-	Projeto de Ar Condicionado: sistema de climatização, ventilação e exaustão mecânica
+
+-	Projeto Executivo de Paisagismo
+
+-	Projeto executivo de elevador
+
+Além da elaboração dos projetos executivos, a empresa ainda deveria efetuar a compatibilização dos projetos, elaborar o orçamento analítico e sintético, o planejamento da construção, o cronograma físico e financeiro da obra e o caderno de encargos e memorial descritivo. A licitação foi realizada pela FAPEPE, fundação de apoio à UNIFEI.
+
+Além das condições padrões afeitas ao processo da licitação, observadas pela FAPEPE, também foi solicitada às empresas participantes, a apresentação de Atestado de Capacidade Técnica Registrado no CREA, confirmando que a empresa já tenha elaborado projetos executivos de edificações (destinadas a laboratórios ou não), contemplando projetos de arquitetura, fundações, superestrutura, instalações elétricas, dados e voz, instalações hidráulicas, elaboração de memoriais descritivos/especificações técnicas e também a elaboração de orçamento da obra.
+
+Após o processo licitatório e observados o devido processo legal (publicação do resultado e respeitado o prazo de recursos), a empresa vencedora foi a DAC Engenharia Ltda. Assim, após esse processo, a empresa começou a elaborar os projetos executivos. Após a entrega desses projetos e antes da realização de uma nova licitação, agora para contratar a empresa responsável pela construção, foi necessário encaminhar toda a documentação (incluindo os projetos executivos) para o Departamento de Engenharia da GIZ, na Alemanha.
+
+Foi encaminhado o Memorial Descritivo do edifício, incluindo os projetos arquitetônico, paisagístico, estrutural e de infraestrutura, bem como o projeto de proteção contra incêndio. A documentação incluiu ainda as licenças ambientais e de uso da água, além dos trâmites junto à prefeitura municipal de Itajubá necessários para a execução da obra. Antes desse envio, uma consultora da GIZ, no Brasil, avaliou o material e emitiu parecer favorável ao projeto, também encaminhado a GIZ, na Alemanha.
+
+##
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figura \@ref(fig:figura07)
+
+```{r figura07, fig.cap="Formulário de Orientação Básica - CH2V (folha 1/2)"}
 knitr::include_graphics(path = 'figura_07.png')
 ```
 
-Figura \@ref(fig:figura_08)
+Figura \@ref(fig:figura08)
 
-```{r figura_08, fig.cap=""}
+```{r figura08, fig.cap="Formulário de Orientação Básica - CH2V (folha 2/2)"}
 knitr::include_graphics(path = 'figura_08.png')
 ```
 
-Figura \@ref(fig:figura_09)
+Figura \@ref(fig:figura09)
 
-```{r figura_09, fig.cap=""}
+```{r figura09, fig.cap="Licença Ambiental Simplificada (LAS) da edificação do CH2V"}
 knitr::include_graphics(path = 'figura_09.png')
 ```
 
-Figura \@ref(fig:figura_10)
+Figura \@ref(fig:figura10)
 
-```{r figura_10, fig.cap=""}
+```{r figura10, fig.cap="Certificado emitido pelo Igam"}
 knitr::include_graphics(path = 'figura_10.png')
 ```
 
-Figura \@ref(fig:figura_11)
+Figura \@ref(fig:figura11)
 
-```{r figura_11, fig.cap=""}
+```{r figura11, fig.cap="Outorga emitida pelo Igam"}
 knitr::include_graphics(path = 'figura_11.png')
 ```
 
-Figura \@ref(fig:figura_12)
+Figura \@ref(fig:figura12)
 
-```{r figura_12, fig.cap=""}
+```{r figura12, fig.cap="Sistema FV instalado no bloco X1 de salas de aulas"}
 knitr::include_graphics(path = 'figura_12.png')
 ```
 
-Figura \@ref(fig:figura_13)
+Figura \@ref(fig:figura13)
 
-```{r figura_13, fig.cap=""}
+```{r figura13, fig.cap="Sistema FV instalado no bloco X2 do instituto IEM"}
 knitr::include_graphics(path = 'figura_13.png')
 ```
 
-Figura \@ref(fig:figura_14)
+Figura \@ref(fig:figura14)
 
-```{r figura_14, fig.cap=""}
+```{r figura14, fig.cap="Sistema FV instalado nos blocos dos institutos ISEE e IEST"}
 knitr::include_graphics(path = 'figura_14.png')
 ```
 
-Figura \@ref(fig:figura_15)
+Figura \@ref(fig:figura15)
 
-```{r figura_15, fig.cap=""}
+```{r figura15, fig.cap="Projeto original da área para o CH2V"}
 knitr::include_graphics(path = 'figura_15.png')
 ```
 
-Figura \@ref(fig:figura_16)
+Figura \@ref(fig:figura16)
 
-```{r figura_16, fig.cap=""}
+```{r figura16, fig.cap="Primeiro desenho da planta de eletrólise sugerida pela NEA"}
 knitr::include_graphics(path = 'figura_16.png')
 ```
 
-Figura \@ref(fig:figura_17)
+Figura \@ref(fig:figura17)
 
-```{r figura_17, fig.cap=""}
+```{r figura17, fig.cap="Vista em perspectiva da planta sugerida pela NEA"}
 knitr::include_graphics(path = 'figura_17.png')
 ```
 
-Figura \@ref(fig:figura_18)
+Figura \@ref(fig:figura18)
 
-```{r figura_18, fig.cap=""}
+```{r figura18, fig.cap="Limites de segurança recomendados pela NFPA"}
 knitr::include_graphics(path = 'figura_18.png')
 ```
 
-Figura \@ref(fig:figura_19)
+Figura \@ref(fig:figura19)
 
-```{r figura_19, fig.cap=""}
+```{r figura19, fig.cap="Novo local para instalação da planta de produção de hidrogênio"}
 knitr::include_graphics(path = 'figura_19.png')
 ```
 
-Figura \@ref(fig:figura_20)
+Figura \@ref(fig:figura20)
 
-```{r figura_20, fig.cap=""}
+```{r figura20, fig.cap="Vista aérea do CTPB"}
 knitr::include_graphics(path = 'figura_20.png')
 ```
 
-Figura \@ref(fig:figura_21)
+Figura \@ref(fig:figura21)
 
-```{r figura_21, fig.cap=""}
+```{r figura21, fig.cap="Instalação do CTPB"}
 knitr::include_graphics(path = 'figura_21.png')
 ```
 
-Figura \@ref(fig:figura_22)
+Figura \@ref(fig:figura22)
 
-```{r figura_22, fig.cap=""}
+```{r figura22, fig.cap="Instalação do CTPB (portão de acesso)"}
 knitr::include_graphics(path = 'figura_22.png')
 ```
 
-Figura \@ref(fig:figura_23)
+Figura \@ref(fig:figura23)
 
-```{r figura_23, fig.cap=""}
+```{r figura23, fig.cap="Parte da área cedida para a instalação da planta de eletrólise do CH2V)"}
 knitr::include_graphics(path = 'figura_23.png')
 ```
 
-Figura \@ref(fig:figura_24)
+Figura \@ref(fig:figura24)
 
-```{r figura_24, fig.cap=""}
+```{r figura24, fig.cap="Detalhe da área selecionada com a localização aproximada da planta de eletrólise"}
 knitr::include_graphics(path = 'figura_24.png')
 ```
 
-Figura \@ref(fig:figura_25)
+Figura \@ref(fig:figura25)
 
-```{r figura_25, fig.cap=""}
+```{r figura25, fig.cap="Layout preliminar da planta de eletrólise do CH2V"}
 knitr::include_graphics(path = 'figura_25.png')
 ```
 
-Figura \@ref(fig:figura_26)
+Figura \@ref(fig:figura26)
 
-```{r figura_26, fig.cap=""}
+```{r figura26, fig.cap="Alvará de Construção nº 264/2022 da edificação do CH2V"}
 knitr::include_graphics(path = 'figura_26.png')
 ```
 
-Figura \@ref(fig:figura_27)
+Figura \@ref(fig:figura27)
 
-```{r figura_27, fig.cap=""}
+```{r figura27, fig.cap="Preparativos iniciais de preparação do terreno para a construção do CH2V"}
 knitr::include_graphics(path = 'figura_27.png')
 ```
 
-Figura \@ref(fig:figura_28)
+Figura \@ref(fig:figura28)
 
-```{r figura_28, fig.cap=""}
+```{r figura28, fig.cap="Preparativos iniciais de preparação do terreno para a construção do CH2V"}
 knitr::include_graphics(path = 'figura_28.png')
 ```
 
-Figura \@ref(fig:figura_29)
+Figura \@ref(fig:figura29)
 
-```{r figura_29, fig.cap=""}
+```{r figura29, fig.cap="Preparativos iniciais de preparação do terreno para a construção do CH2V"}
 knitr::include_graphics(path = 'figura_29.png')
 ```
 
-Figura \@ref(fig:figura_30)
+Figura \@ref(fig:figura30)
 
-```{r figura_30, fig.cap=""}
+```{r figura30, fig.cap="Estaqueamento para a construção do CH2V"}
 knitr::include_graphics(path = 'figura_30.png')
 ```
 
-Figura \@ref(fig:figura_31)
+Figura \@ref(fig:figura31)
 
-```{r figura_31, fig.cap=""}
+```{r figura31, fig.cap="Bloco da fundação concretado"}
 knitr::include_graphics(path = 'figura_31.png')
 ```
 
-Figura \@ref(fig:figura_32)
+Figura \@ref(fig:figura32)
 
-```{r figura_32, fig.cap=""}
+```{r figura32, fig.cap="Escoramento da laje do primeiro pavimento do CH2V"}
 knitr::include_graphics(path = 'figura_32.png')
 ```
 
-Figura \@ref(fig:figura_33)
+Figura \@ref(fig:figura33)
 
-```{r figura_33, fig.cap=""}
+```{r figura33, fig.cap="Enchimento da laje do primeiro pavimento do CH2V"}
 knitr::include_graphics(path = 'figura_33.png')
 ```
 
-Figura \@ref(fig:figura_34)
+Figura \@ref(fig:figura34)
 
-```{r figura_34, fig.cap=""}
+```{r figura34, fig.cap="Término da obra da edificação do CH2V"}
 knitr::include_graphics(path = 'figura_34.png')
 ```
 
-Figura \@ref(fig:figura_35)
+Figura \@ref(fig:figura35)
 
-```{r figura_35, fig.cap=""}
+```{r figura35, fig.cap="Inauguração da edificação do CH2V"}
 knitr::include_graphics(path = 'figura_35.png')
 ```
 
-Figura \@ref(fig:figura_36)
+Figura \@ref(fig:figura36)
 
-```{r figura_36, fig.cap=""}
+```{r figura36, fig.cap="Declaração de destinação dos resíduos sólidos da obra do CH2V"}
 knitr::include_graphics(path = 'figura_36.png')
 ```
 
-Figura \@ref(fig:figura_37)
+Figura \@ref(fig:figura37)
 
-```{r figura_37, fig.cap=""}
+```{r figura37, fig.cap="Primeiros trabalhos de terraplanagem para instalação da planta de produção de H2"}
 knitr::include_graphics(path = 'figura_37.png')
 ```
 
-Figura \@ref(fig:figura_38)
+Figura \@ref(fig:figura38)
 
-```{r figura_38, fig.cap=""}
+```{r figura38, fig.cap="Abertura das brocas de fundação e concretagem"}
 knitr::include_graphics(path = 'figura_38.png')
 ```
 
-Figura \@ref(fig:figura_39)
+Figura \@ref(fig:figura39)
 
-```{r figura_39, fig.cap=""}
+```{r figura39, fig.cap="Escavação das bases e canaletas"}
 knitr::include_graphics(path = 'figura_39.png')
 ```
 
-Figura \@ref(fig:figura_40)
+Figura \@ref(fig:figura40)
 
-```{r figura_40, fig.cap=""}
+```{r figura40, fig.cap="Concretagem das bases e canaletas"}
 knitr::include_graphics(path = 'figura_40.png')
 ```
 
-Figura \@ref(fig:figura_41)
+Figura \@ref(fig:figura41)
 
-```{r figura_41, fig.cap=""}
+```{r figura41, fig.cap="Colocação das grades de piso sobre as canaletas"}
 knitr::include_graphics(path = 'figura_41.png')
 ```
 
-Figura \@ref(fig:figura_42)
+Figura \@ref(fig:figura42)
 
-```{r figura_42, fig.cap=""}
+```{r figura42, fig.cap="Colocação das grades de piso sobre as canaletas"}
 knitr::include_graphics(path = 'figura_42.png')
 ```
 
-Figura \@ref(fig:figura_43)
+Figura \@ref(fig:figura43)
 
-```{r figura_43, fig.cap=""}
+```{r figura43, fig.cap="Guindaste usado para movimentação dos equipamentos pesados"}
 knitr::include_graphics(path = 'figura_43.png')
 ```
 
-Figura \@ref(fig:figura_44)
+Figura \@ref(fig:figura44)
 
-```{r figura_44, fig.cap=""}
+```{r figura44, fig.cap="Chegada e descarregamento do contêiner do eletrolisador"}
 knitr::include_graphics(path = 'figura_44.png')
 ```
 
-Figura \@ref(fig:figura_45)
+Figura \@ref(fig:figura45)
 
-```{r figura_45, fig.cap=""}
+```{r figura45, fig.cap="Descarregamento e colocação dos equipamentos em suas bases"}
 knitr::include_graphics(path = 'figura_45.png')
 ```
 
-Figura \@ref(fig:figura_46)
+Figura \@ref(fig:figura46)
 
-```{r figura_46, fig.cap=""}
+```{r figura46, fig.cap="Montagem da infraestrutura para passagem dos dutos e cabos"}
 knitr::include_graphics(path = 'figura_46.png')
 ```
 
-Figura \@ref(fig:figura_47)
+Figura \@ref(fig:figura47)
 
-```{r figura_47, fig.cap=""}
+```{r figura47, fig.cap="Trocador de calor e dispenser usados para o abastecimento de veículos"}
 knitr::include_graphics(path = 'figura_47.png')
 ```
 
-Figura \@ref(fig:figura_48)
+Figura \@ref(fig:figura48)
 
-```{r figura_48, fig.cap=""}
+```{r figura48, fig.cap="Reservatório de H2 de baixa pressão"}
 knitr::include_graphics(path = 'figura_48.png')
 ```
 
-Figura \@ref(fig:figura_49)
+Figura \@ref(fig:figura49)
 
-```{r figura_49, fig.cap=""}
+```{r figura49, fig.cap="Compressor de H2"}
 knitr::include_graphics(path = 'figura_49.png')
 ```
 
-Figura \@ref(fig:figura_50)
+Figura \@ref(fig:figura50)
 
-```{r figura_50, fig.cap=""}
+```{r figura50, fig.cap="Vista lateral da planta de produção de H2"}
 knitr::include_graphics(path = 'figura_50.png')
 ```
 
-Figura \@ref(fig:figura_51)
+Figura \@ref(fig:figura51)
 
-```{r figura_51, fig.cap=""}
+```{r figura51, fig.cap="Outra vista da planta de produção de H2"}
 knitr::include_graphics(path = 'figura_51.png')
 ```
 
-Figura \@ref(fig:figura_52)
+Figura \@ref(fig:figura52)
 
-```{r figura_52, out.width = "70%", fig.cap=""}
+```{r figura52, out.width = "70%", fig.cap="Esquema de produção de hidrogênio sem compressão"}
 knitr::include_graphics(path = 'figura_52.png')
 ```
 
-Figura \@ref(fig:figura_53)
+Figura \@ref(fig:figura53)
 
-```{r figura_53, fig.cap=""}
+```{r figura53, fig.cap="Reservatório de H2 de baixa pressão"}
 knitr::include_graphics(path = 'figura_53.png')
 ```
 
-Figura \@ref(fig:figura_54)
+Figura \@ref(fig:figura54)
 
-```{r figura_54, fig.cap=""}
+```{r figura54, fig.cap="Planta da unidade de produção de hidrogênio"}
 knitr::include_graphics(path = 'figura_54.png')
 ```
 
-Figura \@ref(fig:figura_55)
+Figura \@ref(fig:figura55)
 
-```{r figura_55, fig.cap=""}
+```{r figura55, fig.cap="Distribuição dos equipamentos na unidade de produção de hidrogênio"}
 knitr::include_graphics(path = 'figura_55.png')
 ```
 
-Figura \@ref(fig:figura_56)
+Figura \@ref(fig:figura56)
 
-```{r figura_56, fig.cap=""}
+```{r figura56, fig.cap="Vista em corte de uma canaleta de utilidades"}
 knitr::include_graphics(path = 'figura_56.png')
 ```
 
-Figura \@ref(fig:figura_57)
+Figura \@ref(fig:figura57)
 
-```{r figura_57, fig.cap=""}
+```{r figura57, fig.cap="Canaletas de utilidades com bandejas de cabos e leito de tubos"}
 knitr::include_graphics(path = 'figura_57.png')
 ```
 
-Figura \@ref(fig:figura_58)
+Figura \@ref(fig:figura58)
 
-```{r figura_58, fig.cap=""}
+```{r figura58, fig.cap="Esquema do abastecimento de água unidade do CH2V"}
 knitr::include_graphics(path = 'figura_58.png')
 ```
 
-Figura \@ref(fig:figura_59)
+Figura \@ref(fig:figura59)
 
-```{r figura_59, fig.cap=""}
+```{r figura59, fig.cap="Consumo de água na planta de produção de hidrogênio"}
 knitr::include_graphics(path = 'figura_59.png')
 ```
 
-Figura \@ref(fig:figura_60)
+Figura \@ref(fig:figura60)
 
-```{r figura_60, fig.cap=""}
+```{r figura60, fig.cap="Esquema unifilar da distribuição da em média tensão"}
 knitr::include_graphics(path = 'figura_60.png')
 ```
 
-Figura \@ref(fig:figura_61)
+Figura \@ref(fig:figura61)
 
-```{r figura_61, fig.cap=""}
+```{r figura61, fig.cap="Diagrama unifilar da distribuição de energia elétrica em 380 V"}
 knitr::include_graphics(path = 'figura_61.png')
 ```
 
-Figura \@ref(fig:figura_62)
+Figura \@ref(fig:figura62)
 
-```{r figura_62, fig.cap=""}
+```{r figura62, fig.cap="Diagrama unifilar da distribuição de energia elétrica em 440 V"}
 knitr::include_graphics(path = 'figura_62.png')
 ```
 
-Figura \@ref(fig:figura_63)
+Figura \@ref(fig:figura63)
 
-```{r figura_63, fig.cap=""}
+```{r figura63, fig.cap="Diagrama unifilar da distribuição de energia elétrica em 220/127 V"}
 knitr::include_graphics(path = 'figura_63.png')
 ```
 
-Figura \@ref(fig:figura_64)
+Figura \@ref(fig:figura64)
 
-```{r figura_64, fig.cap=""}
+```{r figura64, fig.cap="Disposição dos equipamentos no contêiner do eletrolisador"}
 knitr::include_graphics(path = 'figura_64.png')
 ```
 
-Figura \@ref(fig:figura_65)
+Figura \@ref(fig:figura65)
 
-```{r figura_65, fig.cap=""}
+```{r figura65, fig.cap="Diagrama simplificado do compressor de hidrogênio"}
 knitr::include_graphics(path = 'figura_65.png')
 ```
 
-Figura \@ref(fig:figura_66)
+Figura \@ref(fig:figura66)
 
-```{r figura_66, fig.cap=""}
+```{r figura66, fig.cap="Esquema do estoque de hidrogênio em baixa pressão"}
 knitr::include_graphics(path = 'figura_66.png')
 ```
 
-Figura \@ref(fig:figura_67)
+Figura \@ref(fig:figura67)
 
-```{r figura_67, fig.cap=""}
+```{r figura67, fig.cap="Esquema do estoque de hidrogênio em média e alta pressão"}
 knitr::include_graphics(path = 'figura_67.png')
 ```
 
-Figura \@ref(fig:figura_68)
+Figura \@ref(fig:figura68)
 
-```{r figura_68, fig.cap=""}
+```{r figura68, fig.cap="Monitoramento da estanqueidade em um reservatório de hidrogênio"}
 knitr::include_graphics(path = 'figura_68.png')
 ```
 
-Figura \@ref(fig:figura_69)
+Figura \@ref(fig:figura69)
 
-```{r figura_69, fig.cap=""}
+```{r figura69, fig.cap="Mesmo reservatório após correção do vazamento"}
 knitr::include_graphics(path = 'figura_69.png')
 ```
 
-Figura \@ref(fig:figura_70)
+Figura \@ref(fig:figura70)
 
-```{r figura_70, fig.cap=""}
+```{r figura70, fig.cap="Diagrama do sistema de abastecimento de veículos e caminhões"}
 knitr::include_graphics(path = 'figura_70.png')
 ```
 
-Figura \@ref(fig:figura_71)
+Figura \@ref(fig:figura71)
 
-```{r figura_71, fig.cap=""}
+```{r figura71, fig.cap="Diagrama do sistema ar comprimido de instrumentação"}
 knitr::include_graphics(path = 'figura_71.png')
 ```
 
-Figura \@ref(fig:figura_72)
+Figura \@ref(fig:figura72)
 
-```{r figura_72, fig.cap=""}
+```{r figura72, fig.cap="Esquema do sistema de inertização com nitrogênio"}
 knitr::include_graphics(path = 'figura_72.png')
 ```
 
-Figura \@ref(fig:figura_73)
+Figura \@ref(fig:figura73)
 
-```{r figura_73, fig.cap=""}
+```{r figura73, fig.cap="Gráfico com a concentração de O2 após as operações de inertização"}
 knitr::include_graphics(path = 'figura_73.png')
 ```
 
-Figura \@ref(fig:figura_74)
+Figura \@ref(fig:figura74)
 
-```{r figura_74, fig.cap=""}
+```{r figura74, fig.cap="Diagrama do sistema de água industrial de resfriamento"}
 knitr::include_graphics(path = 'figura_74.png')
 ```
 
